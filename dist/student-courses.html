@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Courses</title>
+    <title>Cou</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -52,7 +52,7 @@
 
 </head>
 
-<body class="layout-default">
+<body class="layout-default" onload="disableSubmit()" >
 
 
 
@@ -951,7 +951,7 @@
     <div class="modal-dialog">
     
       <!-- Modal content-->
-      <div class="modal-content" style="margin-top:3rem;width:130%;">
+      <div class="modal-content" style="margin-top:3rem;width:140%;">
         <div>
             <div  class="header-title">
               <h3 class="header-subtitle">AICL TEST</h3>  
@@ -980,15 +980,26 @@
            <h5  style="padding-top:10px;font-size: 16px; font-weight: 400;">Start By</h5>
            <h5 style="font-size: 14px; font-weight: 600;">16 Jan 2021 23:05:16</h5>
           </div>
-           <div style="margin: 40px 60px 10px;">
-               <h5 style="font-size:14px;text-align: center;font-weight: 600;">1. candidate strictly <span style="font-size:14px;text-align: center;font-weight: 600;color:red">not allowed to open new window or tabs or minimize the Exam Tab during the time of an exam,</span>else the Exam will be cancelled and marked a Fake Attempt</h5>
 
+           <div style="margin: 40px 60px 10px;">
+               <h5 style="font-size:14px;text-align:left;font-weight: 600;"><span style="font-size:14px;text-align: center;font-weight: 600;padding-right: 1rem;">1.</span>candidate strictly <span style="font-size:14px;text-align: center;font-weight: 600;color:red">not allowed to open new window or tabs or minimize the Exam Tab during the time of an exam,</span>else the Exam will be cancelled and marked a Fake Attempt</h5>
+     
               
            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div>
+            <div style="display:flex;margin: 30px 60px 30px;">
+                <h5 style="font-size:14px;font-weight:600; padding-right: 1rem;">2.</h5>
+                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">
+                <h5 style="padding-left:9px;font-size:14px;font-weight:600">I Agree</h5>
             </div>
+            <div style="display: flex;justify-content: space-between; margin: 20px 20px 20px 20px; ">
+                <button type="button" class="btn btn-warning" id="submit">Start</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+
         </div>
+         
        
       </div>
       
@@ -1006,7 +1017,23 @@
       'mini': 'mini-student-courses.html'
     }"></app-settings>
     </div>
+   
+    <script>
+        function disableSubmit() {
+            document.getElementById("submit").disabled = true;
+        }
 
+        function activateButton(element) {
+
+            if (element.checked) {
+                document.getElementById("submit").disabled = false;
+            }
+            else {
+                document.getElementById("submit").disabled = true;
+            }
+
+        }
+    </script>
     <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>
 
@@ -1072,7 +1099,7 @@
                 })
             })
          </script>
-         
+        
 
 </body>
 
