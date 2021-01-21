@@ -28,33 +28,78 @@
     <!-- ion Range Slider -->
     <link type="text/css" href="assets/css/vendor-ion-rangeslider.css" rel="stylesheet">
     <link type="text/css" href="assets/css/vendor-ion-rangeslider.rtl.css" rel="stylesheet">
+    <link type="text/css" href="../assets/vendor_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-    <link rel="stylesheet" type="text/css" href="assets/css/default.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
-    <script src="js/modernizr.custom.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../font_awesome/css/font-awesome.min.css">
+    <script src="assets/vendor/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <style>
-    .modal-title{
-        display: flexbox;
-        justify-content: space-between;
+    .header-title{
+       display: flex;
+       justify-content:flex-end;
+       margin: 10px 10px 10px 10px; 
     }
-    .Footer{
-            display:flex;
-            justify-content:flex-start;
-        }
+    .modal-Title{
+       display: flex;
+       justify-content:space-between;
+       margin: 20px 30px 20px 30px; 
+    }
+    .header-subtitle{
+       
+        font-size: 17px;
+        font-weight: 600;
+        background-color: #f3ec78;
+        background-image: linear-gradient(to right,rgb(229,45,39)0% ,rgb(179,18,23) 51%, rgb(229,45,39)100%); background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        text-align: center;
+      
+        
+         }
+    .modal_agree{
+        display:flex;
+        margin: 20px 30px 10px;
+    }
+    
+    .modal_agree >h5{
+        padding-left:9px;
+        font-size:7px;
+        font-weight:600;
+        margin: 30px 30px 30px 30px;
+    }
+    .modal_agree_button{
+        display: flex;
+        justify-content:center; 
+        margin: 10px 10px 10px 10px; 
 
-        .hidden{
-            visibility: hidden;
-            opacity: 0;
-        }
-        .action{
-           visibility: visible;
-        }
+    }
+    .btns{
+        background-color: red;
+    }
+    
+    .modal-Title >h5{
+        padding-top:10px; 
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif; 
+        font-weight: 400
+    }
+    .modal-Title > h6{
+        font-size: 14px; 
+        font-weight: 600;
+    }
+
+      
+
 </style>
+
 
 </head>
 
-<body class="layout-default">
+<body class="layout-default" onload="disableSubmit()" >
 
 
 
@@ -77,7 +122,7 @@
                 <div id="header" class="mdk-header js-mdk-header m-0" data-fixed data-effects="waterfall" data-retarget-mouse-scroll="false">
                     <div class="mdk-header__content">
 
-                        <div class="navbar navbar-expand-sm navbar-main navbar-dark bg-primary pl-md-0 pr-0" id="navbar" data-primary>
+                        <div class="navbar navbar-expand-sm navbar-main navbar-dark bg-danger pl-md-0 pr-0" id="navbar" data-primary>
                             <div class="container-fluid page__container pr-0">
 
                                 <!-- Navbar toggler -->
@@ -365,6 +410,7 @@
                                 </div>
                             </div>
                         </form>
+                     
 
                         <div class="row">
 
@@ -375,13 +421,16 @@
                                             <span><img src="assets/images/logos/react.svg" class="mb-1" style="width:34px;" alt="logo"></span>
                                             <span class="course__title">React</span>
                                             <span class="course__subtitle">Learn the Basics</span>
+
                                         </a>
+                                        
                                     </div>
+
                                     <div class="p-3">
                
-                                        <div class="d-flex align-items-center">
-                                           
-                                            <button href="#" class="btn btn-danger ml-auto  md-trigger" data-modal="modal-2" >Attempt</button>
+                                        <div class="d-flex;justify-content:space-between;flex-row">
+
+                                            <button href="#" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Attempt</button>
                                         </div>
                                     </div>
                                 </div>
@@ -398,7 +447,7 @@
                                     <div class="p-3">
                                         
                                         <div class="d-flex align-items-center">
-                                           
+                                          
                                             <a href="#" class="btn btn-danger ml-auto">Attempt</a>
                                         </div>
                                     </div>
@@ -427,6 +476,7 @@
                                             <span><img src="assets/images/logos/react.svg" class="mb-1" style="width:34px;" alt="logo"></span>
                                             <span class="course__title">React</span>
                                             <span class="course__subtitle">Learn the Basics</span>
+                                            
                                         </a>
                                     </div>
                                     <div class="p-3">
@@ -443,6 +493,7 @@
                                         <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
                                             <span><img src="assets/images/logos/icons8-c++-48.png" class="mb-1" style="width:34px;" alt="logo"></span>
                                             <span class="course__title">C++ Programming</span>
+
                                             <span class="course__subtitle">Learn the Basics</span>
                                         </a>
                                     </div>
@@ -463,7 +514,6 @@
                                             <span><img src="assets/images/logos/icons8-c-sharp-logo-50.png" class="mb-1" style="width:34px;" alt="logo"></span>
                                             <span class="course__title">C Programming</span>
                                             <span class="course__subtitle">Quick Tips</span>
-                                          <div class="countdown" data-value="4" data-unit="hour"></div>
 
                                         </a>
                                     </div>
@@ -649,137 +699,20 @@
                                     <span class="sidebar-menu-text">Courses</span>
                                 </a>
                             </li>
+                            
                             <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="student-course-purchase.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">shopping_cart</i>
-                                    <span class="sidebar-menu-text">Purchase Course</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="student-lessons.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dns</i>
-                                    <span class="sidebar-menu-text">Browse Lessons</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="student-quiz.html">
+                                <a class="sidebar-menu-button" href="atudent_quiz.html">
                                     <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">live_help</i>
                                     <span class="sidebar-menu-text">Take Quiz</span>
                                 </a>
                             </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="student-discussions.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">forum</i>
-                                    <span class="sidebar-menu-text">Discussions</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="edit-account.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">settings</i>
-                                    <span class="sidebar-menu-text">Edit Account</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="student-billing.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">monetization_on</i>
-                                    <span class="sidebar-menu-text">Billing</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="login.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">exit_to_app</i>
-                                    <span class="sidebar-menu-text">Logout</span>
-                                </a>
-                            </li>
                         </ul>
                     </div>
 
 
-                    <div class="sidebar-heading">Author</div>
-                    <div class="sidebar-block p-0">
-                        <ul class="sidebar-menu mt-0">
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="author-dashboard.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dvr</i>
-                                    <span class="sidebar-menu-text">Dashboard</span>
-                                    <span class="badge badge-warning rounded-circle badge-notifications ml-auto">8</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="author-courses.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">layers</i>
-                                    <span class="sidebar-menu-text">Courses</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="author-quiz-manager.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">assignment</i>
-                                    <span class="sidebar-menu-text">Quiz Manager</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="author-earnings.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">local_atm</i>
-                                    <span class="sidebar-menu-text">Earnings</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="author-reports.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">pie_chart</i>
-                                    <span class="sidebar-menu-text">Reports</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="author-payout.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">credit_card</i>
-                                    <span class="sidebar-menu-text">Payout</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="login.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">exit_to_app</i>
-                                    <span class="sidebar-menu-text">Logout</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    
 
-                    <div class="sidebar-heading">Admin</div>
-                    <div class="sidebar-block p-0">
-                        <ul class="sidebar-menu mt-0">
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="admin-dashboard.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dvr</i>
-                                    <span class="sidebar-menu-text">Dashboard</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="admin-emails.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">email</i>
-                                    <span class="sidebar-menu-text">Emails</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="admin-chat.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">comment</i>
-                                    <span class="sidebar-menu-text">Chat</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="admin-tickets.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">local_offer</i>
-                                    <span class="sidebar-menu-text">Tickets</span>
-                                    <span class="badge badge-warning badge-notifications ml-auto">NEW</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="admin-trello.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">touch_app</i>
-                                    <span class="sidebar-menu-text">Trello</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -944,41 +877,74 @@
             </div>
         </div>
     </div>
-    <!-- All modals added here for the demo. You would of course just have one, dynamically created -->
-		<div class="md-modal md-effect-1" id="modal-2">
-			<div class="md-content">
-				<h5 style="text-align: center; padding: 15px;">AICL TEST</h5>
-				
-					<div>
-                        <div class="modal-body Body" style="  display:flex; justify-content:space-between">
-                            <p style="font-size: 18px; font-weight: 400;">Subject Name</p><span>Java</span>
-                        </div>
-                        <div class="modal-body Body" style=" display:flex; justify-content:space-between">
-                            <p>Exam Date</p><span>23-12-2001</span>
-                        </div>
-                        <div class="modal-body Body" style=" display:flex; justify-content:space-between">
-                            <p>Start Time</p><span>12.00 AM</span>
-                        </div>
-                        <div class="modal-body Body-End" style=" display:flex; justify-content:space-between">
-                            <p>End Time</p><span>1.00 AM</span>
-                        </div>
-                        <div style="display:flex; justify-content:center;padding: 19px; ">
-                            <input type="radio" id="accept" name="decide" value="accept">
-                            <label for="male">Accept</label><br>
-                            <input type="radio" id="decline" name="decide" value="decline" style="margin-left: 12px;">
-                            <label for="female">Decline</label><br>
-                        </div>
-                        <div class="modal-footer Footer" style=" display:flex;
-                        justify-content:space-between;">
-                            <a class="btn btn-default hidden" id="button" href="">Start</a>
-                            <button class="md-close btn btn-default" >Close me!</button>
-                        </div>
-                       
-                    </div>
-					
-				
-			</div>
-		</div>
+    <div class="container">
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="margin-top:2rem;width:100%;">
+        <div>
+            <div  class="header-title">
+            
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+        </div>
+        <div>
+            <p class="header-subtitle">AICL TEST</p>  
+          <div class="modal-Title">
+           <h5> Test Name</h5>
+           <h6 >Two</h6>
+          </div>
+          <div class="modal-Title">
+           <h5> No of Question</h5>
+           <h6>10</h6>
+          </div>
+          <div class="modal-Title">
+           <h5 > Durations (in min.)</h5>
+           <h6 >30</h6>
+          </div>
+          <div class="modal-Title">
+           <h5>Test Categories</h5>
+           <h6>React</h6>
+          </div>
+             <div class="modal-Title">
+           <h5>Start By</h5>
+           <h6>16 Jan 2021 23:05:16</h6>
+          </div>
+
+          <div class="header-subtitle">
+              <p>Terms and Condition</p>
+          </div>
+
+           <div style="margin: 20px 60px 10px;">
+              
+              <h5 style="font-size:14px;text-align:center;font-weight: 600;">Candidate strictly <span style="font-size:14px;text-align: center;font-weight:600;color:red">not allowed to open new window or tabs or minimize the Exam Tab during the time of an exam,</span>else the Exam will be cancelled and marked a Fake Attempt.</h5>
+              
+           </div>
+        <div>
+            <div style="display:flex;margin: 30px 60px 30px; justify-content: center;">
+                
+                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">
+                <h5 style="padding-left:9px;font-size:14px;font-weight:600">I accept your Terms and Condition </h5>
+            </div>
+            <div  class="modal_agree_button">
+                <button type="button" class="btns" id="submit">Start</button>
+            </div>
+            </div>
+
+        </div>
+         
+       
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
 
     <!-- App Settings FAB -->
     <div id="app-settings">
@@ -989,7 +955,33 @@
       'mini': 'mini-student-courses.html'
     }"></app-settings>
     </div>
+    <!-- App Settings FAB -->
+    <div id="app-settings">
+        <app-settings layout-active="default" :layout-location="{
+      'default': 'student-quiz.html',
+      'fixed': 'fixed-student-quiz.html',
+      'fluid': 'fluid-student-quiz.html',
+      'mini': 'mini-student-quiz.html'
+    }"></app-settings>
+    </div>
 
+   
+    <script>
+        function disableSubmit() {
+            document.getElementById("submit").disabled = true;
+        }
+
+        function activateButton(element) {
+
+            if (element.checked) {
+                document.getElementById("submit").disabled = false;
+            }
+            else {
+                document.getElementById("submit").disabled = true;
+            }
+
+        }
+    </script>
     <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>
 
@@ -1039,22 +1031,41 @@
             <!-- Required by countdown -->
             <script src="assets/vendor/moment.min.js"></script>
 
-        <script>
-            $(document).ready(function(){
-     
-             
-                $("#accept").click(function () {
-                  $("#button").removeClass("hidden");
-                   $('#button').addClass("active");
-                  
-                })
-     
-                $("#decline").click(function(){
-                    $("#button").removeClass("active")
-                    $('#button').addClass("hidden");
-                })
-            })
-         </script>
+            
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id=" button"
+      document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    
+
+        
+        
 
 </body>
 
