@@ -16,19 +16,16 @@ body {
   float: left;
 }
 
-.col-lg-6 {
-  width: 50vh;
-}
-
 .card {
   position: absolute;
   margin: auto;
+  margin-top: 10px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 80%;
-  height: 80vh;
+  width: 360px;
+  height: 360px;
   border-radius: 10px;
   box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
   background: #fff;
@@ -41,9 +38,15 @@ body {
   right: 0;
   left: 0;
   width: 100%;
-  height: 20%;
-  background: -webkit-linear-gradient(left, #ea8a36, #f35969);
+  height: 25%;
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
   animation: dsTop 1.5s;
+}
+.card .ds-top span {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  margin: 0px 20px;
 }
 .card .avatar-holder {
   position: absolute;
@@ -51,10 +54,9 @@ body {
   top: 40px;
   right: 0;
   left: 0;
-  width: 180px;
-  height: 180px;
+  width: 30%;
+  height: 30%;
   border-radius: 50%;
-  box-shadow: 0 0 0 5px #b11d2c, inset 0 0 0 5px #ea8a36, inset 0 0 0 5px #f35969, inset 0 0 0 5px #ea8a36, inset 0 0 0 5px #f35969;
   background: white;
   overflow: hidden;
   animation: mvTop 1.5s;
@@ -67,7 +69,7 @@ body {
 .card .name {
   position: absolute;
   margin: auto;
-  top: -60px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -84,175 +86,25 @@ body {
 }
 .card .name a:hover {
   text-decoration: underline;
-  color: #f35969;
-}
-.card .name h6 {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: #000000;
-  width: 60px;
-}
-.card .button {
-  position: absolute;
-  margin: auto;
-  padding: 8px;
-  top: 20px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: inherit;
-  height: 40px;
-  text-align: center;
-  animation: fadeIn 2s ease-in;
-  outline: none;
-}
-.card .button a {
-  padding: 5px 20px;
-  border-radius: 10px;
-  color: #000000;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  font-size: 10px;
-  transition: all 1s;
-}
-.card .button a:hover {
-  color: white;
-  background: -webkit-linear-gradient(left, #ea8a36, #f35969);
-}
-.card .ds-info {
-  position: absolute;
-  margin: auto;
-  top: 120px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: inherit;
-  height: 40px;
-  display: flex;
-}
-.card .ds-info .pens, .card .ds-info .projects, .card .ds-info .posts {
-  position: relative;
-  left: -300px;
-  width: calc(600px / 3);
-  text-align: center;
-  color: black;
-  animation: fadeInMove 2s;
-  animation-fill-mode: forwards;
-}
-.card .ds-info .pens h6, .card .ds-info .projects h6, .card .ds-info .posts h6 {
-  text-transform: uppercase;
-  background: -webkit-linear-gradient(left, #ea8a36, #f35969);
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card .ds-info .pens p, .card .ds-info .projects p, .card .ds-info .posts p {
-  font-size: 12px;
+.card h6 {
+  color: #000000;
 }
-.card .ds-info .ds:nth-of-type(2) {
-  animation-delay: 0.5s;
-}
-.card .ds-info .ds:nth-of-type(1) {
-  animation-delay: 1s;
-}
-.card .ds-skill {
-  position: absolute;
-  margin: auto;
-  bottom: 10px;
-  right: 0;
-  left: 0;
-  width: 90%;
-  height: 30%;
-  animation: mvBottom 1.5s;
-}
-.card .ds-skill h5 {
-  margin-bottom: 5px;
-  font-size: medium;
-  font-weight: 700;
+.card h6 span {
   text-transform: uppercase;
-  color: black;
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.card .ds-skill .skill h6 {
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  margin: 4px 0;
-  color: black;
+.card .card-body {
+  height: 75%;
+  margin-top: 25%;
 }
-.card .ds-skill .skill .fab {
-  color: -webkit-linear-gradient(left, #ea8a36, #f35969);
-  font-size: 14px;
-}
-.card .ds-skill .skill .bar {
-  height: 5px;
-  background: -webkit-linear-gradient(left, #ea8a36, #f35969);
-  text-align: right;
-}
-.card .ds-skill .skill .bar p {
-  color: black;
-  font-size: 8px;
-  padding-top: 5px;
-  animation: fadeIn 5s;
-}
-.card .ds-skill .skill .bar:hover {
-  background: -webkit-linear-gradient(left, #2bb636, #2315a3);
-}
-.card .ds-skill .skill .bar-html {
-  width: 95%;
-  animation: htmlSkill 1s;
-  animation-delay: 0.4s;
-}
-.card .ds-skill .skill .bar-css {
-  width: 90%;
-  animation: cssSkill 2s;
-  animation-delay: 0.4s;
-}
-.card .ds-skill .skill .bar-js {
-  width: 75%;
-  animation: jsSkill 3s;
-  animation-delay: 0.4s;
-}
-
-.flex-container {
-  display: flexbox;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  flex-direction: column;
-}
-
-.flex-container .box .card-skill, .flex-container .box .card-rank {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 50%;
-  width: 80%;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
-  background: #fff;
-  overflow: hidden;
-}
-.flex-container .box .card-skill .card-top, .flex-container .box .card-rank .card-top {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 15%;
-  text-align: center;
-  background: -webkit-linear-gradient(left, #ea8a36, #f35969);
-  animation: dsTop 1.5s;
-}
-.flex-container .box .card-skill .row-skill, .flex-container .box .card-rank .row-skill {
-  padding-top: 10%;
-}
-.flex-container .box .card-skill .row-skill .column h4, .flex-container .box .card-rank .row-skill .column h4 {
-  padding: 5px 20px;
+.card .card-body h4 {
+  padding: 2px 10px;
   border-radius: 10px;
   color: #000000;
   letter-spacing: 0.05em;
@@ -260,84 +112,10 @@ body {
   text-decoration: none;
   transition: all 1s;
 }
-.flex-container .box .card-skill .row-skill .column h4:hover, .flex-container .box .card-rank .row-skill .column h4:hover {
+.card .card-body h4:hover {
   width: max-content;
   color: white;
-  background: -webkit-linear-gradient(left, #ea8a36, #f35969);
-}
-.flex-container .box .card-skill .row-skill .column h4 ul, .flex-container .box .card-rank .row-skill .column h4 ul {
-  padding-left: 30px;
-}
-
-@keyframes fadeInMove {
-  0% {
-    opacity: 0;
-    left: -300px;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes htmlSkill {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 95%;
-  }
-}
-@keyframes cssSkill {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@keyframes jsSkill {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 75%;
-  }
-}
-@keyframes mvBottom {
-  0% {
-    bottom: -150px;
-  }
-  100% {
-    bottom: 10px;
-  }
-}
-@keyframes mvTop {
-  0% {
-    top: -150px;
-  }
-  100% {
-    top: 40px;
-  }
-}
-@keyframes dsTop {
-  0% {
-    top: -150px;
-  }
-  100% {
-    top: 0;
-  }
-}
-.following {
-  color: white;
-  background: crimson;
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
