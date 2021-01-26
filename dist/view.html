@@ -15,8 +15,9 @@
             border: 1px solid #ccc;
             border-collapse: collapse;
             background-color: #fff;
-            margin-left: 20rem;
+            margin-left: 15rem;
             padding: 1rem;
+            max-width: 100%;
 
                 }
                 tr:nth-child(even) {
@@ -32,18 +33,15 @@
             }
         .Grid th, .Grid td
          { 
-             padding: 1rem; 
+             padding: 0.75rem; 
              border: none; 
              border-bottom: 1px solid red;
              }
-        .Grid img
-         {
-             cursor:pointer;
-              }
+       
         .ChildGrid
          {
-              width: 100%;
-          }
+             max-width: 100%;
+     }
         .ChildGrid th 
         { 
             background-color:#6C6C6C;
@@ -109,7 +107,8 @@ border-radius: 50%;
         </tr>
             <tr>
                 <td>
-                    <img src="~/Images/plus.png"/>
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+
                     <div style="display:none">
                         <table cellpadding="0" cellspacing="0" class="ChildGrid">
                             <tr>
@@ -229,8 +228,8 @@ border-radius: 50%;
 
                 <tr>
                     <td>
-                        <img src="~/Images/plus.png"/>
-                        <div style="display:none">
+                      <i class="fa fa-plus" aria-hidden="true"></i>
+                      <div style="display:none">
                             <table cellpadding="0" cellspacing="0" class="ChildGrid">
                                 <tr>
                                     <th scope="col">Name</th>
@@ -350,13 +349,13 @@ border-radius: 50%;
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript">
         //Assign Click event to Plus Image.
-        $("body").on("click", "img[src*='plus.png']", function () {
+        $("body").on("click", "i[class*='fa fa-plus']", function () {
             $(this).closest("tr").after("<tr><td></td><td colspan = '999'>" + $(this).next().html() + "</td></tr>");
-            $(this).attr("src", "/images/minus.png");
+            $(this).attr("class", "fa fa-minus");
         });
         //Assign Click event to Minus Image.
-        $("body").on("click", "img[src*='minus.png']", function () {
-            $(this).attr("src", "/images/plus.png");
+        $("body").on("click", "i[class*='fa fa-minus']", function () {
+            $(this).attr("class", "fa fa-plus");
             $(this).closest("tr").next().remove();
         });
     </script>
