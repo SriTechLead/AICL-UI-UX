@@ -19,7 +19,7 @@ body {
 
 
 
-.card {
+.avatar , .certifications{
   position: absolute;
   margin: auto;
   margin-top: 10px;
@@ -119,10 +119,207 @@ body {
       }
     }
   }
+  li{
+    font-size: 22px;
+  }
+  .fa-plus-circle{
+    background: linear-gradient(to right, rgb(229,45,39) 0%,rgb(179,18,23) 51%, rgb(229,45,39) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover{
+      background: linear-gradient(to right, rgb(179,18,23) 0%, rgb(229,45,39) 51%, rgb(179,18,23) 100%); 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
 
+.skills{
+  position: absolute;
+  margin: auto;
+  margin-top: 10px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 360px;
+  height: 280px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  overflow: hidden;
+  .ds-top {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background:linear-gradient(to right,rgb(229,45,39) 0%,rgb(179,18,23) 51%, rgb(229,45,39) 100%);
+    animation: dsTop 1.5s;
+    text-align: center;
+    span{
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      margin: 0px 20px;
+    }
+  }
+  .ds-skill {
+    position: absolute;
+    margin: auto;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    width: 90%;
+    height: 55%;
+    animation: mvBottom 1.5s;
+    h5 {
+      margin-bottom: 5px;
+      font-size: medium;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: black;
+    }
+    .skill {
+      h6 {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        margin: 4px 0;
+        color: black;
+      }
+      .fab {
+        color: -webkit-linear-gradient(left, #ea8a36,#f35969);
+        font-size: 14px;
+      }
+      .bar {
+        height: 5px;
+        background: -webkit-linear-gradient(left, #ea8a36,#f35969);
+        text-align: right;
+        p {
+          color: black;
+          font-size: 8px;
+          padding-top: 5px;
+          animation: fadeIn 5s;
+        }
+        &:hover {
+          background: -webkit-linear-gradient(left, #2bb636,#2315a3);
+        }
+      }
+      .bar-html {
+        width: 95%;
+        animation: htmlSkill 1s;
+        animation-delay: .4s;
+      }
+      .bar-css {
+        width: 90%;
+        animation: cssSkill 2s;
+        animation-delay: .4s;
+      }
+      .bar-js {
+        width: 75%;
+        animation: jsSkill 3s;
+        animation-delay: .4s;
+      }
+    }
+    .fa-plus-circle{
+      background: linear-gradient(to right, rgb(229,45,39) 0%,rgb(179,18,23) 51%, rgb(229,45,39) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      &:hover{
+        background: linear-gradient(to right, rgb(179,18,23) 0%, rgb(229,45,39) 51%, rgb(179,18,23) 100%); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }  
+}
 
-
+.overview{
+  position: absolute;
+  margin: auto;
+  margin-top: 70px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: large;
+  background: linear-gradient(to right, rgb(229,45,39) 0%,rgb(179,18,23) 51%, rgb(229,45,39) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.test{
+  position: absolute;
+  margin: auto;
+  margin-top: 105px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  td{
+    font-size: medium;
+  }
+  .value{
+    font-weight: bold;
+    padding-left: 20px;
+  }
+}
 
   
-
+.row-sm-8{
+  margin-top: 20px;
+  h3{
+    background: linear-gradient(to right, rgb(229,45,39) 0%,rgb(179,18,23) 51%, rgb(229,45,39) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+.card-left{
+  position: absolute;
+  .card {
+    flex-direction: row ;
+    align-items: center ;
+    margin-bottom: 10px;
+  }
+  .card-title {
+    font-weight: bold ;
+    background: linear-gradient(to right, rgb(229,45,39) 0%,rgb(179,18,23) 51%, rgb(229,45,39) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card img {
+    width: 25% ;
+    border-top-right-radius: 0 ;
+    border-bottom-left-radius: calc(0.25rem - 1px) ;
+    margin-top: 10px ;
+  }
+  a{
+    background: linear-gradient(to right, rgb(229,45,39) 0%,rgb(179,18,23) 51%, rgb(229,45,39) 100%);
+    border: 0.5px solid red;
+    &:hover{
+      background: linear-gradient(to right, rgb(179,18,23) 0%, rgb(229,45,39) 51%, rgb(179,18,23) 100%);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    a {
+      display: none ;
+    }
+    .card-body {
+      padding: 0.5em 1.2em ;
+    }
+    .card-body .card-text {
+      margin: 0 ;
+    }
+    .card img {
+      width: 50% ;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .card img {
+      width: 40% ;
+    }
+  }
+}
+}
