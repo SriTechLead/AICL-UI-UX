@@ -8,7 +8,7 @@
     <style type="text/css">
    
         body {
-             font-family:"source sans pro";
+             font-family:"source sans pro",sans-serif;
              font-size: 20px;
            }
         .Grid 
@@ -16,8 +16,9 @@
             border: 1px solid #ccc;
             border-collapse: collapse;
             background-color: #fff;
-            margin-left: 20rem;
+            margin-left: 30rem;
             padding: 1rem;
+            max-width: 100%;
 
          }
                 tr:nth-child(even) 
@@ -34,18 +35,16 @@
             }
         .Grid th, .Grid td
          { 
-             padding: 1rem; 
+             padding: 0.75rem; 
              border: none; 
              border-bottom: 1px solid red;
              }
-        .Grid img
-         {
-             cursor:pointer;
-              }
+       
         .ChildGrid
          {
-            max-width: width 20rem;
-         }
+
+             max-width: 100%;
+     }
         .ChildGrid th 
         { 
             background-color:#6C6C6C;
@@ -111,7 +110,8 @@ border-radius: 50%;
         </tr>
             <tr>
                 <td>
-                    <i class="fas fa-plus"></i>
+
+                  <i class="fa fa-plus" aria-hidden="true"></i>
                     <div style="display:none">
                         <table cellpadding="0" cellspacing="0" class="ChildGrid">
                             <tr>
@@ -133,7 +133,7 @@ border-radius: 50%;
                                     <td>1</td>
                                     <td>pass</td>
                                     <td>
-                                      <a href="view.html"><i class="far fa-eye"  ></i></a>      
+                                      <a><i class="far fa-eye"  ></i></a>      
                           
                                       <i class="fas fa-arrow-down"></i>    
                                     </td>
@@ -146,7 +146,7 @@ border-radius: 50%;
                                     <td>2</td>
                                     <td>pass</td>
                                     <td> 
-                                     <a href="view.html"> <i class="far fa-eye"></i>  </a>    
+                                     <a> <i class="far fa-eye"></i>  </a>    
                                       <i class="fas fa-arrow-down"></i>
                           
                           
@@ -159,7 +159,7 @@ border-radius: 50%;
                                     <td>1</td>
                                     <td>pass</td>
                                     <td>
-                                      <a href="view.html"><i class="far fa-eye"  ></i></a>      
+                                      <a><i class="far fa-eye"  ></i></a>      
                                       <i class="fas fa-arrow-down"></i>
                           
                                   </tr>
@@ -171,7 +171,7 @@ border-radius: 50%;
                                     <td>1</td>
                                     <td>pass</td>
                                     <td>
-                                      <a class="far fa-eye" href="view.html" type="submit"></a>      
+                                      <a class="far fa-eye"></a>      
                                       <i class="fas fa-arrow-down"></i> 
                           
                                   </tr>
@@ -183,7 +183,7 @@ border-radius: 50%;
                                     <td>2</td>
                                     <td>pass</td>
                                     <td> 
-                                      <a href="view.html"><i class="far fa-eye"  ></i></a>      
+                                      <a><i class="far fa-eye"  ></i></a>      
                           
                                       <i class="fas fa-arrow-down"></i>
                           
@@ -196,7 +196,7 @@ border-radius: 50%;
                                     <td>2</td>
                                     <td>pass</td>
                                     <td> 
-                                      <a href="view.html"><i class="far fa-eye"  ></i></a>      
+                                      <a><i class="far fa-eye"  ></i></a>      
                                       
                                       <i class="fas fa-arrow-down"></i>
                           
@@ -209,7 +209,7 @@ border-radius: 50%;
                                     <td>2</td>
                                     <td>pass</td>
                                     <td> 
-                                      <a href="view.html"><i class="far fa-eye"  ></i></a>      
+                                      <a><i class="far fa-eye"  ></i></a>      
                           
                                       <i class="fas fa-arrow-down"></i>
                           
@@ -231,8 +231,8 @@ border-radius: 50%;
 
                 <tr>
                     <td>
-                        <img src="~/Images/plus.png"/>
-                        <div style="display:none">
+                      <i class="fa fa-plus" aria-hidden="true"></i>
+                      <div style="display:none">
                             <table cellpadding="0" cellspacing="0" class="ChildGrid">
                                 <tr>
                                     <th scope="col">Name</th>
@@ -352,13 +352,13 @@ border-radius: 50%;
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript">
         //Assign Click event to Plus Image.
-        $("body").on("click", "i[class*='plus.png']", function () {
+        $("body").on("click", "i[class*='fa fa-plus']", function () {
             $(this).closest("tr").after("<tr><td></td><td colspan = '999'>" + $(this).next().html() + "</td></tr>");
-            $(this).attr("src", "/images/minus.png");
+            $(this).attr("class", "fa fa-minus");
         });
         //Assign Click event to Minus Image.
-        $("body").on("click", "img[src*='minus.png']", function () {
-            $(this).attr("src", "/images/plus.png");
+        $("body").on("click", "i[class*='fa fa-minus']", function () {
+            $(this).attr("class", "fa fa-plus");
             $(this).closest("tr").next().remove();
         });
     </script>

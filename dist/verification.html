@@ -37,18 +37,28 @@
         <div class="d-flex flex-column justify-content-center align-items-center mt-2 mb-2 navbar-light">
             <a href="index.html" class="navbar-brand text-center mb-2 mr-0" style="min-width: 0">
                 <!-- LOGO -->
-               
+               <p style="margin-right: 13rem;">Setup a new passord</p>
 
             </a>
         </div>
 
         <div class="card card-body">
             <div class="alert alert-soft-success d-flex" role="alert">
-               
                 
             </div>
 
             <form action="index.html" novalidate>
+                <div class="form-group">
+                    <label class="text-label" for="password_2">Old Password:</label>
+                    <div class="input-group input-group-merge">
+                        <input id="password_2" type="password" required="" class="form-control form-control-prepended" placeholder="Enter your password">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <span class="fa fa-key"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                
                 <div class="form-group">
                     <label class="text-label" for="password_2">NEW Password:</label>
