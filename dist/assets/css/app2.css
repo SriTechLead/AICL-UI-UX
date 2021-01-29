@@ -12624,7 +12624,7 @@ html,
 
 [dir=ltr] .dropdown-menu-right::before, [dir=ltr] .dropdown-menu-right::after {
   left: initial;
-  rig nht: 10px;
+  right: 10px;
 }
 
 [dir=ltr] .dropup .dropdown-menu {
