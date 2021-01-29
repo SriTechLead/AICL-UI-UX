@@ -2,7 +2,8 @@
 *:not(ul) {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -12,11 +13,11 @@ html, body {
 
 body {
   background: #fff;
-  font-family: "Krub", sans-serif;
+  font-family: 'Krub', sans-serif;
   float: left;
 }
 
-.card {
+.avatar, .certifications {
   position: absolute;
   margin: auto;
   margin-top: 10px;
@@ -27,11 +28,13 @@ body {
   width: 360px;
   height: 360px;
   border-radius: 10px;
-  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
   background: #fff;
   overflow: hidden;
 }
-.card .ds-top {
+
+.avatar .ds-top, .certifications .ds-top {
   position: absolute;
   margin: auto;
   top: 0;
@@ -39,16 +42,20 @@ body {
   left: 0;
   width: 100%;
   height: 25%;
+  background: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
   background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
-  animation: dsTop 1.5s;
+  -webkit-animation: dsTop 1.5s;
+          animation: dsTop 1.5s;
 }
-.card .ds-top span {
+
+.avatar .ds-top span, .certifications .ds-top span {
   color: #fff;
   text-align: center;
   font-size: 30px;
   margin: 0px 20px;
 }
-.card .avatar-holder {
+
+.avatar .avatar-holder, .certifications .avatar-holder {
   position: absolute;
   margin: auto;
   top: 40px;
@@ -59,14 +66,18 @@ body {
   border-radius: 50%;
   background: white;
   overflow: hidden;
-  animation: mvTop 1.5s;
+  -webkit-animation: mvTop 1.5s;
+          animation: mvTop 1.5s;
 }
-.card .avatar-holder img {
+
+.avatar .avatar-holder img, .certifications .avatar-holder img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.card .name {
+
+.avatar .name, .certifications .name {
   position: absolute;
   margin: auto;
   top: 0;
@@ -76,46 +87,313 @@ body {
   width: inherit;
   height: 40px;
   text-align: center;
-  animation: fadeIn 2s ease-in;
+  -webkit-animation: fadeIn 2s ease-in;
+          animation: fadeIn 2s ease-in;
 }
-.card .name a {
+
+.avatar .name a, .certifications .name a {
   color: #000000;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
 }
-.card .name a:hover {
+
+.avatar .name a:hover, .certifications .name a:hover {
   text-decoration: underline;
+  background: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
   background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card h6 {
+
+.avatar h6, .certifications h6 {
   color: #000000;
 }
-.card h6 span {
+
+.avatar h6 span, .certifications h6 span {
   text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
   background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card .card-body {
+
+.avatar .card-body, .certifications .card-body {
   height: 75%;
   margin-top: 25%;
 }
-.card .card-body h4 {
+
+.avatar .card-body h4, .certifications .card-body h4 {
   padding: 2px 10px;
   border-radius: 10px;
   color: #000000;
   letter-spacing: 0.05em;
   font-weight: bold;
   text-decoration: none;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
-.card .card-body h4:hover {
+
+.avatar .card-body h4:hover, .certifications .card-body h4:hover {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
   background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
 }
 
+.avatar li, .certifications li {
+  font-size: 22px;
+}
+
+.avatar .fa-plus-circle, .certifications .fa-plus-circle {
+  background: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.avatar .fa-plus-circle:hover, .certifications .fa-plus-circle:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#b31217), color-stop(51%, #e52d27), to(#b31217));
+  background: linear-gradient(to right, #b31217 0%, #e52d27 51%, #b31217 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills {
+  position: absolute;
+  margin: auto;
+  margin-top: 10px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 360px;
+  height: 280px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  overflow: hidden;
+}
+
+.skills .ds-top {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  -webkit-animation: dsTop 1.5s;
+          animation: dsTop 1.5s;
+  text-align: center;
+}
+
+.skills .ds-top span {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  margin: 0px 20px;
+}
+
+.skills .ds-skill {
+  position: absolute;
+  margin: auto;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  width: 90%;
+  height: 55%;
+  -webkit-animation: mvBottom 1.5s;
+          animation: mvBottom 1.5s;
+}
+
+.skills .ds-skill h5 {
+  margin-bottom: 5px;
+  font-size: medium;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
+
+.skills .ds-skill .skill h6 {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  margin: 4px 0;
+  color: black;
+}
+
+.skills .ds-skill .skill .fab {
+  color: -webkit-linear-gradient(left, #ea8a36, #f35969);
+  font-size: 14px;
+}
+
+.skills .ds-skill .skill .bar {
+  height: 5px;
+  background: -webkit-linear-gradient(left, #ea8a36, #f35969);
+  text-align: right;
+}
+
+.skills .ds-skill .skill .bar p {
+  color: black;
+  font-size: 8px;
+  padding-top: 5px;
+  -webkit-animation: fadeIn 5s;
+          animation: fadeIn 5s;
+}
+
+.skills .ds-skill .skill .bar:hover {
+  background: -webkit-linear-gradient(left, #2bb636, #2315a3);
+}
+
+.skills .ds-skill .skill .bar-html {
+  width: 95%;
+  -webkit-animation: htmlSkill 1s;
+          animation: htmlSkill 1s;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.skills .ds-skill .skill .bar-css {
+  width: 90%;
+  -webkit-animation: cssSkill 2s;
+          animation: cssSkill 2s;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.skills .ds-skill .skill .bar-js {
+  width: 75%;
+  -webkit-animation: jsSkill 3s;
+          animation: jsSkill 3s;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.skills .ds-skill .fa-plus-circle {
+  background: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills .ds-skill .fa-plus-circle:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#b31217), color-stop(51%, #e52d27), to(#b31217));
+  background: linear-gradient(to right, #b31217 0%, #e52d27 51%, #b31217 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.overview {
+  position: absolute;
+  margin: auto;
+  margin-top: 70px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: large;
+  background: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.test {
+  position: absolute;
+  margin: auto;
+  margin-top: 105px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.test td {
+  font-size: medium;
+}
+
+.test .value {
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.row-sm-8 {
+  margin-top: 20px;
+}
+
+.row-sm-8 h3 {
+  background: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.row-sm-8 .card-left {
+  position: absolute;
+}
+
+.row-sm-8 .card-left .card {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.row-sm-8 .card-left .card-title {
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.row-sm-8 .card-left .card img {
+  width: 25%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  margin-top: 10px;
+}
+
+.row-sm-8 .card-left a {
+  background: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  border: 0.5px solid red;
+}
+
+.row-sm-8 .card-left a:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#b31217), color-stop(51%, #e52d27), to(#b31217));
+  background: linear-gradient(to right, #b31217 0%, #e52d27 51%, #b31217 100%);
+}
+
+@media only screen and (max-width: 768px) {
+  .row-sm-8 .card-left a {
+    display: none;
+  }
+  .row-sm-8 .card-left .card-body {
+    padding: 0.5em 1.2em;
+  }
+  .row-sm-8 .card-left .card-body .card-text {
+    margin: 0;
+  }
+  .row-sm-8 .card-left .card img {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .row-sm-8 .card-left .card img {
+    width: 40%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
