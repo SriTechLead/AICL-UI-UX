@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Courses</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="assets/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="assets/css/vendor-material-icons.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-material-icons.rtl.css" rel="stylesheet">
+
+    <!-- Font Awesome FREE Icons -->
+    <link type="text/css" href="assets/css/vendor-fontawesome-free.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-fontawesome-free.rtl.css" rel="stylesheet">
+
+    <!-- ion Range Slider -->
+    <link type="text/css" href="assets/css/vendor-ion-rangeslider.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-ion-rangeslider.rtl.css" rel="stylesheet">
+    <link type="text/css" href="../assets/vendor_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../font_awesome/css/font-awesome.min.css">
+    <script src="assets/vendor/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"rel = "stylesheet">
+
+<style>
+   *{
+  margin: 0;
+}
+.nav {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+HTML CSS JSResult Skip Results Iframe EDIT ON body {
+  font-family: sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.base-timer {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 105px;
+  top: 10px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: #41b883;
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.navbar-light {
+  border: 1px solid;
+  height: 100px;
+}
+
+#resizable,
+#qs,
+#cmp {
+  padding: 0.5em;
+  border: 1px solid black;
+  background: white !important;
+}
+
+#resizable p,
+#qs p,
+#cmp p {
+  text-align: center;
+  margin: 0;
+  background: white !important;
+  border: white;
+  color: gray;
+}
+
+#qs {
+  position: absolute;
+  left: 30%;
+  top: 100px;
+  width: 460px;
+  bottom: 50px;
+  height: 378px;
+  background: #383737 !important;
+
+}
+
+#cmp {
+  position: absolute;
+  left: 60%;
+  top: 100px;
+  height: 377px;
+  width: 610px;
+  background: black !important;
+}
+
+#resizable {
+  position: absolute;
+  height: 380px;
+  width: 460px;
+  top: 6.2rem;
+}
+
+
+#button {
+  box-shadow: none !important;
+  position: relative;
+  left: 80vh;
+  top: 60vh;
+}
+#skp_btn{
+  position: relative;
+  left:50px ;
+}
+.cont{
+  display: table-footer-group;
+  position: absolute;
+  top: 85%;
+  border: 2px solid;
+  left: 10px;
+  padding-left: 10px;
+}
+
+.btn-outline-danger{
+  box-shadow: none !important;
+  margin: 6px;
+
+}
+.split, .gutter.gutter-horizontal {
+  float: left;
+}
+.gutter.gutter-horizontal {
+  cursor: ew-resize;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+   
+      
+
+</style>
+
+
+</head>
+
+<body class="layout-default" onload="disableSubmit()" >
+
+
+
+
+
+
+
+
+
+
+
+    <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px" data-fullbleed>
+        <div class="mdk-drawer-layout__content">
+
+            <!-- Header Layout -->
+            <div class="mdk-header-layout js-mdk-header-layout" data-has-scrolling-region>
+
+                <!-- Header -->
+
+                <div id="header" class="mdk-header js-mdk-header m-0" data-fixed data-effects="waterfall" data-retarget-mouse-scroll="false">
+                    <div class="mdk-header__content">
+
+                        <div class="navbar navbar-expand-sm navbar-main navbar-dark bg-danger pl-md-0 pr-0" id="navbar" data-primary>
+                            <div class="container-fluid page__container pr-0">
+
+                                <!-- Navbar toggler -->
+                                <button class="navbar-toggler navbar-toggler-custom  d-lg-none d-flex mr-navbar" type="button" data-toggle="sidebar">
+                                    <span class="material-icons icon-14pt">menu</span>
+                                </button>
+
+
+
+
+                                <ul class="nav navbar-nav d-none d-md-flex">
+                                   
+                                    
+                                </ul>                                
+
+
+                                <div class="dropdown">
+                                    <a href="#" data-toggle="dropdown" data-caret="false" class="dropdown-toggle navbar-toggler navbar-toggler-dashboard border-left d-flex align-items-center ml-navbar">
+                                        <span class="material-icons">laptop</span>
+                                    </a>
+                                    <div id="company_menu" class="dropdown-menu dropdown-menu-right navbar-company-menu">
+                                        <div class="dropdown-item d-flex align-items-center py-2 navbar-company-info py-3">
+
+                                            <span class="mr-3">
+                                                <img src="assets/images/frontted-logo-blue.svg" width="43" height="43" alt="avatar">
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+                                                <strong class="h5 m-0">Adrian D.</strong>
+                                                <small class="text-muted text-uppercase">STUDENT</small>
+                                            </span>
+
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item d-flex align-items-center py-2" href="edit-account.html">
+                                            <span class="material-icons mr-2">account_circle</span> Edit Account
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                            <span class="material-icons mr-2">settings</span> Settings
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center py-2" href="login.html">
+                                            <span class="material-icons mr-2">exit_to_app</span> Logout
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- // END Header -->
+
+                <!-- Header Layout Content -->
+                <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page" style="padding-top: 60px;">
+
+
+                   
+                    <div>
+                        <!-- As a heading -->
+                        <nav class="navbar navbar-light bg-light">
+                          <span class="nav">Code_Editor</span>
+                          <div id="app"></div>
+                          <button type="button" class="btn btn-danger">Submit</button>
+                        </nav>
+                      </div>
+                    
+                      <!-- As a button -->
+                      <div id="button">
+                        <button type="button" class="btn btn-danger">Save&next</button>
+                        <button type="button" id="00"class="btn btn-danger">Skip</button>
+                      </div>
+                    
+                      
+                         <!-- As a box -->
+                         <div>
+                         <div class="split" id="one">
+                         <div id="resizable" class="ui-widget-content">
+                          <p class="ui-widget-header">We provided some simple React template code. Your goal is to modify the component so that you can properly toggle the button to switch between an ON state and an OFF state. When the button is on and it is clicked, it turns off and the text within it changes from ON to OFF and vice versa. Make use of component state for this challenge.
+                      
+                            You are free to add classes and styles, but make sure you leave the element ID's as they are. Submit your code once it is complete and our system will validate your output.</p>
+                        </div>
+                      </div>
+                      <div class="split" id="two">
+                        <div id="qs" class="ui-widget-content">
+                          <p class="ui-widget-header">CODE</p>
+                        </div>
+                      </div>
+                      <div class="split" id="three">
+                        <div id="cmp" class="ui-widget-content">
+                          <p class="ui-widget-header">OUTPUT</p>
+                        </div>
+                      </div>
+                    </div>
+                      <!-- As a ques button -->
+                      <div class="cont">
+                        <a href="#" class="btn btn-outline-danger">01</a>
+                        <a href="#" class="btn btn-outline-danger">02</a>
+                        <a href="#" class="btn btn-outline-danger">03</a>
+                        <a href="#" class="btn btn-outline-danger">04</a>
+                        <a href="#" class="btn btn-outline-danger">05</a>
+                        <a href="#" class="btn btn-outline-danger">06</a>
+                        <a href="#" class="btn btn-outline-danger">07</a>
+                        <a href="#" class="btn btn-outline-danger">08</a>
+                        <a href="#" class="btn btn-outline-danger">09</a>
+                        <a href="#" class="btn btn-outline-danger">10</a>
+                        <a href="#" class="btn btn-outline-danger">11</a>
+                        <a href="#" class="btn btn-outline-danger">12</a>
+                        <a href="#" class="btn btn-outline-danger">13</a>
+                        <a href="#" class="btn btn-outline-danger">14</a>
+                        <a href="#" class="btn btn-outline-danger">15</a>
+                        <a href="#" class="btn btn-outline-danger">16</a>
+                        <a href="#" class="btn btn-outline-danger">17</a>
+                        <a href="#" class="btn btn-outline-danger">18</a>
+                        <a href="#" class="btn btn-outline-danger">19</a>
+                        <a href="#" class="btn btn-outline-danger">20</a>
+                        <a href="#" class="btn btn-outline-danger">21</a>
+                        <a href="#" class="btn btn-outline-danger">22</a>
+                        <a href="#" class="btn btn-outline-danger">23</a>
+                        <a href="#" class="btn btn-outline-danger">24</a>
+                        <a href="#" class="btn btn-outline-danger">25</a>
+                      </div>
+                    
+                      
+                        
+           
+
+
+                </div>
+                <!-- // END header-layout__content -->
+
+            </div>
+            <!-- // END header-layout -->
+
+        </div>
+        <!-- // END drawer-layout__content -->
+        
+        <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="start">
+            <div class="mdk-drawer__content">
+                <div class="sidebar sidebar-dark sidebar-left bg-dark-gray" data-perfect-scrollbar>
+
+                    <div class="d-flex align-items-center sidebar-p-a sidebar-account flex-shrink-0">
+                      <a href="index.html" class="flex d-flex align-items-center text-underline-0">
+                           
+                        <span class="flex d-flex flex-column justify-content-center align-items-center">
+                            <img src="./assets/images/AICL_Logo1.png" style="width: 5rem; height: 3rem;  ">
+
+                            
+                        </span>
+                    </a>
+                    </div>
+                    
+
+                   
+                   
+                  <div class="sidebar-block p-0">
+                      <ul class="sidebar-menu mt-0">
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button" href="index.html">
+                                  <i class="sidebar-menu-icon fa fa-bar-chart" style="color: yellowgreen;"></i>
+                                  <span class="sidebar-menu-text" style="padding-left: 1rem;">Dashboard</span>
+                              </a>
+                          </li>
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button" href="student-courses.html">
+                                  <i class="sidebar-menu-icon fa fa-tasks"  style="color: yellowgreen;"></i>
+                                  <span class="sidebar-menu-text"  style="padding-left: 1rem;" >Test List</span>
+                              </a>
+                          </li>
+                        
+                         
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button" href="result.html">
+                                  <i class="sidebar-menu-icon  fa fa-line-chart"  style="color: yellowgreen;"> </i>
+                                  <span class="sidebar-menu-text"style="padding-left: 1rem;" >Result</span>
+                              </a>
+                          </li>
+                          
+                          
+                      </ul>
+                  </div>
+
+
+                   
+                    
+                 
+
+
+                    
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        
+                  
+    <!-- // END drawer-layout -->
+
+    <div class="mdk-drawer js-mdk-drawer" id="events-drawer" data-align="end">
+        <div class="mdk-drawer__content">
+            <div class="sidebar sidebar-light sidebar-left" data-perfect-scrollbar>
+
+
+
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Thursday, 28 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>12:30 PM</small>
+                                <small class="text-dark-gray">2 hrs</small>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Marketing Team Meeting</strong></a>
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">location_on</i> 16845 Hicks Road</small>
+
+
+                                </div>
+                                <div class="avatar-group mt-2">
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_joao-silas-636453-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_jeremy-banks-798787-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Wednesday, 27 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>07:48 PM</small>
+                                <small class="text-dark-gray">30 min</small>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Call Alex</strong></a>
+
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">phone</i> 202-555-0131</small>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Tuesday, 26 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>03:13 PM</small>
+                                <small class="text-dark-gray">2 hrs</small>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Design Team Meeting</strong></a>
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">location_on</i> 16845 Hicks Road</small>
+
+
+                                </div>
+                                <div class="avatar-group mt-2">
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_michael-dam-258165-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/stories/256_rsz_clem-onojeghuo-193397-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Monday, 25 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>12:30 PM</small>
+                                <small class="text-dark-gray">2 hrs</small>
+                            </div>
+                            <div class="col d-flex">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Call Wendy</strong></a>
+
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">phone</i> 202-555-0131</small>
+
+                                </div>
+
+
+                                <div class="avatar avatar-xs">
+                                    <img src="assets/images/256_michael-dam-258165-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="margin-top:2rem;width:100%;">
+        <div>
+            <div  class="header-title">
+            
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+        </div>
+        <div>
+            <p class="header-subtitle">AICL TEST</p>  
+          <div class="modal-Title">
+           <h5> Test Name</h5>
+           <h6 >Two</h6>
+          </div>
+          <div class="modal-Title">
+           <h5> No of Question</h5>
+           <h6>10</h6>
+          </div>
+          <div class="modal-Title">
+           <h5 > Durations (in min.)</h5>
+           <h6 >30</h6>
+          </div>
+          <div class="modal-Title">
+           <h5>Test Categories</h5>
+           <h6>React</h6>
+          </div>
+             <div class="modal-Title">
+           <h5>Start By</h5>
+           <h6>16 Jan 2021 23:05:16</h6>
+          </div>
+
+          <div class="header-subtitle">
+              <p>Terms and Condition</p>
+          </div>
+
+           <div style="margin: 20px 60px 10px;">
+              
+              <h5 style="font-size:14px;text-align:center;font-weight: 600;">Candidate strictly <span style="font-size:14px;text-align: center;font-weight:600;color:red">not allowed to open new window or tabs or minimize the Exam Tab during the time of an exam,</span>else the Exam will be cancelled and marked a Fake Attempt.</h5>
+              
+           </div>
+        <div>
+            <div style="display:flex;margin: 30px 60px 30px; justify-content: center;">
+                
+                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">
+                <h5 style="padding-left:9px;font-size:14px;font-weight:600">I accept your Terms and Condition </h5>
+            </div>
+            <div  class="modal_agree_button">
+                <a href="student-quiz.html" class="btn btn-danger" id="submit" >Start</a>
+            </div>
+                  </div>
+            </div>
+
+        </div>
+         
+       
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+    <!-- App Settings FAB -->
+    <div id="app-settings">
+        <app-settings layout-active="default" :layout-location="{
+      'default': 'student-courses.html',
+      'fixed': 'fixed-student-courses.html',
+      'fluid': 'fluid-student-courses.html',
+      'mini': 'mini-student-courses.html'
+    }"></app-settings>
+    </div>
+    <!-- App Settings FAB -->
+    <div id="app-settings">
+        <app-settings layout-active="default" :layout-location="{
+      'default': 'student-quiz.html',
+      'fixed': 'fixed-student-quiz.html',
+      'fluid': 'fluid-student-quiz.html',
+      'mini': 'mini-student-quiz.html'
+    }"></app-settings>
+    </div>
+
+   
+    <script>
+        function disableSubmit() {
+            document.getElementById("submit").disabled = true;
+        }
+
+        function activateButton(element) {
+
+            if (element.checked) {
+                document.getElementById("submit").disabled = false;
+            }
+            else {
+                document.getElementById("submit").disabled = true;
+            }
+
+        }
+    </script>
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="assets/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <!-- Range Slider -->
+    <script src="assets/vendor/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/ion-rangeslider.js"></script>
+
+    <!-- App -->
+    <script src="assets/js/toggle-check-all.js"></script>
+    <script src="assets/js/check-selected-row.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/sidebar-mini.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- App Settings (safe to remove) -->
+    <script src="assets/js/app-settings.js"></script>
+
+    	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="assets/js/classie.js"></script>
+		<script src=" assets/js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="assets/js/cssParser.js"></script>
+		<script src="assets/js/css-filters-polyfill.js"></script>
+        
+        <!--coundown-->
+            <script src="assets/vendor/jquery.countdown.min.js"></script>
+             <script src="assets/js/countdown.js"></script>
+            <!-- Required by countdown -->
+            <script src="assets/vendor/moment.min.js"></script>
+
+            
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="C:\Users\Lenovo\Desktop\m1\main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
+
+        
+
+</body>
+
+</html>
