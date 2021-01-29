@@ -5460,7 +5460,7 @@ html {
 [dir=ltr] .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(180, 25, 25, 0.03)
+  background-color: rgba(180, 25, 25, 0.03);
   border-bottom: 1px solid #efefef;
 }
 [dir=ltr] .card-header:first-child {
@@ -14326,7 +14326,6 @@ html,
   color: #D52222;
 }
 [dir=ltr] .input-group.input-group-merge .form-control-prepended {
-  padding-left: 2rem;
   border-left-width: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -14335,7 +14334,6 @@ html,
 }
 [dir=ltr] .input-group.input-group-merge .form-control-prepended:hover {
 
- color: #fff;
  border-color: red;
 
 

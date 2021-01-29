@@ -2,7 +2,9 @@
 <head>
     <title>forgot password</title>
     <style>
-
+body{
+  overflow: hidden;
+}
   
 .content{
 font-family: "source sans pro",sans-serif;
@@ -13,7 +15,6 @@ text-align: center;
 .popup{
   background-image: url(./assets/images/Login\ page.jpg);
   background-repeat: no-repeat;
-  overflow-y: scroll;
   position: relative;
   background-size: 100%;
   height: 100%;
@@ -22,7 +23,7 @@ text-align: center;
 
 
 #sc-password {
-  background: #f0f0f0fb;
+  background: rgba(231, 228, 228, 0.671); 
   width: 400px;
   margin: 0 auto;
   margin-top: 10rem;
@@ -32,7 +33,7 @@ text-align: center;
 }
 
 #sc-password h1 {
-  background:#f0f0f0;
+  background-image: rgba(231, 228, 228, 0.671);
   padding-top: 20px;
   font-size: 140%;
   font-weight: 300;
@@ -41,10 +42,11 @@ text-align: center;
 }
 
 div#sc-password .sc-container {
-  background: #f0f0f0;
+  background-image:rgba(231, 228, 228, 0.671) ;
   padding-left:  2rem;
   padding-right:  2rem;
   padding-bottom:  2rem;
+  position: static;
 }
 
 div#sc-password input[type="email"],
@@ -80,23 +82,52 @@ div#sc-password input[type="submit"]:hover {
   color: #fff;
   text-decoration: none;
 }
+.ref{
+
+  color: #fff;
+  background-image: linear-gradient(to right, rgb(229, 45, 39) 0%, rgb(179, 18, 23) 51%, rgb(229, 45, 39) 100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 1px;
+  display: block;
+  padding: 1rem;
+text-align: center;
+border-radius: 0.1rem;
+
+
+}
+.logo{
+
+background-image: url("../dist/assets/images/AICL_Logo1.png");
+background-repeat: no-repeat;
+width: 8rem;
+
+}
         
  </style>
 </head>
 <body>
     
  <div class="body"> 
+
 <div class="popup">
+ 
+  <div>
+    <img src="./assets/images/AICL_Logo1.png" style="width: 12rem;height: 6rem;margin-top: 2rem;margin-right: 90rem;" >
+</div>
 <div id="sc-password">
+
     <h1>FORGOT PASSWORD</h1>
     <div class="sc-container">
         <div class="content">Please enter your mail id and we will send you a link to corresponding mail address </div>
       <input type="text" placeholder="Username or Email" />
-      <input type="submit" value="Submit" />
+      <a class="ref" type="submit">SUBMIT</a>
+    </div> 
     </div>
   </div>
 </div> 
-</div>  
+</div>
 </body>
 
 </html>
