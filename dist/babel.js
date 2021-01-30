@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    const center = { x: 325, y: 175 };
+  const center = { x: 325, y: 175 };
 const serv_dist = 250;
 const pointer_dist = 172;
 const pointer_time = 2;

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Quiz</title>
+    <title>Courses</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -28,15 +28,181 @@
     <!-- ion Range Slider -->
     <link type="text/css" href="assets/css/vendor-ion-rangeslider.css" rel="stylesheet">
     <link type="text/css" href="assets/css/vendor-ion-rangeslider.rtl.css" rel="stylesheet">
+    <link type="text/css" href="../assets/vendor_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../font_awesome/css/font-awesome.min.css">
+    <script src="assets/vendor/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"rel = "stylesheet">
+
+<style>
+   *{
+  margin: 0;
+}
+.nav {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+HTML CSS JSResult Skip Results Iframe EDIT ON body {
+  font-family: sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.base-timer {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 105px;
+  top: 10px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: #41b883;
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.navbar-light {
+  border: 1px solid;
+  height: 100px;
+}
+
+#resizable,
+#qs,
+#cmp {
+  padding: 0.5em;
+  border: 1px solid black;
+  background: white !important;
+}
+
+#resizable p,
+#qs p,
+#cmp p {
+  text-align: center;
+  margin: 0;
+  background: white !important;
+  border: white;
+  color: gray;
+}
+
+#qs {
+  position: absolute;
+  left: 30%;
+  top: 100px;
+  width: 460px;
+  bottom: 50px;
+  height: 378px;
+  background: #383737 !important;
+
+}
+
+#cmp {
+  position: absolute;
+  left: 60%;
+  top: 100px;
+  height: 377px;
+  width: 610px;
+  background: black !important;
+}
+
+#resizable {
+  position: absolute;
+  height: 380px;
+  width: 460px;
+  top: 6.2rem;
+}
 
 
+#button {
+  box-shadow: none !important;
+  position: relative;
+  left: 80vh;
+  top: 60vh;
+}
+#skp_btn{
+  position: relative;
+  left:50px ;
+}
+.cont{
+  display: table-footer-group;
+  position: absolute;
+  top: 85%;
+  border: 2px solid;
+  left: 10px;
+  padding-left: 10px;
+}
 
+.btn-outline-danger{
+  box-shadow: none !important;
+  margin: 6px;
 
+}
+.split, .gutter.gutter-horizontal {
+  float: left;
+}
+.gutter.gutter-horizontal {
+  cursor: ew-resize;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+   
+      
+
+</style>
 
 
 </head>
 
-<body class="layout-default">
+<body class="layout-default" onload="disableSubmit()" >
 
 
 
@@ -69,14 +235,11 @@
 
 
 
-                                
-
-
 
                                 <ul class="nav navbar-nav d-none d-md-flex">
                                    
                                     
-                                </ul>
+                                </ul>                                
 
 
                                 <div class="dropdown">
@@ -120,137 +283,75 @@
                 <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page" style="padding-top: 60px;">
 
 
-                    <div class="page__heading border-bottom">
-                        <div class="container-fluid page__container d-flex align-items-center">
-                            <h1 class="mb-0">Quiz</h1>
-                            <div class="ml-auto d-flex align-items-center">
-                                <!-- TEMPLATE USED IN COUNTDOWN.JS -->
-                                <!-- <div class="d-flex align-items-center">
-        <div class="card mr-1 mb-0">
-          <div class="p-1 px-2">
-            <span class="h4 m-0 text-primary">3</span> 
-            <span class="text-muted">hrs</span>
-          </div>
-        </div>
-        <div class="mr-1">:</div>
-        <div class="card mr-1 mb-0">
-            <div class="p-1 px-2">
-              <span class="h4 m-0 text-primary">3</span> 
-              <span class="text-muted">min</span>
-            </div>
-          </div>
-          <div class="mr-1">:</div>
-          <div class="card mb-0 bg-light">
-            <div class="p-1 px-2">
-              <span class="h4 m-0 text-primary">3</span> 
-              <span class="text-muted">sec</span>
-            </div>
-          </div>
-        </div> -->
-                                <div class="countdown" data-value="4" data-unit="hour"></div>
-                                <!-- <span class="badge badge-primary ml-2"><div class="material-icons icon-16pt">access_time</div></span> -->
-                            </div>
-                        </div>
-                    </div>
+                   
+                             <div>
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+      <span class="nav">Code_Editor</span>
+      <div id="app"></div>
+      <button type="button" class="btn btn-danger">Submit</button>
+    </nav>
+  </div>
 
-                    <div class="container-fluid page__container">
-                        <div class="row">
+  <!-- As a button -->
+  <div id="button">
+    <button type="button" class="btn btn-danger">Save&next</button>
+    <button type="button" id="00"class="btn btn-danger">Skip</button>
+  </div>
 
-                            <div class="col-md-8">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="media align-items-center">
-                                            <div class="media-left">
-                                                <h4 class="m-0 text-primary mr-2"><strong>#9</strong></h4>
-                                            </div>
-                                            <div class="media-body">
-                                                <h4 class="card-title m-0">
-                                                    Github command to deploy comits?
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox">
-                                                <input id="customCheck01" type="checkbox" class="custom-control-input">
-                                                <label for="customCheck01" class="custom-control-label">git push</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox">
-                                                <input id="customCheck02" type="checkbox" class="custom-control-input">
-                                                <label for="customCheck02" class="custom-control-label">git commit -m "message"</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox">
-                                                <input id="customCheck03" type="checkbox" class="custom-control-input">
-                                                <label for="customCheck03" class="custom-control-label">git pull</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer">
-                                        <a href="#" class="btn btn-light">Skip</a>
-                                        <a href="view.html"" class="btn btn-success float-right">Submit <i class="material-icons btn__icon--right">arrow_forward</i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 ">
-                                <div class="list-group">
+  
+     <!-- As a box -->
+     <div>
+     <div class="split" id="one">
+     <div id="resizable" class="ui-widget-content">
+      <p class="ui-widget-header">We provided some simple React template code. Your goal is to modify the component so that you can properly toggle the button to switch between an ON state and an OFF state. When the button is on and it is clicked, it turns off and the text within it changes from ON to OFF and vice versa. Make use of component state for this challenge.
+  
+        You are free to add classes and styles, but make sure you leave the element ID's as they are. Submit your code once it is complete and our system will validate your output.</p>
+    </div>
+  </div>
+  <div class="split" id="two">
+    <div id="qs" class="ui-widget-content">
+      <p class="ui-widget-header">CODE</p>
+    </div>
+  </div>
+  <div class="split" id="three">
+    <div id="cmp" class="ui-widget-content">
+      <p class="ui-widget-header">OUTPUT</p>
+    </div>
+  </div>
+</div>
+  <!-- As a ques button -->
+  <div class="cont">
+    <a href="#" class="btn btn-outline-danger">01</a>
+    <a href="#" class="btn btn-outline-danger">02</a>
+    <a href="#" class="btn btn-outline-danger">03</a>
+    <a href="#" class="btn btn-outline-danger">04</a>
+    <a href="#" class="btn btn-outline-danger">05</a>
+    <a href="#" class="btn btn-outline-danger">06</a>
+    <a href="#" class="btn btn-outline-danger">07</a>
+    <a href="#" class="btn btn-outline-danger">08</a>
+    <a href="#" class="btn btn-outline-danger">09</a>
+    <a href="#" class="btn btn-outline-danger">10</a>
+    <a href="#" class="btn btn-outline-danger">11</a>
+    <a href="#" class="btn btn-outline-danger">12</a>
+    <a href="#" class="btn btn-outline-danger">13</a>
+    <a href="#" class="btn btn-outline-danger">14</a>
+    <a href="#" class="btn btn-outline-danger">15</a>
+    <a href="#" class="btn btn-outline-danger">16</a>
+    <a href="#" class="btn btn-outline-danger">17</a>
+    <a href="#" class="btn btn-outline-danger">18</a>
+    <a href="#" class="btn btn-outline-danger">19</a>
+    <a href="#" class="btn btn-outline-danger">20</a>
+    <a href="#" class="btn btn-outline-danger">21</a>
+    <a href="#" class="btn btn-outline-danger">22</a>
+    <a href="#" class="btn btn-outline-danger">23</a>
+    <a href="#" class="btn btn-outline-danger">24</a>
+    <a href="#" class="btn btn-outline-danger">25</a>
+  </div>
 
-                                    <a href="#" class="list-group-item active">
-                                        <span class="media align-items-center">
-                                            <span class="media-left mr-2">
-                                                <span class="btn btn-light btn-sm">#9</span>
-                                            </span>
-                                            <span class="media-body">
-                                                Github command to deploy comits?
-                                            </span>
-                                        </span>
-                                    </a>
-
-
-                                    <a href="#" class="list-group-item">
-                                        <span class="media align-items-center">
-                                            <span class="media-left mr-2">
-                                                <span class="btn btn-light btn-sm">#10</span>
-                                            </span>
-                                            <span class="media-body">
-                                                What's the difference between private and public repos?
-                                            </span>
-                                        </span>
-                                    </a>
-
-
-                                    <a href="#" class="list-group-item">
-                                        <span class="media align-items-center">
-                                            <span class="media-left mr-2">
-                                                <span class="btn btn-light btn-sm">#11</span>
-                                            </span>
-                                            <span class="media-body">
-                                                What is the purpose of a branch?
-                                            </span>
-                                        </span>
-                                    </a>
-
-
-                                    <a href="#" class="list-group-item">
-                                        <span class="media align-items-center">
-                                            <span class="media-left mr-2">
-                                                <span class="btn btn-light btn-sm">#12</span>
-                                            </span>
-                                            <span class="media-body">
-                                                Final Question?
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+  
+    
+           
 
 
                 </div>
@@ -261,62 +362,67 @@
 
         </div>
         <!-- // END drawer-layout__content -->
-
+        
         <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="start">
             <div class="mdk-drawer__content">
                 <div class="sidebar sidebar-dark sidebar-left bg-dark-gray" data-perfect-scrollbar>
 
                     <div class="d-flex align-items-center sidebar-p-a sidebar-account flex-shrink-0">
-                        <a href="index.html" class="flex d-flex align-items-center text-underline-0">
-                            <span class="mr-3">
-                                <!-- LOGO -->
-                                <svg width="30px" viewBox="0 0 27 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <g id="drawer-logo-wrapper" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-                                        <path d="M21.9257604,14.9506975 C20.582703,15.0217165 19.3145795,14.3502722 18.6558508,13.2193504 C18.5961377,13.1299507 18.488013,13.0821416 18.3788008,13.0968482 C18.2695887,13.1115549 18.1791809,13.1860986 18.1471473,13.287853 L16.3403333,18.8266167 C16.0783106,19.5012544 15.4036423,19.9432488 14.6567374,19.9295884 C13.9098324,19.915928 13.2530282,19.4495818 13.0177202,18.7658483 L10.3561926,9.20532122 C10.3224612,9.0828362 10.2066255,8.99820016 10.075223,9.00002907 C9.94382048,9.00185799 9.83056595,9.0896826 9.8005142,9.21305538 C9.53809432,10.6490488 9.07561673,12.0442508 8.42563983,13.3607751 C7.81040896,14.4321066 6.59978897,15.0547797 5.33446397,14.9506975 L0.286383595,14.9506975 C0.200836429,14.9508269 0.119789989,14.987678 0.0652579686,15.0512416 C0.0105052402,15.1148427 -0.011403821,15.1989481 0.00568007946,15.2799517 C1.26517458,21.5063521 6.92177656,26 13.500072,26 C20.0783674,26 25.7349694,21.5063521 26.9944639,15.2799517 C27.0112295,15.1987308 26.9894777,15.1145345 26.935158,15.050392 C26.8808383,14.9862496 26.7996356,14.9488738 26.7137603,14.9484877 C23.5217604,14.9499609 21.9257604,14.9506975 21.9257604,14.9506975 Z" opacity="0.539999962"></path>
-                                        <path d="M5.48262697,13.1162874 C6.53570764,13.1162874 6.62233928,13.1162874 7.63604194,9.25361392 C7.86780969,8.37139838 8.14008055,7.33311522 8.48548201,6.11058557 C8.7087856,5.42413873 9.37946641,4.96506482 10.1258577,4.98776578 C10.8742462,4.96784002 11.5440567,5.43246093 11.761733,6.1225074 L14.4619398,15.7986995 C14.4940991,15.9151627 14.6022445,15.9971672 14.7273152,15.9999282 C14.8523859,16.0026893 14.9643174,15.9255432 15.0019812,15.8106214 L16.5152221,11.1654422 C16.7421482,10.5403405 17.3447552,10.1140124 18.0318383,10.0924774 C18.6964712,10.0434044 19.3301356,10.3708193 19.6553377,10.9313408 C19.7678463,11.1405147 19.8803549,11.3453535 19.9759873,11.5426056 C20.6296623,12.8128226 20.8198019,13.1119522 21.7761252,13.1119522 L26.7186288,13.1119522 C26.7943575,13.1119652 26.8669186,13.0826781 26.9200192,13.030667 C26.9730799,12.97881 27.0019231,12.9083695 26.9999003,12.8355824 C26.9032945,5.71885474 20.8862135,-0.00118613704 13.4977698,1.84496545e-07 C6.10932623,0.00118650603 0.0942250201,5.72315932 8.19668591e-05,12.8399177 C-0.00175692205,12.9131783 0.0274115935,12.9840093 0.080884445,13.0361333 C0.134357296,13.0882573 0.207535985,13.1171917 0.283603687,13.1162874 L5.48262697,13.1162874 Z" id="Shape"></path>
-                                    </g>
-                                </svg>
-                            </span>
-                            <span class="flex d-flex flex-column">
-                                <span class="sidebar-brand">AICL</span>
-                            
-                            </span>
-                        </a>
-                    </div>
+                      <a href="index.html" class="flex d-flex align-items-center text-underline-0">
+                           
+                        <span class="flex d-flex flex-column justify-content-center align-items-center">
+                            <img src="./assets/images/AICL_Logo1.png" style="width: 5rem; height: 3rem;  ">
 
-                
+                            
+                        </span>
+                    </a>
+                    </div>
                     
 
-                    <div class="sidebar-heading">Student</div>
-                    <div class="sidebar-block p-0">
-                        <ul class="sidebar-menu mt-0">
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="index.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">star_half</i>
-                                    <span class="sidebar-menu-text">Dashboard</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="student-courses.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">queue_play_next</i>
-                                    <span class="sidebar-menu-text">Test List</span>
-                                </a>
-                            </li>
+                   
+                   
+                  <div class="sidebar-block p-0">
+                      <ul class="sidebar-menu mt-0">
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button" href="index.html">
+                                  <i class="sidebar-menu-icon fa fa-bar-chart" style="color: yellowgreen;"></i>
+                                  <span class="sidebar-menu-text" style="padding-left: 1rem;">Dashboard</span>
+                              </a>
+                          </li>
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button" href="student-courses.html">
+                                  <i class="sidebar-menu-icon fa fa-tasks"  style="color: yellowgreen;"></i>
+                                  <span class="sidebar-menu-text"  style="padding-left: 1rem;" >Test List</span>
+                              </a>
+                          </li>
+                        
+                         
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button" href="result.html">
+                                  <i class="sidebar-menu-icon  fa fa-line-chart"  style="color: yellowgreen;"> </i>
+                                  <span class="sidebar-menu-text"style="padding-left: 1rem;" >Result</span>
+                              </a>
+                          </li>
+                          
+                          
+                      </ul>
+                  </div>
 
-                            <li class="sidebar-menu-item active">
-                                <a class="sidebar-menu-button" href="student_quiz.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">live_help</i>
-                                    <span class="sidebar-menu-text">Result</span>
-                                </a>
-                            </li>
-                            
-                        </ul>
+
+                   
+                    
+                 
+
+
+                    
                     </div>
+                </div>
+            </div>
 
-
-
+            </div>
         </div>
-    </div>
+        
+                  
     <!-- // END drawer-layout -->
 
     <div class="mdk-drawer js-mdk-drawer" id="events-drawer" data-align="end">
@@ -477,7 +583,85 @@
             </div>
         </div>
     </div>
+    <div class="container">
+  
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="margin-top:2rem;width:100%;">
+        <div>
+            <div  class="header-title">
+            
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+        </div>
+        <div>
+            <p class="header-subtitle">AICL TEST</p>  
+          <div class="modal-Title">
+           <h5> Test Name</h5>
+           <h6 >Two</h6>
+          </div>
+          <div class="modal-Title">
+           <h5> No of Question</h5>
+           <h6>10</h6>
+          </div>
+          <div class="modal-Title">
+           <h5 > Durations (in min.)</h5>
+           <h6 >30</h6>
+          </div>
+          <div class="modal-Title">
+           <h5>Test Categories</h5>
+           <h6>React</h6>
+          </div>
+             <div class="modal-Title">
+           <h5>Start By</h5>
+           <h6>16 Jan 2021 23:05:16</h6>
+          </div>
+
+          <div class="header-subtitle">
+              <p>Terms and Condition</p>
+          </div>
+
+           <div style="margin: 20px 60px 10px;">
+              
+              <h5 style="font-size:14px;text-align:center;font-weight: 600;">Candidate strictly <span style="font-size:14px;text-align: center;font-weight:600;color:red">not allowed to open new window or tabs or minimize the Exam Tab during the time of an exam,</span>else the Exam will be cancelled and marked a Fake Attempt.</h5>
+              
+           </div>
+        <div>
+            <div style="display:flex;margin: 30px 60px 30px; justify-content: center;">
+                
+                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">
+                <h5 style="padding-left:9px;font-size:14px;font-weight:600">I accept your Terms and Condition </h5>
+            </div>
+            <div  class="modal_agree_button">
+                <a href="student-quiz.html" class="btn btn-danger" id="submit" >Start</a>
+            </div>
+                  </div>
+            </div>
+
+        </div>
+         
+       
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+    <!-- App Settings FAB -->
+    <div id="app-settings">
+        <app-settings layout-active="default" :layout-location="{
+      'default': 'student-courses.html',
+      'fixed': 'fixed-student-courses.html',
+      'fluid': 'fluid-student-courses.html',
+      'mini': 'mini-student-courses.html'
+    }"></app-settings>
+    </div>
     <!-- App Settings FAB -->
     <div id="app-settings">
         <app-settings layout-active="default" :layout-location="{
@@ -488,6 +672,23 @@
     }"></app-settings>
     </div>
 
+   
+    <script>
+        function disableSubmit() {
+            document.getElementById("submit").disabled = true;
+        }
+
+        function activateButton(element) {
+
+            if (element.checked) {
+                document.getElementById("submit").disabled = false;
+            }
+            else {
+                document.getElementById("submit").disabled = true;
+            }
+
+        }
+    </script>
     <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>
 
@@ -518,15 +719,37 @@
     <!-- App Settings (safe to remove) -->
     <script src="assets/js/app-settings.js"></script>
 
+    	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="assets/js/classie.js"></script>
+		<script src=" assets/js/modalEffects.js"></script>
 
-    <!-- Required by countdown -->
-    <script src="assets/vendor/moment.min.js"></script>
-    <!-- Easy Countdown -->
-    <script src="assets/vendor/jquery.countdown.min.js"></script>
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="assets/js/cssParser.js"></script>
+		<script src="assets/js/css-filters-polyfill.js"></script>
+        
+        <!--coundown-->
+            <script src="assets/vendor/jquery.countdown.min.js"></script>
+             <script src="assets/js/countdown.js"></script>
+            <!-- Required by countdown -->
+            <script src="assets/vendor/moment.min.js"></script>
 
-    <!-- Init -->
-    <script src="assets/js/countdown.js"></script>
+            
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="C:\Users\Lenovo\Desktop\m1\main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
 
+        
 
 </body>
 
