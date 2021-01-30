@@ -36,15 +36,10 @@
     <script src="assets/vendor/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\m1\css\style.css">
-      <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\m1\css\style.scss">
-      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"rel = "stylesheet">
+
 <style>
-	
-     .far {
-                background-color: yellowgreen;
+       .far {
+                background-color: red;
                  text-decoration: none;
                 text-align: center;
                 border: 5px;
@@ -58,7 +53,7 @@
      }  
 
 .fas {
-    background-color: yellowgreen;
+    background-color: red;
     text-align: center;
     border: none;
    padding:12px;
@@ -67,7 +62,7 @@
   color: white;
 
 }
-.fas :hover{
+.fas:hover{
     
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
      
@@ -77,21 +72,11 @@
   border-radius: 50%;
 
 }
-.fa-eye:hover{
-  background-position: right center;
-
-
-}
 .fa-arrow-down{
 
 
 border-radius: 50%;
 
-
-}
-.fa-arrow-down{
-
-  background-position: right center;
 
 }
       
@@ -181,385 +166,255 @@ border-radius: 50%;
                 <!-- Header Layout Content -->
                 <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page" style="padding-top: 60px;">
 
-					<div class="card" style="width:100%;height: 100%; background-color: #eef0f8;  ">
-						<div class="card-body">
-								<section class="content">
-									<div class="row">
-								
-										<div class="col-12">
-											<div class="box">
-												<div class="box-header">
-													<h4 class="box-title"></h4>
-												</div>
-												<div class="box-body">
-													<div class="table-responsive" style="  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)">
-														<table id="complex_header" class="table table-striped table-bordered display"
-															style="width:100%;background-color:whitesmoke;">
-															
-                                                                
-                                                         <tr>
-                                                         <th>   </th>
-                                                         <th scope="col">Test name</th>
-                                                         <th scope="col">Total time given</th>
-                                                         <th scope="col">Total time taken</th>
-                                                         <th scope="col">Marks allotd</th>
-                                                         <th scope="col">Marks obtained</th>
-                                                         <th scope="col">view/download</th>
-                                                         <th>  </th>
-                                                        </tr>
-                                                     <tr>
-                                                         <td>
 
-                                                         <i class="fa fa-plus" aria-hidden="true"></i>
-                                                         <div style="display:none">
-                                                         <table cellpadding="0" cellspacing="0" class="ChildGrid">
-                                                         <tr>
-                                                         <th scope="col">Name</th>
-                                                        <th scope="col">Test name</th>
-                                                        <th scope="col">Start time</th>
-                                                        <th scope="col">End time</th>
-                                                        <th scope="col">Marks allotd</th>
-                                                        <th scope="col">Marks obtained</th>
-                                                        <th scope="col">view/download</th>
 
-                                                     </tr>
-                                                    <tr>
-                                                        <td>Example 1</td>
-                                                        <td>python</td>
-                                                        <td>  </td>
-                                                        <td>  </td>
-                          
-                                                        <td>1</td>
-                                                        <td>pass</td>
-                                                        <td>
-                                                            <a><i class="far fa-eye"  ></i></a>      
-                          
-                                                                <i class="fas fa-arrow-down"></i>    
-                                                        </td>
-                                                     </tr>
-                                                    <tr>
-                                                         <td>Example2</td>
-                                                            <td>java</td>
-                                                            <td>  </td>
-                                                            <td>  </td>
-                                                            <td>2</td>
-                                                            <td>pass</td>
-                                                                <td> 
-                                                                 <a> <i class="far fa-eye"></i>  </a>    
+
+                  
+
+                    <div class="container-fluid page__container">
+                        <div class="card" style="width:100%;height: 100%; background-color: #eef0f8;  ">
+                            <div class="card-body">
+                                <section class="content">
+                                    <div class="row">
+                        
+                                        <div class="col-12">
+                                            <div class="box">
+                                                <div class="box-header">
+                                                    <h4 class="box-title"></h4>
+                                                </div>
+                                                <div class="box-body">
+                                                    <div class="table-responsive"
+                                                        style="  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)">
+                                                        <table id="complex_header" class="table table-striped table-bordered display"
+                                                            style="width:100%;background-color:whitesmoke;">
+                        
+                        
+                                                            <tr>
+                                                                <th> </th>
+                                                                <th scope="col">Test name</th>
+                                                                <th scope="col">Total time given</th>
+                                                                <th scope="col">Total time taken</th>
+                                                                <th scope="col">Marks allotd</th>
+                                                                <th scope="col">Marks obtained</th>
+                                                                <th scope="col">view/download</th>
+                                                                <th> </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                        
+                                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                    <div style="display:none">
+                                                        <div class="box-body">
+                                                            <div class="table-responsive">
+                                                                <table class="table mb-0 ChildGrid"  cellpadding="0" cellspacing="0"  style="  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)" >
+                                                                    <thead class="thead-dark">
+                                                                        <tr>
+                                                                            <th scope="col">Name</th>
+                                                                            <th scope="col">Start Time</th>
+                                                                            <th scope="col">End Time</th>
+                                                                            <th scope="col">Marks Allocated</th>
+                                                                            <th scope="col">Marks Obtained</th>
+                                                                            <th scope="col">View / Download</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                        <th scope="row">Example 1</th>
+                                                                        <td>1.00pm</td>
+                                                                        <td>2.00pm</td>
+                                                                        <td>200</td>
+                                                                        <td>100</td>
+                                                                        <td style="display:flex; justify-content:space-between">
+                                                                            <a href="view.html"><i class="far fa-eye"  style="background-color: yellowgreen;"></i></a>
+                                                                        
+                                                                            <i class="fas fa-arrow-down"  style="background-color: yellowgreen;"></i>
+                                                                        </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                        <th scope="row">Example 1</th>
+                                                                        <td>1.00pm</td>
+                                                                        <td>2.00pm</td>
+                                                                        <td>200</td>
+                                                                        <td>100</td>
+                                                                        <td style="display:flex; justify-content:space-between">
+                                                                            <a href="view.html"><i class="far fa-eye"  style="background-color: yellowgreen;"></i></a>
+                                                                        
+                                                                            <i class="fas fa-arrow-down"  style="background-color: yellowgreen;"></i>
+                                                                        </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                        <th scope="row">Example 1</th>
+                                                                        <td>1.00pm</td>
+                                                                        <td>2.00pm</td>
+                                                                        <td>200</td>
+                                                                        <td>100</td>
+                                                                        <td style="display:flex; justify-content:space-between">
+                                                                            <a href="view.html"><i class="far fa-eye"  style="background-color: yellowgreen;"></i></a>
+                                                                        
+                                                                            <i class="fas fa-arrow-down"  style="background-color: yellowgreen;"></i>
+                                                                        </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Technical</td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td  style="display:flex; justify-content:space-between">
+                                                                    <a href="view.html"><i class="far fa-eye"></i></a>
+                        
                                                                     <i class="fas fa-arrow-down"></i>
-                          
-                          
-                                                    </tr>
-                                                    <tr>
-                                                        <td>example 3</td>
-                                                        <td>c</td>
-                                                        <td>  </td>
-                                                        <td>  </td>
-                                                        <td>1</td>
-                                                        <td>pass</td>
-                                                        <td>
-                                                        <a><i class="far fa-eye"  ></i></a>      
-                                                        <i class="fas fa-arrow-down"></i>
-                          
-                                                    </tr>
-                                                     <tr>
-                                                        <td>example 4</td>
-                                                        <td>c++</td>
-                                                        <td>  </td>
-                                                        <td>  </td>
-                                                        <td>1</td>
-                                                        <td>pass</td>
-                                                         <td>
-                                                            <a class="far fa-eye"></a>      
-                                                         <i class="fas fa-arrow-down"></i> 
-                          
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Example2</td>
-                                                        <td>java</td>
-                                                        <td>  </td>
-                                                        <td>  </td>
-                                                        <td>2</td>
-                                                        <td>pass</td>
-                                                        <td> 
-                                                             <a><i class="far fa-eye"  ></i></a>      
-                          
-                                                            <i class="fas fa-arrow-down"></i>
-                          
-                          
-                                  </tr> <tr>
-                                    <td>Example2</td>
-                                    <td>java</td>
-                                    <td>  </td>
-                                    <td>  </td>
-                                    <td>2</td>
-                                    <td>pass</td>
-                                    <td> 
-                                      <a><i class="far fa-eye"  ></i></a>      
-                                      
-                                      <i class="fas fa-arrow-down"></i>
-                          
-                          
-                                  </tr> <tr>
-                                    <td>Example2</td>
-                                    <td>java</td>
-                                    <td>  </td>
-                                    <td>  </td>
-                                    <td>2</td>
-                                    <td>pass</td>
-                                    <td> 
-                                      <a><i class="far fa-eye"  ></i></a>      
-                          
-                                      <i class="fas fa-arrow-down"></i>
-                          
-                                </tr>
-                        </table>
-                    </div>
-                </td>
-                <td>Technical</td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-                <td>                                     
-                     <a href="view.html"><i class="far fa-eye"  ></i></a>      
-                          
-                    <i class="fas fa-arrow-down"></i>
-         </td>
-            </tr>
-
-                <tr>
-                    <td>
-                      <i class="fa fa-plus" aria-hidden="true"></i>
-                      <div style="display:none">
-                            <table cellpadding="0" cellspacing="0" class="ChildGrid">
-                                <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Test name</th>
-                                    <th scope="col">Start time</th>
-                                    <th scope="col">End time</th>
-                                    <th scope="col">Marks allotd</th>
-                                    <th scope="col">Marks obtained</th>
-                                    <th scope="col">view/download</th>
-    
-                                </tr>
-                                    <tr>
-                                        <td>Example 1</td>
-                                        <td>python</td>
-                                        <td>  </td>
-                                        <td>  </td>
-                              
-                                        <td>1</td>
-                                        <td>pass</td>
-                                        <td>
-                                          <a href="view.html"><i class="far fa-eye"  ></i></a>      
-                              
-                                          <i class="fas fa-arrow-down"></i>    
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>Example2</td>
-                                        <td>java</td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td>2</td>
-                                        <td>pass</td>
-                                        <td> 
-                                         <a href="view.html"> <i class="far fa-eye"></i>  </a>    
-                                          <i class="fas fa-arrow-down"></i>
-                              
-                              
-                                      </tr>
-                                      <tr>
-                                        <td>example 3</td>
-                                        <td>c</td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td>1</td>
-                                        <td>pass</td>
-                                        <td>
-                                          <a href="view.html"><i class="far fa-eye"  ></i></a>      
-                                          <i class="fas fa-arrow-down"></i>
-                              
-                                      </tr>
-                                      <tr>
-                                        <td>example 4</td>
-                                        <td>c++</td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td>1</td>
-                                        <td>pass</td>
-                                        <td>
-                                          <a class="far fa-eye" href="view.html" type="submit"></a>      
-                                          <i class="fas fa-arrow-down"></i> 
-                              
-                                      </tr>
-                                      <tr>
-                                        <td>Example2</td>
-                                        <td>java</td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td>2</td>
-                                        <td>pass</td>
-                                        <td> 
-                                          <a href="view.html"><i class="far fa-eye"  ></i></a>      
-                              
-                                          <i class="fas fa-arrow-down"></i>
-                              
-                              
-                                      </tr> <tr>
-                                        <td>Example2</td>
-                                        <td>java</td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td>2</td>
-                                        <td>pass</td>
-                                        <td> 
-                                          <a href="view.html"><i class="far fa-eye"  ></i></a>      
-                                          
-                                          <i class="fas fa-arrow-down"></i>
-                              
-                              
-                                      </tr> <tr>
-                                        <td>Example2</td>
-                                        <td>java</td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td>2</td>
-                                        <td>pass</td>
-                                        <td> 
-                                          <a href="view.html"><i class="far fa-eye"  ></i></a>      
-                              
-                                          <i class="fas fa-arrow-down"></i>
-                              
-                                    </tr>
-                            </table>
-                        </div>
-                    </td>
-                    <td>Non-Technical</td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-                <td>                    
-                      <a href="view.html"><i class="far fa-eye"  ></i></a>      
-                          
-                    <i class="fas fa-arrow-down"></i></td>
-                </tr>
-    </table>
-    
-   
-															
-										</div>
-												</div>
-											</div>
-										</div>
-								
-								
-								
-                                   </div>
-                             <!---     <div class="col-12 " style="display: none;"  class="ChildGrid">
-                                        <div class="box">
-                                            <div class="box-header with-border">
-                                                <h4 class="box-title">Table head options</h4>
-                                            </div>
-                                            <div class="box-body">
-                                                <div class="table-responsive">
-                                                    <table class="table mb-0">
-                                                        <thead class="thead-dark">
-                                                            <tr>
-                                                                <th scope="col">#</th>
-                                                                <th scope="col">First</th>
-                                                                <th scope="col">Last</th>
-                                                                <th scope="col">Handle</th>
+                                                                </td>
                                                             </tr>
-                                                        </thead>
-                                                        <tbody>
+                        
                                                             <tr>
-                                                                <th scope="row">1</th>
-                                                                <td>Mark</td>
-                                                                <td>Otto</td>
-                                                                <td>@mdo</td>
+                                                                <td>
+                                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                    <div style="display:none">
+                                                                    <div class="box-body">
+                                                                        <div class="table-responsive">
+                                                                            <table class="table table-borderless table-dark mb-0 ChildGrid"    cellpadding="0" cellspacing="0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <th scope="col">Name</th>
+                                                                                        <th scope="col">Start Time</th>
+                                                                                        <th scope="col">End Time</th>
+                                                                                        <th scope="col">Marks Allocated</th>
+                                                                                        <th scope="col">Marks Obtained</th>
+                                                                                        <th scope="col">View / Download</th>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <th scope="row">Example 1</th>
+                                                                                        <td>1.00pm</td>
+                                                                                        <td>2.00pm</td>
+                                                                                        <td>200</td>
+                                                                                        <td>100</td>
+                                                                                      <td style="display:flex; justify-content:space-between">
+                                                                                         <a href="view.html"><i class="far fa-eye" style="background-color: yellowgreen;"></i></a>
+                                                                                                                                        
+                                                                                            <i class="fas fa-arrow-down"  style="background-color: yellowgreen;"></i>
+                                                                                      </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th scope="row">Example 1</th>
+                                                                                        <td>1.00pm</td>
+                                                                                        <td>2.00pm</td>
+                                                                                        <td>200</td>
+                                                                                        <td>100</td>
+                                                                                        <td style="display:flex; justify-content:space-between">
+                                                                                            <a href="view.html"><i class="far fa-eye"  style="background-color: yellowgreen;"></i></a>
+                                                                                        
+                                                                                            <i class="fas fa-arrow-down"  style="background-color: yellowgreen;"></i>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th scope="row">Example 1</th>
+                                                                                        <td>1.00pm</td>
+                                                                                        <td>2.00pm</td>
+                                                                                        <td>200</td>
+                                                                                        <td>100</td>
+                                                                                        <td style="display:flex; justify-content:space-between">
+                                                                                            <a href="view.html"><i class="far fa-eye"  style="background-color: yellowgreen;"></i></a>
+                                                                                        
+                                                                                            <i class="fas fa-arrow-down"  style="background-color: yellowgreen;"></i>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Non-Technical</td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td style="display:flex; justify-content:space-between">
+                                                                    <a href="view.html"><i class="far fa-eye"></i></a>
+                        
+                                                                    <i class="fas fa-arrow-down"></i>
+                                                                </td>
                                                             </tr>
-                                                            <tr>
-                                                                <th scope="row">2</th>
-                                                                <td>Jacob</td>
-                                                                <td>Thornton</td>
-                                                                <td>@fat</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">3</th>
-                                                                <td>Larry</td>
-                                                                <td>the Bird</td>
-                                                                <td>@twitter</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                        </table>
+                        
+                        
+                        
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                        
+                        
+                        
                                     </div>
-								</section>
+                            </div>
+                        </div>
 
-						</div>
-					</div>
-                   
-	
+                        
+                      
+                    </div>
+
+
                 </div>
+                <!-- // END header-layout__content -->
 
             </div>
+            <!-- // END header-layout -->
 
         </div>
+        <!-- // END drawer-layout__content -->
         
         <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="start">
             <div class="mdk-drawer__content">
                 <div class="sidebar sidebar-dark sidebar-left bg-dark-gray" data-perfect-scrollbar>
 
                     <div class="d-flex align-items-center sidebar-p-a sidebar-account flex-shrink-0">
-                      <a href="index.html" class="flex d-flex align-items-center text-underline-0">
+                        <a href="index.html" class="flex d-flex align-items-center text-underline-0">
                            
-                        <span class="flex d-flex flex-column justify-content-center align-items-center">
-                            <img src="./assets/images/AICL_Logo1.png" style="width: 5rem; height: 3rem;  ">
+                            <span class="flex d-flex flex-column justify-content-center align-items-center">
+                                <img src="./assets/images/AICL_Logo1.png" style="width: 5rem; height: 3rem;  ">
 
-                            
-                        </span>
-                    </a>
+                                
+                            </span>
+                        </a>
                     </div>
-                    
+
 
                    
-                   
-                  <div class="sidebar-block p-0">
-                      <ul class="sidebar-menu mt-0">
-                          <li class="sidebar-menu-item">
-                              <a class="sidebar-menu-button" href="index.html">
-                                  <i class="sidebar-menu-icon fa fa-bar-chart" style="color: yellowgreen;"></i>
-                                  <span class="sidebar-menu-text" style="padding-left: 1rem;">Dashboard</span>
-                              </a>
-                          </li>
-                          <li class="sidebar-menu-item">
-                              <a class="sidebar-menu-button" href="student-courses.html">
-                                  <i class="sidebar-menu-icon fa fa-tasks"  style="color: yellowgreen;"></i>
-                                  <span class="sidebar-menu-text"  style="padding-left: 1rem;" >Test List</span>
-                              </a>
-                          </li>
-                        
-                         
-                          <li class="sidebar-menu-item">
-                              <a class="sidebar-menu-button" href="result.html">
-                                  <i class="sidebar-menu-icon  fa fa-line-chart"  style="color: yellowgreen;"> </i>
-                                  <span class="sidebar-menu-text"style="padding-left: 1rem;" >Result</span>
-                              </a>
-                          </li>
+                    <div class="sidebar-block p-0">
+                        <ul class="sidebar-menu mt-0">
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="index.html">
+                                    <i class="sidebar-menu-icon fa fa-bar-chart" style="color: yellowgreen;"></i>
+                                    <span class="sidebar-menu-text" style="padding-left: 1rem;">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="student-courses.html">
+                                    <i class="sidebar-menu-icon fa fa-tasks"  style="color: yellowgreen;"></i>
+                                    <span class="sidebar-menu-text"  style="padding-left: 1rem;" >Test List</span>
+                                </a>
+                            </li>
                           
-                          
-                      </ul>
-                  </div>
-
-
-                   
-                    
-                 
+                           
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="result.html">
+                                    <i class="sidebar-menu-icon  fa fa-line-chart"  style="color: yellowgreen;"> </i>
+                                    <span class="sidebar-menu-text"style="padding-left: 1rem;" >Result</span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
 
 
                     
@@ -569,8 +424,28 @@ border-radius: 50%;
 
             </div>
         </div>
-        
-                  
+                    <div class="sidebar-heading">Student</div>
+                    <div class="sidebar-block p-0">
+                        <ul class="sidebar-menu mt-0">
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="index.html">
+                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">star_half</i>
+                                    <span class="sidebar-menu-text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item active">
+                                <a class="sidebar-menu-button" href="student-courses.html">
+                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">queue_play_next</i>
+                                    <span class="sidebar-menu-text">Courses</span>
+                                </a>
+                            </li>
+                            
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="student_quiz.html">
+                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">live_help</i>
+
+    </div>
+    <!-- // END drawer-layout -->
 
     <div class="mdk-drawer js-mdk-drawer" id="events-drawer" data-align="end">
         <div class="mdk-drawer__content">
@@ -733,9 +608,74 @@ border-radius: 50%;
     <div class="container">
   
 
- 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="margin-top:2rem;width:100%;">
+        <div>
+            <div  class="header-title">
+            
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-     App Settings FAB -->
+            </div>
+        </div>
+        <div>
+            <p class="header-subtitle">AICL TEST</p>  
+          <div class="modal-Title">
+           <h5> Test Name</h5>
+           <h6 >Two</h6>
+          </div>
+          <div class="modal-Title">
+           <h5> No of Question</h5>
+           <h6>10</h6>
+          </div>
+          <div class="modal-Title">
+           <h5 > Durations (in min.)</h5>
+           <h6 >30</h6>
+          </div>
+          <div class="modal-Title">
+           <h5>Test Categories</h5>
+           <h6>React</h6>
+          </div>
+             <div class="modal-Title">
+           <h5>Start By</h5>
+           <h6>16 Jan 2021 23:05:16</h6>
+          </div>
+
+          <div class="header-subtitle">
+              <p>Terms and Condition</p>
+          </div>
+
+           <div style="margin: 20px 60px 10px;">
+              
+              <h5 style="font-size:14px;text-align:center;font-weight: 600;">Candidate strictly <span style="font-size:14px;text-align: center;font-weight:600;color:red">not allowed to open new window or tabs or minimize the Exam Tab during the time of an exam,</span>else the Exam will be cancelled and marked a Fake Attempt.</h5>
+              
+           </div>
+        <div>
+            <div style="display:flex;margin: 30px 60px 30px; justify-content: center;">
+                
+                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">
+                <h5 style="padding-left:9px;font-size:14px;font-weight:600">I accept your Terms and Condition </h5>
+            </div>
+            <div  class="modal_agree_button">
+                <a href="Question.html" class="btn btn-danger" id="submit" >Start</a>
+            </div>
+                  </div>
+            </div>
+
+        </div>
+         
+       
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+    <!-- App Settings FAB -->
     <div id="app-settings">
         <app-settings layout-active="default" :layout-location="{
       'default': 'student-courses.html',
@@ -755,7 +695,23 @@ border-radius: 50%;
     </div>
 
    
-  
+    <script>
+        function disableSubmit() {
+            document.getElementById("submit").disabled = true;
+        }
+
+        function activateButton(element) {
+
+            if (element.checked) {
+                document.getElementById("submit").disabled = false;
+            }
+            else {
+                document.getElementById("submit").disabled = true;
+            }
+
+        }
+    </script>
+    <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>
 
     <!-- Bootstrap -->
@@ -803,24 +759,22 @@ border-radius: 50%;
              <script src="assets/js/countdown.js"></script>
             <!-- Required by countdown -->
             <script src="assets/vendor/moment.min.js"></script>
+<script type="text/javascript">
+    //Assign Click event to Plus Image.
+    $("body").on("click", "i[class*='fa fa-plus']", function () {
+        $(this).closest("tr").after("<tr><td></td><td colspan = '999'>" + $(this).next().html() + "</td></tr>");
+        $(this).attr("class", "fa fa-minus");
+    });
+    //Assign Click event to Minus Image.
+    $("body").on("click", "i[class*='fa fa-minus']", function () {
+        $(this).attr("class", "fa fa-plus");
+        $(this).closest("tr").next().remove();
+    });
+</script>
+            
 
-            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript">
-        //Assign Click event to Plus Image.
-        $("body").on("click", "i[class*='fa fa-plus']", function () {
-            $(this).closest("tr").after("<tr><td></td><td colspan = '999'>" + $(this).next().html() + "</td></tr>");
-            $(this).attr("class", "fa fa-minus");
-        });
-        //Assign Click event to Minus Image.
-        $("body").on("click", "i[class*='fa fa-minus']", function () {
-            $(this).attr("class", "fa fa-plus");
-            $(this).closest("tr").next().remove();
-        });
-    </script>
+    
 
-  
-    
-    
         
 
 </body>
