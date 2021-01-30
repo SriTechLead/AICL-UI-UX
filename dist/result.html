@@ -1,101 +1,76 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Result</title>
-      <script src="https://kit.fontawesome.com/8b141e3cc6.js" crossorigin="anonymous"></script>
-   <style>
-    .table{
+    <title>Courses</title>
 
-        margin-left:10rem;
-           
-    }
-    table {
-  border-collapse: separate;
-  border-spacing: 0;
-  color: #4a4a4d;
-  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-th,
-td {
-  padding: 1rem 2rem;
-  vertical-align: middle;
-}
-thead {
-  background: #e40f07;
-  background: linear-gradient(#cc311c, #fc2e05);
-  color: #fff;
-  font-size: 11px;
-  text-transform: uppercase;
-}
-th:first-child {
-  border-top-left-radius: 5px;
-  text-align: left;
-}
-th:last-child {
-  border-top-right-radius: 5px;
-}
-tbody tr:nth-child(even) {
-  background: #f0f0f2;
-}
-td {
-  border-bottom: 1px solid #cecfd5;
-  border-color: red;
-}
-.book-title {
-  color: #395870;
-  display: block;
-}
-.text-offset {
-  color: #7c7c80;
-  font-size: 12px;
-}
-.item-stock,
-.item-qty {
-  text-align: center;
-}
-.item-price {
-  text-align: right;
-}
-.item-multiple {
-  display: block;
-}
-tfoot {
-  text-align: right;
-}
-tfoot tr:last-child {
-  background: #f0f0f2;
-  color: #395870;
-  font-weight: bold;
-}
-tfoot tr:last-child td:first-child {
-  border-bottom-left-radius: 5px;
-}
-tfoot tr:last-child td:last-child {
-  border-bottom-right-radius: 5px;
-}
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
 
-.far {
-  background-image: linear-gradient(to right, rgb(229, 45, 39) 0%, rgb(179, 18, 23) 51%, rgb(229, 45, 39) 100%);
- text-decoration: none;
-text-align: center;
-border: 5px;
-padding: 1rem;
-cursor: pointer;
-color: white;
-}
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="assets/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="assets/css/vendor-material-icons.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-material-icons.rtl.css" rel="stylesheet">
+
+    <!-- Font Awesome FREE Icons -->
+    <link type="text/css" href="assets/css/vendor-fontawesome-free.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-fontawesome-free.rtl.css" rel="stylesheet">
+
+    <!-- ion Range Slider -->
+    <link type="text/css" href="assets/css/vendor-ion-rangeslider.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-ion-rangeslider.rtl.css" rel="stylesheet">
+    <link type="text/css" href="../assets/vendor_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../font_awesome/css/font-awesome.min.css">
+    <script src="assets/vendor/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\m1\css\style.css">
+      <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\m1\css\style.scss">
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"rel = "stylesheet">
+<style>
+	
+     .far {
+                background-color: yellowgreen;
+                 text-decoration: none;
+                text-align: center;
+                border: 5px;
+                padding: 12px;
+                cursor: pointer;
+                color: white;
+           }
+       
+     .fas:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+     }  
+
 .fas {
-  background-image: linear-gradient(to right, rgb(229, 45, 39) 0%, rgb(179, 18, 23) 51%, rgb(229, 45, 39) 100%);
+    background-color: yellowgreen;
+    text-align: center;
+    border: none;
+   padding:12px;
+   border-color: black;
+   cursor: pointer;
+  color: white;
 
-text-align: center;
-border: none;
-padding: 1rem;
-border-color: black;
-cursor: pointer;
-color: white;
-
-margin-right: 1rem;
+}
+.fas :hover{
+    
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+     
 }
 .fa-eye{
 
@@ -119,121 +94,549 @@ border-radius: 50%;
   background-position: right center;
 
 }
-    
-   </style>
-  </head>
-<body>
-    <table class="table">
-        <thead>
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Test name</th>
-          <th scope="col">Start time</th>
-          <th scope="col">End time</th>
-          <th scope="col">Marks allotd</th>
-          <th scope="col">Marks obtained</th>
-          <th scope="col">view/download</th>
-        </tr>
-        </thead>
-        <tr>
-          <td>EXample 1</td>
-          <td>python</td>
-          <td>  </td>
-          <td>  </td>
+      
 
-          <td>1</td>
-          <td>pass</td>
-          <td>
-            <a href="view.html"><i class="far fa-eye"  ></i></a>      
-
-            <i class="fas fa-arrow-down"></i>    
-          </td>
-        </tr>
-        <tr>
-          <td>Example2</td>
-          <td>java</td>
-          <td>  </td>
-          <td>  </td>
-          <td>2</td>
-          <td>pass</td>
-          <td> 
-           <a href="view.html"> <i class="far fa-eye"></i>  </a>    
-            <i class="fas fa-arrow-down"></i>
+</style>
 
 
-        </tr>
-        <tr>
-          <td>example 3</td>
-          <td>c</td>
-          <td>  </td>
-          <td>  </td>
-          <td>1</td>
-          <td>pass</td>
-          <td>
-            <a href="view.html"><i class="far fa-eye"  ></i></a>      
-            <i class="fas fa-arrow-down"></i>
+</head>
 
-        </tr>
-        <tr>
-          <td>example 4</td>
-          <td>c++</td>
-          <td>  </td>
-          <td>  </td>
-          <td>1</td>
-          <td>pass</td>
-          <td>
-            <a class="far fa-eye" href="view.html" type="submit"></a>      
-            <i class="fas fa-arrow-down"></i> 
-
-        </tr>
-        <tr>
-          <td>Example2</td>
-          <td>java</td>
-          <td>  </td>
-          <td>  </td>
-          <td>2</td>
-          <td>pass</td>
-          <td> 
-            <a href="view.html"><i class="far fa-eye"  ></i></a>      
-
-            <i class="fas fa-arrow-down"></i>
+<body class="layout-default" onload="disableSubmit()" >
 
 
-        </tr> <tr>
-          <td>Example2</td>
-          <td>java</td>
-          <td>  </td>
-          <td>  </td>
-          <td>2</td>
-          <td>pass</td>
-          <td> 
-            <a href="view.html"><i class="far fa-eye"  ></i></a>      
+
+
+
+
+
+
+
+
+
+    <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px" data-fullbleed>
+        <div class="mdk-drawer-layout__content">
+
+            <!-- Header Layout -->
+            <div class="mdk-header-layout js-mdk-header-layout" data-has-scrolling-region>
+
+                <!-- Header -->
+
+                <div id="header" class="mdk-header js-mdk-header m-0" data-fixed data-effects="waterfall" data-retarget-mouse-scroll="false">
+                    <div class="mdk-header__content">
+
+                        <div class="navbar navbar-expand-sm navbar-main navbar-dark bg-danger pl-md-0 pr-0" id="navbar" data-primary>
+                            <div class="container-fluid page__container pr-0">
+
+                                <!-- Navbar toggler -->
+                                <button class="navbar-toggler navbar-toggler-custom  d-lg-none d-flex mr-navbar" type="button" data-toggle="sidebar">
+                                    <span class="material-icons icon-14pt">menu</span>
+                                </button>
+
+
+
+
+                                <ul class="nav navbar-nav d-none d-md-flex">
+                                   
+                                    
+                                </ul>                                
+
+
+                                <div class="dropdown">
+                                    <a href="#" data-toggle="dropdown" data-caret="false" class="dropdown-toggle navbar-toggler navbar-toggler-dashboard border-left d-flex align-items-center ml-navbar">
+                                        <span class="material-icons">laptop</span>
+                                    </a>
+                                    <div id="company_menu" class="dropdown-menu dropdown-menu-right navbar-company-menu">
+                                        <div class="dropdown-item d-flex align-items-center py-2 navbar-company-info py-3">
+
+                                            <span class="mr-3">
+                                                <img src="assets/images/frontted-logo-blue.svg" width="43" height="43" alt="avatar">
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+                                                <strong class="h5 m-0">Adrian D.</strong>
+                                                <small class="text-muted text-uppercase">STUDENT</small>
+                                            </span>
+
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item d-flex align-items-center py-2" href="edit-account.html">
+                                            <span class="material-icons mr-2">account_circle</span> Edit Account
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                            <span class="material-icons mr-2">settings</span> Settings
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center py-2" href="login.html">
+                                            <span class="material-icons mr-2">exit_to_app</span> Logout
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- // END Header -->
+
+                <!-- Header Layout Content -->
+                <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page" style="padding-top: 60px;">
+
+					<div class="card" style="width:100%;height: 100%; background-color: #eef0f8;  ">
+						<div class="card-body">
+								<section class="content">
+									<div class="row">
+								
+										<div class="col-12">
+											<div class="box">
+												<div class="box-header">
+													<h4 class="box-title"></h4>
+												</div>
+												<div class="box-body">
+													<div class="table-responsive" style="  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)">
+														<table id="complex_header" class="table table-striped table-bordered display"
+															style="width:100%;background-color:whitesmoke;">
+															<thead>
+																<tr>
+																	<th rowspan="2">Test Name</th>
+																
+																</tr>
+																<tr>
+																	<th>Total Time Given</th>
+																	<th>Marks Allocated</th>
+																	<th>Marks Obtained</th>
+																	<th>View / Download</th>
+																	
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+                                                                    
+																	<td>Technical English</td>
+																	<td>1 hr</td>
+																	<td>200</td>
+																	<td>61</td>
+                                                                <td class="d-flex justify-content-between">
+                                                                    <a><i class="far fa-eye"></i></a>
+                                                                
+                                                                    <i class="fas fa-arrow-down"></i>
+                                                                </td>
+																</tr>
+																<tr>
+																	<td>Garrett Winters</td>
+																	<td>Accountant</td>
+																	<td>Tokyo</td>
+																	<td>63</td>
+                                                                    <td class="d-flex justify-content-between">
+                                                                        <a><i class="far fa-eye" ></i></a>
+                                                                    
+                                                                        <i class="fas fa-arrow-down"></i>
+                                                                    </td>
+																	
+																</tr>
+																<tr>
+																	<td>Ashton Cox</td>
+																	<td>Junior Technical Author</td>
+																	<td>San Francisco</td>
+																	<td>66</td>
+                                                                    <td class="d-flex justify-content-between">
+                                                                        <a><i class="far fa-eye" ></i></a>
+                                                                    
+                                                                        <i class="fas fa-arrow-down"></i>
+                                                                    </td>
+																
+																</tr>
+								
+								
+															</tbody>
+								
+														</table>
+													</div>
+												</div>
+												<!-- /.box-body -->
+											</div>
+											<!-- /.box -->
+										</div>
+								
+								
+								
+										<!-- /.col -->
+                                    </div>
+                                    <div class="col-12 " style="display: none;"  class="ChildGrid">
+                                        <div class="box">
+                                            <div class="box-header with-border">
+                                                <h4 class="box-title">Table head options</h4>
+                                            </div>
+                                            <!-- /.box-header -->
+                                            <div class="box-body">
+                                                <div class="table-responsive">
+                                                    <table class="table mb-0">
+                                                        <thead class="thead-dark">
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">First</th>
+                                                                <th scope="col">Last</th>
+                                                                <th scope="col">Handle</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Mark</td>
+                                                                <td>Otto</td>
+                                                                <td>@mdo</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">2</th>
+                                                                <td>Jacob</td>
+                                                                <td>Thornton</td>
+                                                                <td>@fat</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">3</th>
+                                                                <td>Larry</td>
+                                                                <td>the Bird</td>
+                                                                <td>@twitter</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /.box-body -->
+                                        </div>
+                                        <!-- /.box -->
+                                    </div>
+									<!-- /.row -->
+								</section>
+
+						</div>
+					</div>
+                   
+                   <!-- Main content -->
+	
+                </div>
+                <!-- // END header-layout__content -->
+
+            </div>
+            <!-- // END header-layout -->
+
+        </div>
+        <!-- // END drawer-layout__content -->
+        
+        <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="start">
+            <div class="mdk-drawer__content">
+                <div class="sidebar sidebar-dark sidebar-left bg-dark-gray" data-perfect-scrollbar>
+
+                    <div class="d-flex align-items-center sidebar-p-a sidebar-account flex-shrink-0">
+                      <a href="index.html" class="flex d-flex align-items-center text-underline-0">
+                           
+                        <span class="flex d-flex flex-column justify-content-center align-items-center">
+                            <img src="./assets/images/AICL_Logo1.png" style="width: 5rem; height: 3rem;  ">
+
+                            
+                        </span>
+                    </a>
+                    </div>
+                    
+
+                   
+                   
+                  <div class="sidebar-block p-0">
+                      <ul class="sidebar-menu mt-0">
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button" href="index.html">
+                                  <i class="sidebar-menu-icon fa fa-bar-chart" style="color: yellowgreen;"></i>
+                                  <span class="sidebar-menu-text" style="padding-left: 1rem;">Dashboard</span>
+                              </a>
+                          </li>
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button" href="student-courses.html">
+                                  <i class="sidebar-menu-icon fa fa-tasks"  style="color: yellowgreen;"></i>
+                                  <span class="sidebar-menu-text"  style="padding-left: 1rem;" >Test List</span>
+                              </a>
+                          </li>
+                        
+                         
+                          <li class="sidebar-menu-item">
+                              <a class="sidebar-menu-button" href="result.html">
+                                  <i class="sidebar-menu-icon  fa fa-line-chart"  style="color: yellowgreen;"> </i>
+                                  <span class="sidebar-menu-text"style="padding-left: 1rem;" >Result</span>
+                              </a>
+                          </li>
+                          
+                          
+                      </ul>
+                  </div>
+
+
+                   
+                    
+                 
+
+
+                    
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        
+                  
+    <!-- // END drawer-layout -->
+
+    <div class="mdk-drawer js-mdk-drawer" id="events-drawer" data-align="end">
+        <div class="mdk-drawer__content">
+            <div class="sidebar sidebar-light sidebar-left" data-perfect-scrollbar>
+
+
+
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Thursday, 28 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>12:30 PM</small>
+                                <small class="text-dark-gray">2 hrs</small>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Marketing Team Meeting</strong></a>
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">location_on</i> 16845 Hicks Road</small>
+
+
+                                </div>
+                                <div class="avatar-group mt-2">
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_joao-silas-636453-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_jeremy-banks-798787-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Wednesday, 27 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>07:48 PM</small>
+                                <small class="text-dark-gray">30 min</small>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Call Alex</strong></a>
+
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">phone</i> 202-555-0131</small>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Tuesday, 26 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>03:13 PM</small>
+                                <small class="text-dark-gray">2 hrs</small>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Design Team Meeting</strong></a>
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">location_on</i> 16845 Hicks Road</small>
+
+
+                                </div>
+                                <div class="avatar-group mt-2">
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_michael-dam-258165-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/stories/256_rsz_clem-onojeghuo-193397-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Monday, 25 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>12:30 PM</small>
+                                <small class="text-dark-gray">2 hrs</small>
+                            </div>
+                            <div class="col d-flex">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Call Wendy</strong></a>
+
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">phone</i> 202-555-0131</small>
+
+                                </div>
+
+
+                                <div class="avatar avatar-xs">
+                                    <img src="assets/images/256_michael-dam-258165-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+  
+
+ 
+
+    <!-- App Settings FAB -->
+    <div id="app-settings">
+        <app-settings layout-active="default" :layout-location="{
+      'default': 'student-courses.html',
+      'fixed': 'fixed-student-courses.html',
+      'fluid': 'fluid-student-courses.html',
+      'mini': 'mini-student-courses.html'
+    }"></app-settings>
+    </div>
+    <!-- App Settings FAB -->
+    <div id="app-settings">
+        <app-settings layout-active="default" :layout-location="{
+      'default': 'student-quiz.html',
+      'fixed': 'fixed-student-quiz.html',
+      'fluid': 'fluid-student-quiz.html',
+      'mini': 'mini-student-quiz.html'
+    }"></app-settings>
+    </div>
+
+   
+  
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="assets/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <!-- Range Slider -->
+    <script src="assets/vendor/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/ion-rangeslider.js"></script>
+
+    <!-- App -->
+    <script src="assets/js/toggle-check-all.js"></script>
+    <script src="assets/js/check-selected-row.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/sidebar-mini.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- App Settings (safe to remove) -->
+    <script src="assets/js/app-settings.js"></script>
+
+    	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="assets/js/classie.js"></script>
+		<script src=" assets/js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="assets/js/cssParser.js"></script>
+		<script src="assets/js/css-filters-polyfill.js"></script>
+        
+        <!--coundown-->
+            <script src="assets/vendor/jquery.countdown.min.js"></script>
+             <script src="assets/js/countdown.js"></script>
+            <!-- Required by countdown -->
+            <script src="assets/vendor/moment.min.js"></script>
+
             
-            <i class="fas fa-arrow-down"></i>
 
+  <script>
+         $("body").on("click", "i[class*='fa fa-plus']", function () {
 
-        </tr> <tr>
-          <td>Example2</td>
-          <td>java</td>
-          <td>  </td>
-          <td>  </td>
-          <td>2</td>
-          <td>pass</td>
-          <td> 
-            <a href="view.html"><i class="far fa-eye"  ></i></a>      
+                $("body").on("click", "i[class*='plus.png']", function () {
 
-            <i class="fas fa-arrow-down"></i>
-
-
-        </tr>
-      </table>
-
-
-
+                    $(this).closest("tr").after("<tr><td></td><td colspan = '999'>" + $(this).next().html() + "</td></tr>");
+                    $(this).attr("class", "fa fa-minus");
+                });
+                //Assign Click event to Minus Image.
+                $("body").on("click", "i[class*='fa fa-minus']", function () {
+                    $(this).attr("class", "fa fa-plus");
+                    $(this).closest("tr").next().remove();
+                });
+            })
+  </script>
+    
+    
+        
 
 </body>
-
-
-
 
 </html>
