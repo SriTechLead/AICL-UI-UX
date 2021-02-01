@@ -4591,7 +4591,7 @@ html {
   opacity: 0;
 }
 [dir=ltr] .custom-control-input:checked ~ .custom-control-label::before {
-  color: #fff;
+  color: rgb(253, 252, 252);
   border-color: #1367C9;
   background-color: #1367C9;
 }
@@ -11660,7 +11660,7 @@ html {
 }
 
 [dir=ltr] .text-body {
-  color: #212529 !important;
+  color: #f82509 !important;
 }
 
 [dir=ltr] .text-muted {
@@ -12624,7 +12624,7 @@ html,
 
 [dir=ltr] .dropdown-menu-right::before, [dir=ltr] .dropdown-menu-right::after {
   left: initial;
-  rig nht: 10px;
+  right: 10px;
 }
 
 [dir=ltr] .dropup .dropdown-menu {

@@ -29,7 +29,6 @@
     <!-- ion Range Slider -->
     <link type="text/css" href="assets/css/vendor-ion-rangeslider.css" rel="stylesheet">
     <link type="text/css" href="assets/css/vendor-ion-rangeslider.rtl.css" rel="stylesheet">
-    
 </head>
 <body class="layout-login-centered-boxed">
         <div class="layout-login-centered-boxed__form">
@@ -51,17 +50,23 @@
                 
             </div>
 
-            <form action="index.html" novalidate>
+            <form action="index.html" >
                 <div class="form-group">
-                    <label class="text-label" for="email_2">Email Address:</label>
+                    <label class="text-label" for="email_2" required>Email Address:</label>
                     <div class="input-group input-group-merge">
-                        <input id="email_2" type="email" required="" class="form-control form-control-prepended" placeholder="john@doe.com">
+<<<<<<< HEAD
+                        <input id="email_2" type="email" class="form-control form-control-prepended" placeholder="john@doe.com" required name="email">
+=======
+                        <input id="email_2" type="email"  class="form-control form-control-prepended" placeholder="john@doe.com" required/>
+>>>>>>> main
                         <div class="input-group-prepend">
                             <div class="input-group-text">
                                 <span class="far fa-envelope"></span>
                             </div>
                         </div>
+                  
                     </div>
+                    <div id="vaildate-email"></div>
                 </div>
                 <div class="form-group">
                     <label class="text-label" for="password_2">Password:</label>
@@ -75,7 +80,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <a class="btn btn-block btn-primary" id="gradient" type="submit" href="student-dashboard" style="color: white;">LOGIN</a>
+                    <a class="btn btn-block btn-primary" id="gradient" type="submit" href="student-dashboard.html" style="color: white;">LOGIN</a>
                     <a class="btn btn-block btn-primary" type="submit" href="signup.html">SIGNUP</a>
                 </div>
                 <div class="form-group text-center">
@@ -125,10 +130,30 @@
 
     <!-- App Settings (safe to remove) -->
     <script src="assets/js/app-settings.js"></script>
+<<<<<<< HEAD
 
 
+     <script>
+         function Email (){
+           const E =document.getElementById("email_2").value
+           console.log(E);
+         }
+         Email()
+      
+        
+     </script>
 
-
+=======
+   <script>
+       function email(){
+        var emailvalue=document.getElementById("email_2");
+        console.log(emailvalue)   
+       }
+       email()
+   </script>
+   
+  
+>>>>>>> main
 </body>
 
 </html>
