@@ -28,7 +28,8 @@
 
         .Grid th {
             background: #e40f07;
-            background: linear-gradient(#cc311c, #fc2e05);
+            background: linear-gradient(to bottom, rgb(229, 45, 39) , rgb(179, 18, 23),rgb(229, 45, 39) );
+              background-repeat: no-repeat;
              color: #fff;
             font-size: 11px;
             text-transform: uppercase;
@@ -42,17 +43,9 @@
        
         .ChildGrid
          {
-<<<<<<< Updated upstream
 
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
-             max-width: 100%;
-     }
-=======
             max-width: width 20rem;
          }
->>>>>>> main
         .ChildGrid th 
         { 
             background-color:#6C6C6C;
@@ -105,7 +98,7 @@ border-radius: 50%;
     </style>
 </head>
 <body>
-    <table cellpadding="0" cellspacing="0" class="Grid">
+    <table cellpadding="0" cellspacing="0" class="Grid" style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)">
         <tr>
             <th scope="col">Name</th>
             <th scope="col">Test name</th>
@@ -118,17 +111,11 @@ border-radius: 50%;
         </tr>
             <tr>
                 <td>
-<<<<<<< Updated upstream
+
 
                   <i class="fa fa-plus" aria-hidden="true"></i>
-=======
-<<<<<<< HEAD
-                  <i class="fa fa-plus" aria-hidden="true"></i>
 
-=======
-                    <i class="fas fa-plus"></i>
->>>>>>> main
->>>>>>> Stashed changes
+
                     <div style="display:none">
                         <table cellpadding="0" cellspacing="0" class="ChildGrid">
                             <tr>
@@ -369,11 +356,7 @@ border-radius: 50%;
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript">
         //Assign Click event to Plus Image.
-<<<<<<< HEAD
         $("body").on("click", "i[class*='fa fa-plus']", function () {
-=======
-        $("body").on("click", "i[class*='plus.png']", function () {
->>>>>>> main
             $(this).closest("tr").after("<tr><td></td><td colspan = '999'>" + $(this).next().html() + "</td></tr>");
             $(this).attr("class", "fa fa-minus");
         });
