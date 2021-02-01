@@ -38,6 +38,8 @@
      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
 <style>
+  
+  
        .far {
                 background-color: red;
                  text-decoration: none;
@@ -79,6 +81,10 @@ border-radius: 50%;
 
 
 }
+      
+
+</style>
+   
       
 
 </style>
@@ -128,7 +134,7 @@ border-radius: 50%;
 
                                 <div class="dropdown">
                                     <a href="#" data-toggle="dropdown" data-caret="false" class="dropdown-toggle navbar-toggler navbar-toggler-dashboard border-left d-flex align-items-center ml-navbar">
-                                        <span class="material-icons">laptop</span>
+                                        <span class="material-icons mr-2" style="font-size: 1.6rem;">account_circle</span> 
                                     </a>
                                     <div id="company_menu" class="dropdown-menu dropdown-menu-right navbar-company-menu">
                                         <div class="dropdown-item d-flex align-items-center py-2 navbar-company-info py-3">
@@ -357,6 +363,23 @@ border-radius: 50%;
                     </div>
 
 
+
+
+                    <div class="page__heading border-bottom">
+                        
+                        
+                    </div>
+
+                    <div class="container-fluid page__container">
+                        
+                      
+                        
+                      
+                        
+
+                    </div>
+
+
                 </div>
                 <!-- // END header-layout__content -->
 
@@ -365,7 +388,6 @@ border-radius: 50%;
 
         </div>
         <!-- // END drawer-layout__content -->
->>>>>>> main
         
         <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="start">
             <div class="mdk-drawer__content">
@@ -754,21 +776,19 @@ border-radius: 50%;
              <script src="assets/js/countdown.js"></script>
             <!-- Required by countdown -->
             <script src="assets/vendor/moment.min.js"></script>
-<script type="text/javascript">
-    //Assign Click event to Plus Image.
-    $("body").on("click", "i[class*='fa fa-plus']", function () {
-        $(this).closest("tr").after("<tr><td></td><td colspan = '999'>" + $(this).next().html() + "</td></tr>");
-        $(this).attr("class", "fa fa-minus");
-    });
-    //Assign Click event to Minus Image.
-    $("body").on("click", "i[class*='fa fa-minus']", function () {
-        $(this).attr("class", "fa fa-plus");
-        $(this).closest("tr").next().remove();
-    });
-</script>
-            
 
-    
+            <script type="text/javascript">
+                //Assign Click event to Plus Image.
+                $("body").on("click", "i[class*='fa fa-plus']", function () {
+                    $(this).closest("tr").after("<tr><td></td><td colspan = '999'>" + $(this).next().html() + "</td></tr>");
+                    $(this).attr("class", "fa fa-minus");
+                });
+                //Assign Click event to Minus Image.
+                $("body").on("click", "i[class*='fa fa-minus']", function () {
+                    $(this).attr("class", "fa fa-plus");
+                    $(this).closest("tr").next().remove();
+                });
+            </script>
 
         
 
