@@ -22,7 +22,11 @@
 	  
 	<!-- Style-->  
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/skin_color.css">
+    <link rel="stylesheet" href="css/skin_color.css">
+    <link rel="stylesheet" href="./Events.css">
+    <link rel="stylesheet" href="./Events.scss">
+
+
     <!-- Material Design Icons -->
     <link type="text/css" href="assets/css/vendor-material-icons.css" rel="stylesheet">
     <link type="text/css" href="assets/css/vendor-material-icons.rtl.css" rel="stylesheet">
@@ -46,8 +50,14 @@
     <link type="text/css" href="assets/vendor/jqvmap/jqvmap.min.css" rel="stylesheet">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-
-
+   
+   <!--News And Event-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+   <!--Babel.js-->
+   <script src="./babel.js"></script>
 
 <style>
     .text-color{
@@ -112,7 +122,7 @@ font-family: "Rubik", sans-serif;
 
                                 <div class="dropdown">
                                     <a href="#" data-toggle="dropdown" data-caret="false" class="dropdown-toggle navbar-toggler navbar-toggler-dashboard border-left d-flex align-items-center ml-navbar">
-                                        <span class="material-icons mr-2" style="font-size: 1.6rem;">account_circle</span> 
+                                        <span class="material-icons mr-2" style="font-size: 1.8rem;">account_circle</span> 
                                     </a>
                                     <div id="company_menu" class="dropdown-menu dropdown-menu-right navbar-company-menu">
                                         <div class="dropdown-item d-flex align-items-center py-2 navbar-company-info py-3">
@@ -261,7 +271,7 @@ font-family: "Rubik", sans-serif;
                                     </ul>
                                     <div class="text-center" style="margin-top: 2rem;">
                                         <input class="knob" data-width="150" data-height="150" data-min="-100" data-fgColor="#faa700"
-                                            data-displayPrevious="true" value="84" />
+                                            data-displayPrevious="true"/>
                                     </div>
                                 </div>
                             </div>
@@ -345,6 +355,168 @@ font-family: "Rubik", sans-serif;
                  
              </div>
            </main>
+           <div>
+            <div class="container">
+                <svg id="circle-nav-services" width="60%" height="100%" viewBox="0 0 650 550">
+                  <defs>
+                  <filter id="service-shadow" height="2" width="2" y="-.5" x="-.5">
+                    <feOffset result="offOut" in="SourceGraphic" dx="0" dy="5" />
+                    <feGaussianBlur result="blurOut" in="offOut" stdDeviation="12" />
+                    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                  </filter>
+                </defs>
+                
+                  <symbol id="circle-nav-copy" viewBox="0 0 300 300">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          font-size: 28px;
+                          font-family: Roboto-Bold, Roboto;
+                          font-weight: 700;
+                        }
+              
+                        .cls-2 {
+                          letter-spacing: -0.02em;
+                        }
+              
+                        .cls-3 {
+                          letter-spacing: -0.01em;
+                        }
+              
+                        .cls-4 {
+                          letter-spacing: -0.01em;
+                        }
+              
+                        .cls-5 {
+                          font-size: 16px;
+                          font-family: Roboto-Regular, Roboto;
+                        }
+              
+                        .cls-6 {
+                          letter-spacing: -0.01em;
+                        }
+              
+                        .cls-7 {
+                          letter-spacing: -0.01em;
+                        }
+              
+                        .cls-8 {
+                          letter-spacing: -0.02em;
+                        }
+              
+                        .cls-9 {
+                          letter-spacing: -0.01em;
+                        }
+              
+                        .cls-10 {
+                          letter-spacing: 0.01em;
+                        }
+              
+                        .cls-11 {
+                          letter-spacing: -0.01em;
+                        }
+              
+                        .cls-12 {
+                          letter-spacing: -0.04em;
+                        }
+              
+                        .cls-13 {
+                          letter-spacing: -0.02em;
+                        }
+              
+                        .cls-14 {
+                          letter-spacing: 0.01em;
+                        }
+              
+                        .cls-15 {
+                          letter-spacing: -0.01em;
+                        }
+              
+                        .cls-16 {
+                          letter-spacing: -0.06em;
+                        }
+              
+                        .cls-17 {
+                          letter-spacing: -0.02em;
+                        }
+              
+                        .cls-18 {
+                          letter-spacing: 0.01em;
+                        }
+              
+                        .cls-19 {
+                          letter-spacing: 0.02em;
+                        }
+              
+                        .cls-20 {
+                          letter-spacing: -0.01em;
+                        }
+              
+                        .cls-21 {
+                          letter-spacing: -0.03em;
+                        }
+                      </style>
+                    </defs>
+                    <text x="83" y="60" style="font-size: 17px; font-family:roboto;font-weight:600;">AICL WORKSHOP</text>
+      
+                  
+                  
+                  
+                  
+                   
+                  
+                   
+                  
+                 
+                  </symbol>
+                  <symbol id="industries" viewBox="0 0 512 512">
+                      <text x="70" y="320"  style="font-size: 13rem; font-family:roboto;font-weight:600;">Node</text>
+                  </symbol>
+                  <symbol id="validation" viewBox="0 0 512 512">
+                    <text x="0.5" y="320"  style="font-size: 11rem; font-family:roboto;font-weight:600;">Python</text>
+
+              </symbol>
+                  <symbol id="engineering" viewBox="0 0 512 512">
+                    <text x="70" y="320"  style="font-size: 11rem; font-family:roboto;font-weight:600;">React</text>
+
+              </symbol>
+                  <symbol id="management" viewBox="0 0 512 512">
+                    <text x="0.5" y="320"  style="font-size: 10rem; font-family:roboto;font-weight:600;">Angular</text>
+
+              </symbol>
+                  <symbol id="manufacturing" viewBox="0 0 512 512">
+                    <text x="70" y="320"  style="font-size: 13rem; font-family:roboto;font-weight:600;">Java</text>
+
+              </symbol>
+                  <symbol id="technical" viewBox="0 0 512 512">
+                    <text x="70" y="320"  style="font-size: 13rem; font-family:roboto;font-weight:600;">c++</text>
+
+                
+              </symbol>
+                  <symbol id="process" viewBox="0 0 512 512">
+                    <text x="100" y="320"  style="font-size: 13rem; font-family:roboto;font-weight:600;">c</text>
+
+              </symbol>
+                  
+                  <!-- arc travelled by the pointer -->
+                  <svg x="150" y="0" width="350" height="350" viewBox="0 0 500 500">
+                    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="250.2542" y1="496.283" x2="250.2542" y2="-.2102">
+                      <stop offset="0" stop-color="#0F68A9"/>
+                      <stop offset="1" stop-color="#3DDEED" stop-opacity="0"/>
+                    </linearGradient>
+                    <path fill="url(#a)" d="M250.3 0c137 0 248.1 111.1 248.1 248.1S387.3 496.2 250.3 496.2 2.2 385.1 2.2 248.1 113.2 0 250.3 0C112.5 0 .8 111.7.8 249.5S112.5 499 250.3 499s249.5-111.7 249.5-249.5S388 0 250.3 0z"/>
+                  </svg>
+                  
+                  <g id="service-collection">
+                    <!-- this gets filled dynamically -->
+                  </g>
+                  <circle cx="325" cy="170" r="140" class="center"/>
+                  <use x="185" y="30" width="280" height="280" xlink:href="#circle-nav-copy" class="nav-copy"/>
+                  <rect data-url="/industries" id="learn-more" x="280" y="250" width="90" height="30" />
+                  <text x="290" y="270" class="learn-more-text">Learn more</text>
+                </svg>
+              </div>
+           </div>
 		<!-- /.content -->
                                 <!-- FIRST TAB CONTENT -->
                      
@@ -504,15 +676,15 @@ font-family: "Rubik", sans-serif;
                     <div class="sidebar-block p-0">
                         <ul class="sidebar-menu mt-0">
                             <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="index.html">
+                                <a class="sidebar-menu-button" href="index.html" style="padding-top: 12px;">
                                     <i class="sidebar-menu-icon fa fa-bar-chart" style="color: yellowgreen;"></i>
-                                    <span class="sidebar-menu-text" style="padding-left: 1rem;">Dashboard</span>
+                                    <span class="sidebar-menu-text" style="padding-left: 1rem;  font-size: 17px;">Dashboard</span>
                                 </a>
                             </li>
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button" href="student-courses.html">
                                     <i class="sidebar-menu-icon fa fa-tasks"  style="color: yellowgreen;"></i>
-                                    <span class="sidebar-menu-text"  style="padding-left: 1rem;" >Test List</span>
+                                    <span class="sidebar-menu-text"  style="padding-left: 1rem;   font-size: 17px;" >Test List</span>
                                 </a>
                             </li>
                           
@@ -520,7 +692,7 @@ font-family: "Rubik", sans-serif;
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button" href="result.html">
                                     <i class="sidebar-menu-icon  fa fa-line-chart"  style="color: yellowgreen;"> </i>
-                                    <span class="sidebar-menu-text"style="padding-left: 1rem;" >Result</span>
+                                    <span class="sidebar-menu-text"style="padding-left: 1rem;   font-size: 17px;" >Result</span>
                                 </a>
                             </li>
                             
@@ -528,21 +700,16 @@ font-family: "Rubik", sans-serif;
                         </ul>
                         <hr>
                         <h6   style="text-align: center; font-size:1.1rem; font-weight: 700;" >Company Hiring</h5>
-                            <div style="display: flex;justify-content: space-around; padding-top: 1rem; margin-left: 50px;">
-                                <marquee direction="up"> <img src="./assets/images/AICL_Logo1.png" style="width:3rem; height: 3rem; " id='image1'></marquee>
-                                <marquee direction="up"> <img src="./assets/images/AICL_Logo1.png" style="width:3rem; height: 3rem; " id='image1'></marquee>
-
+                            <div>
+                                <marquee behavior="scroll" direction="up" style="display: flex;justify-content: center;align-items: center;">
+                                    <img src="./assets/images/AICL_Logo1.png" width="100" height="50" alt="W3docs" />
+                                    <img src="./assets/images/AICL_Logo1.png" width="100" height="50"  alt="W3docs"   style="display:flex;flex-direction:column; margin-top: 3rem;"/>
+                                    <img src="./assets/images/AICL_Logo1.png" width="100" height="50"  alt="W3docs" style=" margin-top: 3rem;"/>
+    
+                                  </marquee>
+    
                             </div>
-                            <div style="display: flex;justify-content: space-around;padding-top: 1.8rem;  margin-left: 50px;">
-                                <marquee direction="up"> <img src="./assets/images/AICL_Logo1.png" style="width:3rem; height: 3rem; " id='image1'></marquee>
-                                <marquee direction="up"> <img src="./assets/images/AICL_Logo1.png" style="width:3rem; height: 3rem; " id='image1'></marquee>
-
-                            </div>
-                            <div style="display: flex;justify-content: space-around; padding-top: 1.8rem;  margin-left: 50px;">
-                                <marquee direction="up"> <img src="./assets/images/AICL_Logo1.png" style="width:3rem; height: 3rem; " id='image1'></marquee>
-                                <marquee direction="up"> <img src="./assets/images/AICL_Logo1.png" style="width:3rem; height: 3rem; " id='image1'></marquee>
-
-                            </div>
+                          
                     </div>
 
 

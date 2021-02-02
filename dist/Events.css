@@ -17,7 +17,7 @@
   fill-opacity: 1;
 }
 #learn-more:hover ~ .learn-more-text {
-  fill: #005fa4;
+  fill:red;
 }
 
 .learn-more-text {
@@ -29,12 +29,12 @@
 }
 
 .center {
-  fill: #005fa4;
+  fill: red;
 }
 
 .pointer {
   fill: #fff;
-  stroke: #3b8fc0;
+  stroke: red;
   stroke-width: 2;
 }
 
@@ -63,7 +63,7 @@
   transition: all 250ms ease-in;
 }
 .service circle {
-  fill: #005fa4;
+  fill: red;
 }
 .service circle.shadow {
   fill-opacity: 0;
@@ -85,7 +85,7 @@
   fill-opacity: 0.4;
 }
 .service.active text, .service:hover text {
-  fill: #005fa4;
+  fill: red;
   font-weight: bold;
 }
 

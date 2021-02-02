@@ -11,13 +11,13 @@ const tspan_delta = 16;
 //name is used as the title for the bubble
 //icon is the id of the corresponding svg symbol
 const services_data = [
-  { name: "Industries", icon: "industries" },
-  { name: "Validation\n(C&Q and CSV)", icon: "validation" },
-  { name: "Engineering", icon: "engineering" },
-  { name: "Project\nManagement", icon: "management" },
-  { name: "Manufacturing\nIT", icon: "manufacturing" },
-  { name: "Technical\nServices", icon: "technical" },
-  { name: "Process\nAutomation", icon: "process" }
+  { name: "", icon: "industries" },
+  { name: "", icon: "validation" },
+  { name: "", icon: "engineering" },
+  { name: "", icon: "management" },
+  { name: "", icon: "manufacturing" },
+  { name: "", icon: "technical" },
+  { name: "", icon: "process" }
 ];
 
 const services = document.getElementById("service-collection");
