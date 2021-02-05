@@ -1,23 +1,46 @@
-const target = {
-    clicked: 0,
-    currentFollowers: 90,
-    btn: document.querySelector("a.btn"),
-    fw: document.querySelector("span.followers")
-  };
-  
-  const follow = () => {
-    target.clicked += 1;
-    target.btn.innerHTML = 'Following <i class="fas fa-user-times"></i>';
-  
-    if (target.clicked % 2 === 0) {
-      target.currentFollowers -= 1;
-      target.btn.innerHTML = 'Follow <i class="fas fa-user-plus"></i>';
-    }
-    else {
-      target.currentFollowers += 1;
-    }
-  
-    target.fw.textContent = target.currentFollowers;
-    target.btn.classList.toggle("following");
+var x = document.getElementById("btn-save");
+var y = document.getElementById("add-skill");
+var z = document.getElementById('image-upload')
+x.style.display = "none";
+z.style.display = "none";
+
+
+function edit(){
+  if (x.style.display === "none") {
+    x.style.display = "block";
   }
+  if (z.style.display === "none") {
+    z.style.display = "block";
+  }
+  document.getElementById("name").contentEditable="true";
+  document.getElementById("mail").contentEditable="true";
+  document.getElementById("phone").contentEditable="true";
+  document.getElementById("mobile").contentEditable="true";
+  document.getElementById("address").contentEditable="true";
+  document.getElementById("portfolio").contentEditable="true";
+  document.getElementById("github").contentEditable="true";
+  document.getElementById("twitter").contentEditable="true";
+  document.getElementById("instagram").contentEditable="true";
+  document.getElementById("facebook").contentEditable="true";
   
+}  
+
+function save(){
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  }
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  }
+  document.getElementById("name").contentEditable="false";
+  document.getElementById("mail").contentEditable="false";
+  document.getElementById("phone").contentEditable="false";
+  document.getElementById("mobile").contentEditable="false";
+  document.getElementById("address").contentEditable="false";
+  document.getElementById("portfolio").contentEditable="false";
+  document.getElementById("github").contentEditable="false";
+  document.getElementById("twitter").contentEditable="false";
+  document.getElementById("instagram").contentEditable="false";
+  document.getElementById("facebook").contentEditable="false";
+}
+
