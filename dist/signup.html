@@ -108,7 +108,7 @@
                         <div class="form-group">
                             <label class="text-label" for="email_2">Mobile Number:</label>
                             <div class="input-group input-group-merge">
-                                <input id="email_2" type="email" required="" class="form-control form-control-prepended" placeholder="10-Digit Mobile Number">
+                                <input id="tel" type="email" required="" class="form-control form-control-prepended" placeholder="10-Digit Mobile Number">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
                                         <span class="fas fa-mobile"></span>
@@ -184,7 +184,27 @@
     <!-- App Settings (safe to remove) -->
     <script src="assets/js/app-settings.js"></script>
 
+<script>
+function phonenumber(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  if(inputtxt.value.match(phoneno))
+  {
+      return true;
+  }
+  else
+  {
+     alert("Not a valid Phone Number");
+     return false;
+  }
+  }
 
+
+
+
+
+
+</script>
 
 
 </body>
