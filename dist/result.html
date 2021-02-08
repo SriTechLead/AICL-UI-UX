@@ -30,6 +30,15 @@
     <link type="text/css" href="assets/css/vendor-ion-rangeslider.rtl.css" rel="stylesheet">
     <link type="text/css" href="../assets/vendor_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="css/vendors_css.css">
+	  
+	<!-- Style-->  
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skin_color.css">
+	
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="../font_awesome/css/font-awesome.min.css">
     <script src="assets/vendor/bootstrap.min.js"></script>
@@ -146,10 +155,10 @@ border-radius: 50%;
                                             <span class="mr-3">
                                                 <img src="assets/images/frontted-logo-blue.svg" width="43" height="43" alt="avatar">
                                             </span>
-                                            <span class="flex d-flex flex-column">
+                                            <a class="flex d-flex flex-column" href="profile.html">
                                                 <strong class="h5 m-0">Adrian D.</strong>
                                                 <small class="text-muted text-uppercase">STUDENT</small>
-                                            </span>
+                                            </a>
 
                                         </div>
                                         <div class="dropdown-divider"></div>
@@ -175,14 +184,16 @@ border-radius: 50%;
 
                 <!-- Header Layout Content -->
                 <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page" style="padding-top: 60px;">
+                    
+                  <div class="page__heading border-bottom">
+                    <div class="container-fluid page__container d-flex;">
+                        <h1 class="mb-0" style="font-size: 30px; color: rgb(82, 79, 79); font-weight: 600;"  class="pricing__title mb-0" >Test Result</h1>
+                    </div>
+                </div>
+                    
                     <div class="container-fluid page__container">
                         <!--Header-Profie-->
-                        <div class="card" style="width:100%;height: 100%; background-color: #eef0f8;position: relative;  ">
-                            <div class="card-body">
-                                <i class="far fa-user-circle" style="float: left; border-radius: 50%;padding: 1rem;"></i>
-                                 <h3 style="align-content: center ;margin-left: 3.5rem;margin-top: 10px;">Eddie charlton</h3>
-                            </div> 
-                        </div>
+                       
                         <div class="card" style="width:100%;height: 100%; background-color: #eef0f8;  ">
                             <div class="card-body">
                                 <section class="content">
@@ -203,10 +214,12 @@ border-radius: 50%;
                                                             <tr>
                                                                 <th> </th>
                                                                 <th scope="col">Test name</th>
-                                                                <th scope="col">Total time given</th>
-                                                                <th scope="col">Total time taken</th>
-                                                                <th scope="col">Marks allotd</th>
+                                                                <th scope="col">Correct</th>
+                                                                <th scope="col">Incorrect</th>
+                                                                <th scope="col">Unattempted</th>
+                                                                <th scope="col">Test taken on</th>
                                                                 <th scope="col">Marks obtained</th>
+                                                                <th scope="col">Grade</th>
                                                                 <th scope="col">view/download</th>
                                                                 <th> </th>
                                                             </tr>
@@ -372,6 +385,8 @@ border-radius: 50%;
                                                                 <td> </td>
                                                                 <td> </td>
                                                                 <td> </td>
+                                                                <td></td>
+                                                                <td></td>
                                                                 <td  style="display:flex; justify-content:space-between">
                                                                     <a href="view.html"><i class="far fa-eye"></i></a>
                         
@@ -859,9 +874,13 @@ border-radius: 50%;
                     $(this).closest("tr").next().remove();
                 });
             </script>
-
-        
-
+  
+  <script src="../assets/vendor_components/Flot/jquery.flot.js"></script>
+  <script src="../assets/vendor_components/Flot/jquery.flot.resize.js"></script>
+  <script src="../assets/vendor_components/Flot/jquery.flot.pie.js"></script>
+  <script src="../assets/vendor_components/Flot/jquery.flot.categories.js"></script>
+  <script src="js/pages/widget-flot-charts.js"></script>
+  
 </body>
 
 </html>

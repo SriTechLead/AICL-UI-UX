@@ -9,13 +9,14 @@
 
 
 .col-md-3{
+  position: absolute;
+  margin-left: 0px;
   .avatar-holder {
     margin-left: 0px;
     position: absolute;
-    margin: auto;
     top: 40px;
     right: 0;
-    left: 0;
+    left: -140px;
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -27,16 +28,38 @@
       height: 100%;
       object-fit: cover;
     }
+    a{
+      position: absolute;
+      background: none;
+      bottom: 0;
+      left: 0;
+      color: rgb(66, 60, 60);
+      font-size: 36px;
+      margin-left: 40%;
+    }
   }  
 }
 
 .col-md-9{
   margin-top: 25%;
-  margin-left: 45%;
+  margin-left: 25%;
   color: white;
   p{
     font-size: 24px;
     font-weight: bold;
+  }
+  .btn-edit{
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: transparent;
+    color: white;
+  }
+  #btn-save{
+    margin-top: 2px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: green;
+    color: white;
   }
   .fas{
     color: rgb(206, 197, 202);
@@ -70,7 +93,7 @@
 }
 
 .card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon-large .far, .card .card-statistic-3 .card-icon-large .fab, .card .card-statistic-3 .card-icon-large .fal {
-    font-size: 110px;
+    font-size: 40px;
 }
 
 .card .card-statistic-3 .card-icon {
@@ -232,55 +255,4 @@ h1{
       }
     }
   }  
-}
-
-.col-lg-6{
-  .card-left{
-    position: absolute;
-  .card {
-    flex-direction: row ;
-    align-items: center ;
-    margin-bottom: 10px;
-  }
-  .card-title {
-    margin-top: -10px;
-    font-weight: bold ;
-    color: #000;
-  }
-  .card img {
-    width: 25% ;
-    height: 100px;
-    border-top-right-radius: 0 ;
-    border-bottom-left-radius: calc(0.25rem - 1px) ;
-    margin-top: -20px;
-    margin-bottom: -20px;
-  }
-  a{
-    background: linear-gradient(to right, rgb(229,45,39) 0%,rgb(179,18,23) 51%, rgb(229,45,39) 100%);
-    border: 0.5px solid red;
-    margin-left: 20px;
-    &:hover{
-      background: linear-gradient(to right, rgb(179,18,23) 0%, rgb(229,45,39) 51%, rgb(179,18,23) 100%);
-    }
-  }
-  @media only screen and (max-width: 768px) {
-    a {
-      display: none ;
-    }
-    .card-body {
-      padding: 0.5em 1.2em ;
-    }
-    .card-body .card-text {
-      margin: 0 ;
-    }
-    .card img {
-      width: 50% ;
-    }
-  }
-  @media only screen and (max-width: 1200px) {
-    .card img {
-      width: 40% ;
-    }
-  }
-}
 }
