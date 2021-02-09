@@ -133,7 +133,7 @@
 
                         <div class="navbar navbar-expand-sm navbar-main navbar-dark bg-danger pl-md-0 pr-0" id="navbar" data-primary>
                             <div class="container-fluid page__container pr-0">
-
+                                       
                                 <!-- Navbar toggler -->
                                 <button class="navbar-toggler navbar-toggler-custom  d-lg-none d-flex mr-navbar" type="button" data-toggle="sidebar">
                                     <span class="material-icons icon-14pt">menu</span>
@@ -187,14 +187,9 @@
 
                 <!-- Header Layout Content -->
                 <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page" style="padding-top: 60px;">
+                            <h1>Test Result</h1>
 
-                  <div class="page__heading border-bottom">
-                    <div class="container-fluid page__container d-flex;">
-                        <h1 class="mb-0" style="font-size: 30px; color: rgb(82, 79, 79);margin-left:50%">Test Result</h1>
-                    </div>
-                </div>
-
-
+                    
 
                     <div class="container-fluid page__container">
                       
@@ -209,13 +204,14 @@
                                   <img src="./img/WhatsApp Image 2020-12-22 at 10.35.38 PM.jpeg" style=" width:10rem; height: 8rem; border-radius: 50%; width: 8rem; margin-top:3rem;">
                                  
                                 </div>
-                                <h4 class="pricing__title mb-0" style="font-size: 18px; font-weight: 600;padding-top: 10px; text-align: center; margin-right:2rem;">Kavin</h4>
+                                <h4 class="pricing__title mb-0" style="font-size: 18px; font-weight: 600;padding-top: 10px; text-align: center; margin-right:3rem;">Kavin</h4>
 
-                                <a class="sidebar-menu-button" href="#" style="padding-top: 10px;float: left;">
-                                  <i  class="fas fa-user-cog" style="color: red; margin-right:10px"></i>
-                                  <h4 class="pricing__title mb-0" style="font-size: 15px;font-weight: 600;">Edit Profile</h4>
-                                  <br>
-                                </a>
+                               
+                                <div style="margin: 20px ;padding-bottom: 40px;">
+                                 
+                                  <button class="btn btn-danger " onclick="edit()" style="padding-top: 5px;float: left; left:10px;width:90%; "  > <i  class="fas fa-user-cog" style="color: white; padding-right:10px"></i> Edit </button>
+                                  <button class="btn btn-outline" id="btn-save" onclick="save()"  style="padding-bottom:20px">Save Profile</button>
+                              </div>
                                </div>
                                 
                             </div>
@@ -830,10 +826,55 @@
 		<script src="assets/js/cssParser.js"></script>
 		<script src="assets/js/css-filters-polyfill.js"></script>
     
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    var x = document.getElementById("btn-save");
+var y = document.getElementById("add-skill");
+var z = document.getElementById('image-upload')
+x.style.display = "none";
+z.style.display = "none";
 
-        
+
+function edit(){
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }
+  
+  
+  document.getElementById("name").contentEditable="true";
+  document.getElementById("mail").contentEditable="true";
+  document.getElementById("phone").contentEditable="true";
+  document.getElementById("mobile").contentEditable="true";
+  document.getElementById("address").contentEditable="true";
+  document.getElementById("portfolio").contentEditable="true";
+  document.getElementById("github").contentEditable="true";
+  document.getElementById("twitter").contentEditable="true";
+  document.getElementById("instagram").contentEditable="true";
+  document.getElementById("facebook").contentEditable="true";
+  
+}  
+
+function save(){
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  }
+  
+  document.getElementById("name").contentEditable="false";
+  document.getElementById("mail").contentEditable="false";
+  document.getElementById("phone").contentEditable="false";
+  document.getElementById("mobile").contentEditable="false";
+  document.getElementById("address").contentEditable="false";
+  document.getElementById("portfolio").contentEditable="false";
+  document.getElementById("github").contentEditable="false";
+  document.getElementById("twitter").contentEditable="false";
+  document.getElementById("instagram").contentEditable="false";
+  document.getElementById("facebook").contentEditable="false";
+}
+
+
+  </script>
+       
 
 </body>
 
