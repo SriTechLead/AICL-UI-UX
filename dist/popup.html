@@ -4,6 +4,8 @@
     <style>
 body{
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
   
 .content{
@@ -15,7 +17,7 @@ text-align: center;
 .popup{
   background-image: url(./assets/images/Login\ page.jpg);
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
   background-size: 100%;
   height: 100%;
   width: 100%;
@@ -34,6 +36,7 @@ text-align: center;
 
 #sc-password h1 {
   background-image: rgba(231, 228, 228, 0.671);
+  font-family:" source sans pro", sans-serif;
   padding-top: 20px;
   font-size: 140%;
   font-weight: 300;
@@ -83,17 +86,20 @@ div#sc-password input[type="submit"]:hover {
   text-decoration: none;
 }
 .ref{
-
+  font-family:" source sans pro" ,sans-serif;
   color: #fff;
   background-image: linear-gradient(to right, rgb(229, 45, 39) 0%, rgb(179, 18, 23) 51%, rgb(229, 45, 39) 100%);
   transition: 0.5s;
   background-size: 200% auto;
   color: white;            
   border-radius: 1px;
-  display: block;
-  padding: 1rem;
-text-align: center;
+  display: flex;
+  padding:7px;
 border-radius: 0.1rem;
+width: 5rem;
+font-size: 14px;
+font-weight: '600';
+margin-left: 6rem;
 
 
 }
@@ -116,10 +122,10 @@ width: 8rem;
     
  <div class="body"> 
 
-<div class="popup">
+<div class="popup" >
  
   <div>
-    <img src="./assets/images/AICL_Logo1.png" style="width: 12rem;height: 6rem;margin-top: 2rem;margin-right: 90rem;" >
+    <img src="./assets/images/AICL_Logo1.png" style="width: 12rem;height: 6rem;margin-top: 2rem;margin-right: 20rem; margin-left: 37rem;" >
 </div>
 <div id="sc-password">
 
@@ -127,7 +133,7 @@ width: 8rem;
     <div class="sc-container">
         <div class="content">Please enter your mail id and we will send you a link to corresponding mail address </div>
       <input type="text" placeholder="Username or Email" />
-      <a class="ref" type="submit">SUBMIT</a>
+      <a class="ref" type="submit" style="text-align: center;padding-left: 35px;">SUBMIT</a>
     </div> 
     </div>
   </div>
