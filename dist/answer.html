@@ -7,17 +7,75 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <style>
+        .correct{
+            color: yellowgreen;
+        }
+        .wrong{
+            color: red;
+        }
+    </style>
 </head>
 <body style="background-color: rgb(231, 226, 226);">
-        <div style="border:1px solid black; margin:2rem 12rem;background-color: white;padding-left:10px;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);  ">
+        <div style="border:3px solid rgb(54, 168, 31); margin:2rem 12rem;background-color: white;padding-left:10px;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);padding-bottom: 10px;">
         <div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est rerum in ut. Debitis architecto illo, minus animi repellendus enim deserunt veritatis, delectus consequuntur ad quisquam distinctio facilis unde, eveniet earum?</p>
-        <input type="radio">a<br>
-        <input type="radio">b<br>
-        <input type="radio">c<br>
-        <input type="radio">d<br>
+            <input type="radio" id="a" name="answer1" value="a">
+            <label for="a">a</label><br>
+            <input type="radio" id="b" name="answer1"  value="b">
+            <label for="b">b</label><br>  
+            <input type="radio" id="c" name="answer1" value="c">
+            <label for="c">c</label><br>
+            <input type="radio" id="d" name="answer1" value="d">
+            <label for="d">d</label><br>
+            
 
         </div>
     </div>
+    <div style="border:3px solid rgb(54, 168, 31); margin:2rem 12rem;background-color: white;padding-left:10px;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);padding-bottom: 10px;  ">
+        <div class="correct">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est rerum in ut. Debitis architecto illo, minus animi repellendus enim deserunt veritatis, delectus consequuntur ad quisquam distinctio facilis unde, eveniet earum?</p>
+        <input type="radio" id="a" name="answer2" value="a">
+            <label for="a">a</label><br>
+            <input type="radio" id="b" name="answer2" value="b">
+            <label for="b">b</label><br>  
+            <input type="radio" id="c" name="answer2" value="c">
+            <label for="c">c</label><br>
+            <input type="radio" id="d" name="answer2" value="d">
+            <label for="d">d</label><br>
+
+        </div>
+    </div>
+    <div style="border:3px solid red; margin:2rem 12rem;background-color: white;padding-left:10px;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); padding-bottom: 10px; ">
+        <div class="wrong">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est rerum in ut. Debitis architecto illo, minus animi repellendus enim deserunt veritatis, delectus consequuntur ad quisquam distinctio facilis unde, eveniet earum?</p>
+        <input type="radio" id="a" name="answer3" value="a">
+            <label for="a">a</label><br>
+            <input type="radio" id="b" name="answer3" value="b">
+            <label for="b">b</label><br>  
+            <input type="radio" id="c" name="answer3" value="c">
+            <label for="c">c</label><br>
+            <input type="radio" id="d" name="answer3" value="d">
+            <label for="d">d</label><br>
+            <h4 style="color: rgb(54, 168, 31);">Correct answer:</h4>
+            <input type="radio" id="c" name="answer3" value="c">
+            <label for="c"><span style="">a</span></label><br>
+        </div>
+    </div>
+    <div style="border:3px solid rgb(54, 168, 31); margin:2rem 12rem;background-color: white;padding-left:10px;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);padding-bottom: 10px;  ">
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est rerum in ut. Debitis architecto illo, minus animi repellendus enim deserunt veritatis, delectus consequuntur ad quisquam distinctio facilis unde, eveniet earum?</p>
+            <input type="radio" id="a" name="answer4" value="a">
+            <label for="a">a</label><br>
+            <input type="radio" id="b" name="answer4" value="b">
+            <label for="b">b</label><br>  
+            <input type="radio" id="c" name="answer4" value="c">
+            <label for="c">c</label><br>
+            <input type="radio" id="d" name="answer4" value="d">
+            <label for="d">d</label><br>
+
+        </div>
+    </div>
+ 
 </body>
 </html>
