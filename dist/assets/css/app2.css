@@ -16614,7 +16614,7 @@ html,
 [dir=ltr] .dp-preview:hover .dp-preview__overlay {
   opacity: 1;
 }
-
+/* responsive signup */
   
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
@@ -16721,6 +16721,7 @@ body {
     color: white;
 }
 
+
 h1 {
   font-size: 3em;
   text-align: center;
@@ -16733,7 +16734,6 @@ h1 {
 
 /*-- main --*/
 .main-w3layouts {
-  padding: 3em 0 1em;
 }
 
 .main-agileinfo {
@@ -16741,10 +16741,12 @@ h1 {
   margin: 3em auto;
   background: rgba(252, 250, 250, 0.18);
   background-size: cover;
+  margin-top: 7rem;
 }
 
 .agileits-top {
-  padding: 3em;
+  padding: 3rem;
+
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
@@ -17134,6 +17136,21 @@ input.checkbox:checked:after {
   .agileits-top p {
     letter-spacing: 0px;
   }
+  body{
+    overflow: visible;
+  }
+ 
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 89.5%;
+    font-size: 0.85em;
+  }
+  input[type="submit"] {
+    margin: 1.5em 0;
+    padding: 0.8em;
+    font-size: .85em;
+  }
+
+ 
 }
 
 @media(max-width:320px) {
