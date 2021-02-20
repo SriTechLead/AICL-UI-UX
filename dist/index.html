@@ -97,6 +97,30 @@ font-family: "Rubik", sans-serif;
         font-size: 28px;
         padding-top: 10px;
     }
+
+    .mobile_dashboard{
+        text-align: center;
+        padding-top: 3rem;
+        
+    }
+
+    .mobile_dashboard >h5{
+        display: none;
+        font-family: helvetica;
+        font-size: 32px;
+        font-weight: 700;
+        font-family: helvetica;
+        color: red;
+    }
+
+    @media screen and (max-width:995px){
+        .dashboard{
+            display:none
+        }
+        .mobile_dashboard >h5{
+            display:block;
+        }
+    }
    
 </style>
 
@@ -145,8 +169,11 @@ font-family: "Rubik", sans-serif;
                                    
                                     
                                 </ul>
-                                <h1 class="dashboard">Dashboard</h1>
-                                <p class="welcome">Welcome Name</p>
+                                <div class="dashboard">
+                                    <h1 >Dashboard</h1>
+                                    <p class="welcome">Welcome Name</p>
+                                </div>
+                             
                                 <div  class="nav-item">
                                     
                                     <a href="#notifications_menu" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
@@ -322,8 +349,10 @@ font-family: "Rubik", sans-serif;
                 <!-- Header Layout Content -->
                 <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page" style="padding-top: 60px;">
 
-
-
+                       <div class="mobile_dashboard"> 
+                        <h5>Dashboard</h5>
+                       </div>
+                        
 
 
                    
@@ -408,12 +437,15 @@ font-family: "Rubik", sans-serif;
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-4">
+                        
+                        <div class="col-xl-4 col-12">
                             <div class="box">
                                 <div class="box-header">
                                     <h4 class="box-title">Total Vendor</h4>
-                                
+                                    
                                 </div>
+                           
+                                
                                 <div class="box-body">
                                     <ul class="list-inline my-10">
                                         <li class="px-10">
@@ -431,13 +463,16 @@ font-family: "Rubik", sans-serif;
                                             <h6 class="mb-0 text-bold">18.55%</h6>
                                         </li>
                                     </ul>
-                                    <div class="text-center" style="margin-top: 2rem;">
-                                        <input class="knob" data-width="150" data-height="150" data-min="-100" data-fgColor="#faa700"
-                                            data-displayPrevious="true"/>
-                                    </div>
                                 </div>
+
+                                <div class="text-center">
+                                    <input class="knob" data-width="150" data-height="150" data-linecap="round" data-fgColor="#3e8ef7" value="50" data-skin="tron" data-angleOffset="180" data-readOnly="true" data-thickness=".1" />
+                                </div>
+                               
                             </div>
                         </div>
+
+                       
                       
                       
                         <div class="col-xl-3 col-12">
@@ -519,7 +554,7 @@ font-family: "Rubik", sans-serif;
            </main>
            <div>
             <div class="container">
-                <svg id="circle-nav-services" width="60%" height="100%" viewBox="0 0 650 550">
+                <svg id="circle-nav-services" width="80%" height="100%" viewBox="0 0 650 550">
                   <defs>
                   <filter id="service-shadow" height="2" width="2" y="-.5" x="-.5">
                     <feOffset result="offOut" in="SourceGraphic" dx="0" dy="5" />
@@ -844,7 +879,7 @@ font-family: "Rubik", sans-serif;
                                 </a>
                             </li>
                             <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="student-courses.html">
+                                <a class="sidebar-menu-button" href="test-list.html">
                                     <i class="sidebar-menu-icon fa fa-tasks"  style="color: yellowgreen;"></i>
                                     <span class="sidebar-menu-text"  style="padding-left: 1rem;   font-size: 17px;" >Test List</span>
                                 </a>
@@ -864,10 +899,11 @@ font-family: "Rubik", sans-serif;
                         <h6   style="text-align: center; font-size:1.1rem; font-weight: 700;" >Company Hiring</h5>
                             <div>
                                 <marquee behavior="scroll" direction="up" style="display: flex;justify-content: center;align-items: center;">
-                                    <img src="./assets/images/AICL_Logo1.png" width="100" height="50" alt="W3docs" />
-                                    <img src="./assets/images/AICL_Logo1.png" width="100" height="50"  alt="W3docs"   style="display:flex;flex-direction:column; margin-top: 3rem;"/>
-                                    <img src="./assets/images/AICL_Logo1.png" width="100" height="50"  alt="W3docs" style=" margin-top: 3rem;"/>
-    
+                                    <img src="./assets/images/NreImage/Cognizant-01.png" width="90%" height="90%" alt="W3docs" style="margin-left: 2rem;" />
+                                    <img src="./assets/images/NreImage//Tetra-Tech-01.png" width="100%" height="90%"  alt="W3docs"   style="display:flex;flex-direction:column; margin-top: 3rem;"/>
+                                    <img src="./assets/images/NreImage/Tetra-Tech-01.png" width="100%" height="90%"  alt="W3docs" style=" margin-top: 3rem;"/>
+                                    <img src="./assets/images/NreImage/Tetra-Tech-01.png" width="100%" height="90%"  alt="W3docs" style=" margin-top: 3rem;"/>
+
                                   </marquee>
     
                             </div>
@@ -1140,6 +1176,9 @@ font-family: "Rubik", sans-serif;
 
     },8000);
    </script>
+
+<script src="../assets/vendor_components/jquery-knob/js/jquery.knob.js"></script>
+<script src="js/pages/widget-inline-charts.js"></script>
 
 </body>
 

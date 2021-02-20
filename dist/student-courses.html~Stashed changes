@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Courses</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="assets/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="assets/css/vendor-material-icons.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-material-icons.rtl.css" rel="stylesheet">
+
+    <!-- Font Awesome FREE Icons -->
+    <link type="text/css" href="assets/css/vendor-fontawesome-free.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-fontawesome-free.rtl.css" rel="stylesheet">
+
+    <!-- ion Range Slider -->
+    <link type="text/css" href="assets/css/vendor-ion-rangeslider.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-ion-rangeslider.rtl.css" rel="stylesheet">
+    <link type="text/css" href="../assets/vendor_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../font_awesome/css/font-awesome.min.css">
+    <script src="assets/vendor/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+<style>
+    .header-title{
+       display: flex;
+       justify-content:flex-end;
+       margin: 10px 10px 10px 10px; 
+    }
+    .modal-Title{
+       display: flex;
+       justify-content:space-between;
+       margin: 20px 30px 20px 30px; 
+    }
+    .header-subtitle{
+       
+        font-size: 17px;
+        font-weight: 600;
+        background-color: #f3ec78;
+        background-image: linear-gradient(to right,rgb(229,45,39)0% ,rgb(179,18,23) 51%, rgb(229,45,39)100%); background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        text-align: center;
+      
+        
+         }
+    .modal_agree{
+        display:flex;
+        margin: 20px 30px 10px;
+    }
+    
+    .modal_agree >h5{
+        padding-left:9px;
+        font-size:7px;
+        font-weight:600;
+        margin: 30px 30px 30px 30px;
+    }
+    .modal_agree_button{
+        display: flex;
+        justify-content:center; 
+        margin: 10px 10px 10px 10px; 
+
+    }
+    .btns{
+        background-color: red;
+    }
+    
+    .modal-Title >h5{
+        padding-top:10px; 
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif; 
+        font-weight: 400
+    }
+    .modal-Title > h6{
+        font-size: 14px; 
+        font-weight: 600;
+    }
+
+    .mb-0{
+        font-weight: bolder;
+        line-height: 1.2;
+        position: absolute;
+        color: white;
+        left: 1rem; 
+        font-size: 28px;
+        padding-top: 10px;
+    }
+   
+    i.fas.fa-bell {
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    right: 6rem;
+    }
+    .welcome{
+        font-weight: 500;
+        line-height: 1.2;
+        position: absolute;
+        color: #ffffff;
+        right: 8.5rem;
+        font-size: 20px;
+        padding-top: 10px;
+    }  
+
+</style>
+
+
+</head>
+
+<body class="layout-default" onload="disableSubmit()" >
+
+
+
+
+
+
+
+
+
+
+
+    <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px" data-fullbleed>
+        <div class="mdk-drawer-layout__content">
+
+            <!-- Header Layout -->
+            <div class="mdk-header-layout js-mdk-header-layout" data-has-scrolling-region>
+
+                <!-- Header -->
+
+                <div id="header" class="mdk-header js-mdk-header m-0" data-fixed data-effects="waterfall" data-retarget-mouse-scroll="false">
+                    <div class="mdk-header__content">
+
+                        <div class="navbar navbar-expand-sm navbar-main navbar-dark bg-danger pl-md-0 pr-0" id="navbar" data-primary>
+                            <div class="container-fluid page__container pr-0">
+
+                                <!-- Navbar toggler -->
+                                <button class="navbar-toggler navbar-toggler-custom  d-lg-none d-flex mr-navbar" type="button" data-toggle="sidebar">
+                                    <span class="material-icons icon-14pt">menu</span>
+                                </button>
+
+                                <h1 class="mb-0">Test List</h1>
+
+
+
+                                <ul class="nav navbar-nav d-none d-md-flex">
+                                   
+                                    
+                                </ul>                                
+                                <p class="welcome">Welcome Name</p>
+                                <i class="fas fa-bell"></i>
+
+                                <div class="dropdown">
+                                    <a href="#" data-toggle="dropdown" data-caret="false" class="dropdown-toggle navbar-toggler navbar-toggler-dashboard border-left d-flex align-items-center ml-navbar">
+                                        <span class="material-icons mr-2" style="font-size: 1.6rem;">account_circle</span> 
+                                    </a>
+                                    <div id="company_menu" class="dropdown-menu dropdown-menu-right navbar-company-menu">
+                                        <div class="dropdown-item d-flex align-items-center py-2 navbar-company-info py-3">
+
+                                            <span class="mr-3">
+                                                <img src="assets/images/frontted-logo-blue.svg" width="43" height="43" alt="avatar">
+                                            </span>
+                                            <a class="flex d-flex flex-column" href="profile.html">
+                                                <strong class="h5 m-0">Adrian D.</strong>
+                                                <small class="text-muted text-uppercase">STUDENT</small>
+                                            </a>
+
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item d-flex align-items-center py-2" href="edit-account.html">
+                                            <span class="material-icons mr-2">account_circle</span> Edit Account
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center py-2" href="#">
+                                            <span class="material-icons mr-2">settings</span> Settings
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center py-2" href="login.html">
+                                            <span class="material-icons mr-2">exit_to_app</span> Logout
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- // END Header -->
+
+                <!-- Header Layout Content -->
+                <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page" style="padding-top: 60px;">
+
+
+
+
+                    <!-- <div class="page__heading border-bottom">
+                        <div class="container-fluid page__container d-flex;">
+                            <h1 class="mb-0" style="font-size: 30px; color: rgb(82, 79, 79);margin-left:50%">Test List</h1>
+                        </div>
+                    </div> -->
+
+                    <div class="container-fluid page__container">
+                        <form action="#" class="mb-3 border-bottom pb-3">
+                            <div class="d-flex">
+                                <div class="search-form mr-3 search-form--light">
+                                    <input type="text" class="form-control" placeholder="Search Test" id="searchSample02">
+                                    <button class="btn" type="button"><i class="material-icons">search</i></button>
+                                </div>
+
+                                <div class="form-inline ml-auto">
+                                    <div class="form-group mr-3">
+                                        <label for="custom-select" class="form-label mr-1">Category</label>
+                                        <select id="custom-select" class="form-control custom-select" style="width: 200px;">
+                                            <option selected>All categories</option>
+                                            <option value="1">Vue.js</option>
+                                            <option value="2">Node.js</option>
+                                            <option value="3">GitHub</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="published01" class="form-label mr-1">Status</label>
+                                        <select id="published01" class="form-control custom-select" style="width: 200px;">
+                                            <option selected>All</option>
+                                            <option value="1">Attend</option>
+                                            <option value="3">Expired</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                     
+
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="card card__course">
+                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                                            <span><img src="assets/images/logos/react.svg" class="mb-1" style="width:34px;" alt="logo"></span>
+                                            <span class="course__title">React</span>
+                                            <span class="course__subtitle">Learn the Basics</span>
+                                            <span id="timer" style="font-size:12px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight:600; margin-top:1rem;" > </span>  
+
+
+                                        </a>
+                                        
+                                    </div>
+
+                                    <div class="p-3">
+                                        
+                                        <div class="d-flex align-items-center">
+                                          
+                                            <a href="#" class="btn btn-danger ml-auto"  data-toggle="modal" data-target="#myModal">Attempt</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card card__course">
+                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                                            <span><img src="assets/images/logos/icons8-python-48.png" class="mb-1" style="width:34px;" alt="logo"></span>
+                                            <span class="course__title">Python</span>
+                                            <span class="course__subtitle">Learn the Basics</span>
+                                        </a>
+                                    </div>
+                                    <div class="p-3">
+                                        
+                                        <div class="d-flex align-items-center">
+                                          
+                                            <a href="#" class="btn btn-danger ml-auto"  data-toggle="modal" data-target="#myModal">Attempt</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <div class="col-md-3">
+                                <div class="card card__course">
+                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                                            <span><img src="assets/images/logos/icons8-r-project-64.png" class="mb-1" style="width:34px;" alt="logo"></span>
+                                            <span class="course__title">React</span>
+                                            <span class="course__subtitle">Learn the Basics</span>
+                                        </a>
+                                    </div>
+                                    <div class="p-3">
+                                        
+                                        <div class="d-flex align-items-center">
+                                            
+                                            <a href="#" class="btn btn-danger ml-auto"  style="opacity: 0.5;" disabled>Expired</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <div class="col-md-3">
+                                <div class="card card__course">
+                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                                            <span><img src="assets/images/logos/react.svg" class="mb-1" style="width:34px;" alt="logo"></span>
+                                            <span class="course__title">React</span>
+                                            <span class="course__subtitle">Learn the Basics</span>
+                                            
+                                        </a>
+                                    </div>
+                                    <div class="p-3">
+                                        
+                                        <div class="d-flex align-items-center">
+                                           
+                                            <a href="#" class="btn btn-danger ml-auto"  data-toggle="modal" data-target="#myModal">Attempt</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <div class="col-md-3">
+                                <div class="card card__course">
+                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                                            <span><img src="assets/images/logos/icons8-c++-48.png" class="mb-1" style="width:34px;" alt="logo"></span>
+                                            <span class="course__title">C++ Programming</span>
+
+                                            <span class="course__subtitle">Learn the Basics</span>
+                                        </a>
+                                    </div>
+                                    <div class="p-3">
+                                        
+                                        <div class="d-flex align-items-center">
+                                           
+                                            <button href="#" class="btn btn-danger ml-auto" style="opacity: 0.5;" disabled>Expired</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card card__course">
+                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                                            <span><img src="assets/images/logos/icons8-c-sharp-logo-50.png" class="mb-1" style="width:34px;" alt="logo"></span>
+                                            <span class="course__title">C Programming</span>
+                                            <span class="course__subtitle">Quick Tips</span>
+
+                                        </a>
+                                    </div>
+                                    <div class="p-3">
+                                        
+                                        <div class="d-flex align-items-center">
+                                           
+                                            <a href="#" class="btn btn-danger ml-auto"  data-toggle="modal" data-target="#myModal">Attempt</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card card__course">
+                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                                            <span><img src="assets/images/logos/icons8-html-48.png" class="mb-1" style="width:34px;" alt="logo"></span>
+                                            <span class="course__title">HTML</span>
+                                            <span class="course__subtitle">Back to Basics</span>
+                                        </a>
+                                    </div>
+                                    <div class="p-3">
+                                        
+                                        <div class="d-flex align-items-center">
+                                           
+                                            <a href="#" class="btn btn-danger ml-auto"  style="opacity: 0.5;" disabled>Expired</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card card__course">
+                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                                            <span><img src="assets/images/logos/icons8-java-50.png" class="mb-1" style="width:34px;" alt="logo"></span>
+                                            <span class="course__title">Java</span>
+                                            <span class="course__subtitle">ES6 and Beyond</span>
+                                        </a>
+                                    </div>
+                                    <div class="p-3">
+                                        
+                                        <div class="d-flex align-items-center">
+                                            
+                                            <a href="#" class="btn btn-danger ml-auto"  data-toggle="modal" data-target="#myModal">Attempt</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card card__course">
+                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                                            <span><img src="assets/images/logos/node.svg" class="mb-1" style="width:34px;" alt="logo"></span>
+                                            <span class="course__title">Node</span>
+                                            <span class="course__subtitle">ES6 and Beyond</span>
+                                        </a>
+                                    </div>
+                                    <div class="p-3">
+                                        
+                                        <div class="d-flex align-items-center">
+                                           
+                                            <a href="#" class="btn btn-danger ml-auto"  data-toggle="modal" data-target="#myModal">Attempt</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card card__course">
+                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                                            <span><img src="assets/images/logos/gitlab.png" class="mb-1" style="width:34px;" alt="logo"></span>
+                                            <span class="course__title">Gitlab</span>
+                                            <span class="course__subtitle">Git Workflows</span>
+                                        </a>
+                                    </div>
+                                    <div class="p-3">
+                                     
+                                        <div class="d-flex align-items-center">
+                                           
+                                            <a href="#" class="btn btn-danger ml-auto"  style="opacity: 0.5;" disabled>Expired</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card card__course">
+                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
+                                            <span><img src="assets/images/logos/angular.svg" class="mb-1" style="width:34px;" alt="logo"></span>
+                                            <span class="course__title">Angular</span>
+                                            <span class="course__subtitle">Typescript and Beyond</span>
+                                        </a>
+                                    </div>
+                                    <div class="p-3">
+                                       
+                                        <div class="d-flex align-items-center">
+                                           
+                                            <button href="#" class="btn btn-danger ml-auto"  style="opacity: 0.5;" disabled>Expired</button>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                        </div> </div>
+
+                        <hr>
+                        <div class="d-flex flex-row align-items-center mb-3">
+                            <div class="form-inline">
+                                View
+                                <select class="custom-select ml-2">
+                                    <option value="20" selected>20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
+                            </div>
+                            <div class="ml-auto">
+                                20 <span class="text-muted">of 100</span> <a href="#" class="icon-muted"><i class="material-icons float-right">arrow_forward</i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- // END header-layout__content -->
+
+            </div>
+            <!-- // END header-layout -->
+
+        </div>
+        <!-- // END drawer-layout__content -->
+        
+        <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="start">
+            <div class="mdk-drawer__content">
+                <div class="sidebar sidebar-dark sidebar-left bg-dark-gray" data-perfect-scrollbar>
+
+                    <div class="d-flex align-items-center sidebar-p-a sidebar-account flex-shrink-0">
+                        <a href="index.html" class="flex d-flex align-items-center text-underline-0">
+                           
+                            <span class="flex d-flex flex-column justify-content-center align-items-center">
+                                <img src="./assets/images/AICL_Logo1.png" style="width: 5rem; height: 3rem;  ">
+
+                                
+                            </span>
+                        </a>
+                    </div>
+
+
+                   
+                    <div class="sidebar-block p-0">
+                        <ul class="sidebar-menu mt-0">
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="index.html"  style=" padding-top:12px; margin-left:1.3rem;">
+                                    <i class="sidebar-menu-icon fa fa-bar-chart" style="color: yellowgreen;"></i>
+                                    <span class="sidebar-menu-text" style="padding-left: 1rem; font-size: 17px;">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="student-courses.html"  style="margin-left:1.3rem;">
+                                    <i class="sidebar-menu-icon fa fa-tasks"  style="color: yellowgreen;"></i>
+                                    <span class="sidebar-menu-text"  style="padding-left: 1rem;" >Test List</span>
+                                </a>
+                            </li>
+                          
+                           
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="result.html"  style="margin-left:1.3rem;">
+                                    <i class="sidebar-menu-icon  fa fa-line-chart"  style="color: yellowgreen;"> </i>
+                                    <span class="sidebar-menu-text"style="padding-left: 1rem;" >Result</span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                        <hr>
+                        <h6   style="text-align: center; font-size:1.1rem; font-weight: 700;" >Company Hiring</h5>
+                            <div>
+                                <marquee behavior="scroll" direction="up" style="display: flex;justify-content: center;align-items: center;">
+                                    <img src="./assets/images/AICL_Logo1.png" width="100" height="50" alt="W3docs" />
+                                    <img src="./assets/images/AICL_Logo1.png" width="100" height="50"  alt="W3docs"   style="display:flex;flex-direction:column; margin-top: 3rem;"/>
+                                    <img src="./assets/images/AICL_Logo1.png" width="100" height="50"  alt="W3docs" style=" margin-top: 3rem;"/>
+    
+                                  </marquee>
+    
+                            </div>
+                    </div>
+                        
+
+                    
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+                    <div class="sidebar-heading">Student</div>
+                    <div class="sidebar-block p-0">
+                        <ul class="sidebar-menu mt-0">
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="index.html">
+                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">star_half</i>
+                                    <span class="sidebar-menu-text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item active">
+                                <a class="sidebar-menu-button" href="student-courses.html">
+                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">queue_play_next</i>
+                                    <span class="sidebar-menu-text">Courses</span>
+                                </a>
+                            </li>
+                            
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="student_quiz.html">
+                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">live_help</i>
+
+    </div>
+    <!-- // END drawer-layout -->
+
+    <div class="mdk-drawer js-mdk-drawer" id="events-drawer" data-align="end">
+        <div class="mdk-drawer__content">
+            <div class="sidebar sidebar-light sidebar-left" data-perfect-scrollbar>
+
+
+
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Thursday, 28 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>12:30 PM</small>
+                                <small class="text-dark-gray">2 hrs</small>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Marketing Team Meeting</strong></a>
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">location_on</i> 16845 Hicks Road</small>
+
+
+                                </div>
+                                <div class="avatar-group mt-2">
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_joao-silas-636453-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_jeremy-banks-798787-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Wednesday, 27 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>07:48 PM</small>
+                                <small class="text-dark-gray">30 min</small>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Call Alex</strong></a>
+
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">phone</i> 202-555-0131</small>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Tuesday, 26 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>03:13 PM</small>
+                                <small class="text-dark-gray">2 hrs</small>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Design Team Meeting</strong></a>
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">location_on</i> 16845 Hicks Road</small>
+
+
+                                </div>
+                                <div class="avatar-group mt-2">
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_michael-dam-258165-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                    <div class="avatar avatar-xs">
+                                        <img src="assets/images/stories/256_rsz_clem-onojeghuo-193397-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <small class="text-dark-gray px-3 py-1">
+                    <strong>Monday, 25 Feb</strong>
+                </small>
+
+                <div class="list-group list-group-flush">
+
+                    <div class="list-group-item bg-light">
+                        <div class="row">
+                            <div class="col-auto d-flex flex-column">
+                                <small>12:30 PM</small>
+                                <small class="text-dark-gray">2 hrs</small>
+                            </div>
+                            <div class="col d-flex">
+                                <div class="d-flex flex-column flex">
+                                    <a href="#" class="text-body"><strong class="text-15pt">Call Wendy</strong></a>
+
+
+                                    <small class="text-muted d-flex align-items-center"><i class="material-icons icon-16pt mr-1">phone</i> 202-555-0131</small>
+
+                                </div>
+
+
+                                <div class="avatar avatar-xs">
+                                    <img src="assets/images/256_michael-dam-258165-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="margin-top:2rem;width:100%;">
+        <div>
+            <div  class="header-title">
+            
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+        </div>
+        <div>
+            <p class="header-subtitle">AICL TEST</p>  
+          <div class="modal-Title">
+           <h5> Test Name</h5>
+           <h6 >Two</h6>
+          </div>
+          <div class="modal-Title">
+           <h5> No of Question</h5>
+           <h6>10</h6>
+          </div>
+          <div class="modal-Title">
+           <h5 > Durations (in min.)</h5>
+           <h6 >30</h6>
+          </div>
+          <div class="modal-Title">
+           <h5>Test Categories</h5>
+           <h6>React</h6>
+          </div>
+             <div class="modal-Title">
+           <h5>Start By</h5>
+           <h6>16 Jan 2021 23:05:16</h6>
+          </div>
+
+          <div class="header-subtitle">
+              <p>Terms and Condition</p>
+          </div>
+
+           <div style="margin: 20px 60px 10px;">
+              
+              <h5 style="font-size:14px;text-align:center;font-weight: 600;">Candidate strictly <span style="font-size:14px;text-align: center;font-weight:600;color:red">not allowed to open new window or tabs or minimize the Exam Tab during the time of an exam,</span>else the Exam will be cancelled and marked a Fake Attempt.</h5>
+              
+           </div>
+        <div>
+            <div style="display:flex;margin: 30px 60px 30px; justify-content: center;">
+                
+                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">
+                <h5 style="padding-left:9px;font-size:14px;font-weight:600">I accept your Terms and Condition </h5>
+            </div>
+            <div  class="modal_agree_button">
+                <a href="Question.html" class="btn btn-danger" id="submit" >Start</a>
+            </div>
+                  </div>
+            </div>
+
+        </div>
+         
+       
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+    <!-- App Settings FAB -->
+    <div id="app-settings">
+        <app-settings layout-active="default" :layout-location="{
+      'default': 'student-courses.html',
+      'fixed': 'fixed-student-courses.html',
+      'fluid': 'fluid-student-courses.html',
+      'mini': 'mini-student-courses.html'
+    }"></app-settings>
+    </div>
+    <!-- App Settings FAB -->
+    <div id="app-settings">
+        <app-settings layout-active="default" :layout-location="{
+      'default': 'student-quiz.html',
+      'fixed': 'fixed-student-quiz.html',
+      'fluid': 'fluid-student-quiz.html',
+      'mini': 'mini-student-quiz.html'
+    }"></app-settings>
+    </div>
+
+   
+    <script>
+        function disableSubmit() {
+            document.getElementById("submit").disabled = true;
+        }
+
+        function activateButton(element) {
+
+            if (element.checked) {
+                document.getElementById("submit").disabled = false;
+            }
+            else {
+                document.getElementById("submit").disabled = true;
+            }
+
+        }
+    </script>
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="assets/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <!-- Range Slider -->
+    <script src="assets/vendor/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/ion-rangeslider.js"></script>
+
+    <!-- App -->
+    <script src="assets/js/toggle-check-all.js"></script>
+    <script src="assets/js/check-selected-row.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/sidebar-mini.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- App Settings (safe to remove) -->
+    <script src="assets/js/app-settings.js"></script>
+
+    	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="assets/js/classie.js"></script>
+		<script src=" assets/js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="assets/js/cssParser.js"></script>
+		<script src="assets/js/css-filters-polyfill.js"></script>
+        
+        <!--coundown-->
+            <script src="assets/vendor/jquery.countdown.min.js"></script>
+             <script src="assets/js/countdown.js"></script>
+            <!-- Required by countdown -->
+            <script src="assets/vendor/moment.min.js"></script>
+
+            
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+    
+      var hours = Math.floor( (distance % (1000 * 60 * 60 * 24) ) / (1000 * 60 * 60) );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id=" button"
+      document.getElementById("timer").innerHTML = hours + "h "
+      + minutes + "m " + seconds + "s " + "Left";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    
+
+        
+
+</body>
+
+</html>

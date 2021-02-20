@@ -3,6 +3,7 @@
   height: 480px;
 }
 
+
 #learn-more {
   fill-opacity: 0;
   fill: #fff;
@@ -33,7 +34,7 @@
 }
 
 .center {
-  fill: #005fa4;
+  fill: red;
 }
 
 .pointer {
@@ -75,7 +76,7 @@
 }
 
 .service circle {
-  fill: #005fa4;
+  fill:red;
 }
 
 .service circle.shadow {
@@ -111,3 +112,9 @@
   font-weight: bold;
 }
 /*# sourceMappingURL=Events.css.map */
+
+@media screen and(max-width:400px){
+  .circle-nav-service{
+    width:70%
+  }
+}

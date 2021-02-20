@@ -85,9 +85,7 @@
         margin: 10px 10px 10px 10px; 
 
     }
-    .btns{
-        background-color: red;
-    }
+    
     
     .modal-Title >h5{
         padding-top:10px; 
@@ -133,7 +131,7 @@
 
 </head>
 
-<body class="layout-default" onload="disableSubmit()" >
+<body class="layout-default">
 
 
 
@@ -555,7 +553,7 @@
                                 <hr>
                                 <div class="ds-skill">
                                   <div class="skill html">
-                                    <h6 style="font-size: 15px; font-weight: 600;"><i class="fas fa-laptop-code"></i> Machine Learning with Python </h6>
+                                    <h6 style="font-size: 15px; font-weight: 600;"><i class="fas fa-laptop-code" ></i> Machine Learning with Python </h6>
                                     <div class="bar bar-html">
                                       <p>95%</p>
                                     </div>
@@ -572,8 +570,17 @@
                                       <p>75%</p>
                                     </div>
                                   </div>
+                                  <div class="skill javascript" style="padding-top:1rem">
+                                    <h6 style="font-size: 15px; font-weight: 600;"><i class="fab fa-mixcloud" id="skills"></i>  </h6>
+                                    <div class="bar bar-js">
+                                      <p id="bar"></p>
+                                    </div>
+                                  </div>
                                   <br>
-                                  <i class="fas fa-plus-circle" onclick="add">  Add new Skill</i>
+                                    
+                                    <button  class="btn btn-danger" id="submit"   data-toggle="modal" data-target="#myModal"><i class="fas fa-plus-circle" style="color: white;">Add  Skill</i> </buuton>
+                                
+                                  
                                 </div>
                                 </div>
                             </div>
@@ -770,7 +777,7 @@
                     <div class="list-group-item bg-light">
                         <div class="row">
                             <div class="col-auto d-flex flex-column">
-                                <small>03:13 PM</small>
+                                <small >03:13 PM</small>
                                 <small class="text-dark-gray">2 hrs</small>
                             </div>
                             <div class="col">
@@ -860,46 +867,28 @@
         </div>
         <div>
             <p class="header-subtitle">AICL TEST</p>  
+         
+         
+        
           <div class="modal-Title">
-           <h5> Test Name</h5>
-           <h6 >Two</h6>
-          </div>
-          <div class="modal-Title">
-           <h5> No of Question</h5>
-           <h6>10</h6>
-          </div>
-          <div class="modal-Title">
-           <h5 > Durations (in min.)</h5>
-           <h6 >30</h6>
-          </div>
-          <div class="modal-Title">
-           <h5>Test Categories</h5>
-           <h6>React</h6>
+           <h5>Skill</h5>
+           <input type="text" name="skill" value="" id="myText" ></input>
           </div>
              <div class="modal-Title">
-           <h5>Start By</h5>
-           <h6>16 Jan 2021 23:05:16</h6>
+           <h5>Level</h5>
+           <input type="text" name="skill" value="" id="myskills" ></input>
           </div>
 
-          <div class="header-subtitle">
-              <p>Terms and Condition</p>
-          </div>
+         
 
-           <div style="margin: 20px 60px 10px;">
-              
-              <h5 style="font-size:14px;text-align:center;font-weight: 600;">Candidate strictly <span style="font-size:14px;text-align: center;font-weight:600;color:red">not allowed to open new window or tabs or minimize the Exam Tab during the time of an exam,</span>else the Exam will be cancelled and marked a Fake Attempt.</h5>
-              
-           </div>
+          
         <div>
-            <div style="display:flex;margin: 30px 60px 30px; justify-content: center;">
-                
-                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">
-                <h5 style="padding-left:9px;font-size:14px;font-weight:600">I accept your Terms and Condition </h5>
-            </div>
+           
             <div  class="modal_agree_button">
-                <a href="Question.html" class="btn btn-danger" id="submit" >Start</a>
+                <button   class="btn btn-danger" id="submit"onclick="myFunction()">Add Skill</button>
+               
             </div>
-                  </div>
+        </div>
             </div>
 
         </div>
@@ -947,6 +936,21 @@
             }
 
         }
+    </script>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myText").value;
+      var y = document.getElementById("myskills").value;
+
+      document.getElementById("skills").innerText=x;
+      document.getElementById("bar").innerText=y;
+      
+    }
+    </script>
+
+    <script>
+      
     </script>
     <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>
@@ -1037,6 +1041,9 @@ function save(){
   document.getElementById("facebook").contentEditable="false";
 }
 
+function add (){
+    console.log("hai")
+}
 
   </script>
        
