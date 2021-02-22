@@ -118,6 +118,39 @@ border-radius: 50%;
         font-size: 20px;
         padding-top: 10px;
     }
+    .dashboard{
+        font-weight: bolder;
+        line-height: 1.2;
+        position: absolute;
+        color: white;
+        left: 1rem; 
+        font-size: 28px;
+        padding-top: 10px;
+    }
+
+    .mobile_dashboard{
+        text-align: center;
+        padding-top: 3rem;
+        
+    }
+
+    .mobile_dashboard >h5{
+        display: none;
+        font-family: helvetica;
+        font-size: 32px;
+        font-weight: 700;
+        font-family: helvetica;
+        color: red;
+    }
+
+    @media screen and (max-width:995px){
+        .dashboard{
+            display:none
+        }
+        .mobile_dashboard >h5{
+            display:block;
+        }
+    }
 
 </style>
    
@@ -162,15 +195,18 @@ border-radius: 50%;
 
 
 
-                                <h1 class="result-nav">Result</h1>
 
 
 
                                 <ul class="nav navbar-nav d-none d-md-flex">
                                    
                                     
-                                </ul>                                
-                                <p class="welcome">Welcome Name</p>
+                                </ul> 
+                                <div class="dashboard">
+                                    <h1 >Result</h1>
+                                    <p class="welcome">Welcome Name</p>
+                                </div>                               
+                              
                                 <div  class="nav-item">
                                     
                                     <a href="#notifications_menu" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
@@ -349,7 +385,10 @@ border-radius: 50%;
                 <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page" style="padding-top: 60px;">
                     
             
-                    
+                    <div class="mobile_dashboard"> 
+                        <h5>Result</h5>
+                       </div>
+                        
                     <div class="container-fluid page__container">
                         <!--Header-Profie-->
                        
@@ -631,7 +670,7 @@ border-radius: 50%;
                                 </a>
                             </li>
                             <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="student-courses.html" style="margin-left:1.6rem;">
+                                <a class="sidebar-menu-button" href="test-list.html" style="margin-left:1.6rem;">
                                     <i class="sidebar-menu-icon fa fa-tasks"  style="color: yellowgreen;" style="margin-left:1.3rem;"></i>
                                     <span class="sidebar-menu-text"  style="padding-left: 1rem;" >Test List</span>
                                 </a>
