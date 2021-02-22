@@ -124,6 +124,10 @@
         font-size: 20px;
         padding-top: 10px;
     }
+
+    @media screen and (max-width:392px) {
+        
+    }
       
 
 </style>
@@ -367,14 +371,10 @@
                                   <img src="./img/WhatsApp Image 2020-12-22 at 10.35.38 PM.jpeg" style=" width:10rem; height: 8rem; border-radius: 50%; width: 8rem; margin-top:3rem;">
                                  
                                 </div>
-                                <h4 class="pricing__title mb-0" style="font-size: 18px; font-weight: 600;padding-top: 10px; text-align: center; margin-right:3rem;">Kavin</h4>
+                                <h4 class="pricing__title mb-0" style="font-size: 18px; font-weight: 600;padding-top: 10px; text-align: left; margin-left:2rem;">Kavin</h4>
 
                                
-                                <div style="margin: 20px ;padding-bottom: 40px;">
-                                 
-                                  <button class="btn btn-danger " onclick="edit()" style="padding-top: 5px;float: left; left:10px;width:90%; "  > <i  class="fas fa-user-cog" style="color: white; padding-right:10px"></i> Edit </button>
-                                  <button class="btn btn-outline" id="btn-save" onclick="save()"  style="padding-bottom:20px">Save Profile</button>
-                              </div>
+                              
                                </div>
                                 
                             </div>
@@ -456,6 +456,11 @@
                              </div>
                           </div>
                      </div>
+                     <div style="margin: 20px ;padding-bottom: 40px;">
+                                 
+                        <button class="btn btn-danger " onclick="edit()" style="padding-top: 5px;float: left; width:10%;margin-left: 4rem; "  > <i  class="fas fa-user-cog" style="color: white; padding-right:10px"></i> Edit </button>
+                        <button class="btn btn-outline" id="btn-save" onclick="save()"  style="padding-bottom:20px">Save Profile</button>
+                    </div>
                    </div>
                     
                       <section id="personal-info">
@@ -578,7 +583,7 @@
                                   </div>
                                   <br>
                                     
-                                    <button  class="btn btn-danger" id="submit"   data-toggle="modal" data-target="#myModal"><i class="fas fa-plus-circle" style="color: white;">Add  Skill</i> </buuton>
+                                    <button  class="btn btn-warning" id="submit"   data-toggle="modal" data-target="#myModal"><i class="fas fa-plus-circle" style="color: white;">Add  Skill</i> </buuton>
                                 
                                   
                                 </div>
@@ -885,7 +890,7 @@
         <div>
            
             <div  class="modal_agree_button">
-                <button   class="btn btn-danger" id="submit"onclick="myFunction()">Add Skill</button>
+                <button   class="btn btn-warning" id="submit"onclick="myFunction()">Add Skill</button>
                
             </div>
         </div>
