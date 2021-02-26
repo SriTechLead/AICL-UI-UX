@@ -1,138 +1,47 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>forgot password</title>
-    <style>
-body{
-  overflow: hidden;
-}
-  
-.content{
-font-family: "source sans pro",sans-serif;
-    padding-bottom: 1rem;
-    font-size: 17px;
-text-align: center;
-}
-.popup{
-  background-image: url(./assets/images/Login\ page.jpg);
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: 100%;
-  height: 100%;
-  width: 100%;
-}
+<title>Signup</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../dist/assets/css/app2.css">
+<!-- Custom Theme files -->
 
 
-#sc-password {
-  background: rgba(231, 228, 228, 0.671); 
-  width: 400px;
-  margin: 0 auto;
-  margin-top: 10rem;
-  margin-bottom: 2%;
-  transition: opacity 1s;
-  -webkit-transition: opacity 1s;
-}
-
-#sc-password h1 {
-  background-image: rgba(231, 228, 228, 0.671);
-  padding-top: 20px;
-  font-size: 140%;
-  font-weight: 300;
-  text-align: center;
-  color:rgb(179, 18, 23);
-}
-
-div#sc-password .sc-container {
-  background-image:rgba(231, 228, 228, 0.671) ;
-  padding-left:  2rem;
-  padding-right:  2rem;
-  padding-bottom:  2rem;
-  position: static;
-}
-
-div#sc-password input[type="email"],
-div#sc-password input[type="text"],
-div#sc-password input[type="password"] {
-  width: 92%;
-  background: #fff;
-  margin-bottom: 4%;
-  border: 1px solid #ccc;
-  padding: 4%;
-  margin-left: 1rem;
-  font-family: "source sans pro", sans-serif;
-  font-size: 95%;
-  color: #555;
-}
-
-div#sc-password input[type="submit"] {
-  font-weight: 400;
-  font-size: larger;
-  width: 100%;
-  font-family:"source sans pro", sans-serif;
-  padding:0.50rem 0.50rem;
-  color: #fff;
-  background-image: linear-gradient(to right, rgb(229, 45, 39) 0%, rgb(179, 18, 23) 51%, rgb(229, 45, 39) 100%);
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;            
-  display: block;
-}
-
-div#sc-password input[type="submit"]:hover {
-    background-position: right center;
-  color: #fff;
-  text-decoration: none;
-}
-.ref{
-
-  color: #fff;
-  background-image: linear-gradient(to right, rgb(229, 45, 39) 0%, rgb(179, 18, 23) 51%, rgb(229, 45, 39) 100%);
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;            
-  border-radius: 1px;
-  display: block;
-  padding: 1rem;
-text-align: center;
-border-radius: 0.1rem;
-
-
-}
-.ref:hover{
-background-position: right center;
-  color: #fff;
-  text-decoration: none;
-}
-.logo{
-
-background-image: url("../dist/assets/images/AICL_Logo1.png");
-background-repeat: no-repeat;
-width: 8rem;
-
-}
-        
- </style>
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
 </head>
-<body>
-    
- <div class="body"> 
+<body style="background-image: url(../dist/assets/images/Login\ page.jpg);background-size: cover;background-repeat: no-repeat;">
+    <div class="p" >
 
-<div class="popup">
- 
-  <div>
-    <img src="./assets/images/AICL_Logo1.png" style="width: 12rem;height: 6rem;margin-top: 2rem;margin-left: 40rem;" >
-</div>
-<div id="sc-password">
+  <img src="../dist/assets/images/AICL_Logo1.png" style="width: 8rem;height: 5rem;">
 
-    <h1>FORGOT PASSWORD</h1>
-    <div class="sc-container">
-        <div class="content">Please enter your mail id and we will send you a link to corresponding mail address </div>
-      <input type="text" placeholder="Username or Email" />
-      <a class="ref" type="submit">SUBMIT</a>
-    </div> 
     </div>
-  </div>
-</div> 
-</div>
+	<div class="main-w3layouts wrapper" style="margin-bottom: 14rem;">
+       
+		<div class="main-agileinfo" >
+            
+			<div class="agileits-top">
+                <form action="#" method="post">
+                  <h6 style="text-align: center;font-size:2rem;padding-bottom: 1px;margin:0 10px;color: red;">Forgot password</h6>
+                  <p>Please enter your maild we will send a link to your mail id</p>
+                   
+                    <label class="label1">Email address:</label>
+					<input class="text email" type="email" name="email" placeholder="Email" required=""><br>
+                   
+                   
+				
+					<input type="submit" value="SIGNUP" style="margin-right:1rem;">
+				</form>
+			</div>
+		</div>
+		
+			
+	
+	</div>
+  
+	<!-- //main -->
 </body>
-
 </html>
